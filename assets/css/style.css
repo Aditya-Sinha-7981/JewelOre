@@ -50,7 +50,7 @@ header nav ul li .home {
 }
 
 .center-div {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -274,5 +274,108 @@ header nav ul li .home {
 
 .information article figure ul.categories li.middle-category {
   margin: 100px 0 0 0;
+}
+
+.about-us {
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+
+.about-us article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-us article aside {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about-us article aside h2 {
+  font-size: 50px;
+  font-family: "Playfair Display";
+  color: #073300;
+  font-weight: 700;
+}
+
+.about-us article aside p {
+  font-size: 18px;
+  margin: 40px 0 50px 0;
+  color: #073300;
+  font-family: "Lora";
+  font-weight: 400;
+}
+
+.about-us article aside ul {
+  list-style-image: url(../images/list-bullet.svg);
+}
+
+.about-us article aside ul li {
+  font-size: 18px;
+  font-family: "Lora";
+  color: #073300;
+  font-weight: 400;
+  margin: 15px 0;
+  line-height: 26px;
+}
+
+.about-us article aside a {
+  background: #073300;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 20px 60px;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 40px 0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-us article figure {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about-us article figure img {
+  z-index: 1;
+}
+
+.about-us article figure .orange-box {
+  height: 690px;
+  width: 420px;
+  background: #FFDAC5;
+  position: absolute;
+  right: 0%;
+  margin: 0 0 10px 0;
+  z-index: 0;
 }
 /*# sourceMappingURL=style.css.map */

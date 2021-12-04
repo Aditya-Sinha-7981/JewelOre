@@ -51,7 +51,7 @@ header{
 // Center div
 
 .center-div{
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -211,6 +211,90 @@ header{
                 li.middle-category{
                     margin: 100px 0 0 0;
                 }
+            }
+        }
+    }
+}
+
+// About Us Section
+
+.about-us{
+    width: 100%;
+    margin: 100px 0 0 0;
+
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        aside{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            h2{
+                font-size: 50px;
+                font-family: $secondaryFont;
+                color: $primary-color;
+                font-weight: 700;
+            }
+
+            p{
+                font-size: 18px;
+                margin: 40px 0 50px 0;
+                color: $primary-color;
+                font-family: $primaryFont;
+                font-weight: 400;
+            }
+
+            ul{
+                list-style-image: url(../images/list-bullet.svg);
+
+
+                li{
+                    font-size: 18px;
+                    font-family: $primaryFont;
+                    color: $primary-color;
+                    font-weight: 400;
+                    margin: 15px 0;
+                    line-height: 26px;
+                }
+            }
+
+            a{
+                background: $primary-color;
+                color: white;
+                cursor: pointer;
+                font-size: 25px;
+                text-decoration: none;
+                font-weight: 700;
+                padding: 20px 60px;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                margin: 40px 0;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        figure{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end; 
+
+            img{
+                z-index: 1;
+            }
+            
+            .orange-box{
+                height: 690px;
+                width: 420px;
+                background: $secondary-color;
+                position: absolute;
+                right: 0%;
+                margin: 0 0 10px 0;
+                z-index: 0;
             }
         }
     }
