@@ -19,8 +19,12 @@ $secondaryFont: 'Playfair Display';
 
 header{
     position: fixed;
+    width: 100%;
+    z-index: 2;
+
     nav{
         width: 100%;
+
         ul{
             width: 100%;
             list-style: none;
@@ -30,9 +34,11 @@ header{
             align-content: center;
             justify-content: flex-start;
             align-items: center;
+            
             li{
                 list-style: none;
                 margin: 5px 10px;
+
                 a{
                     color: $primary-color;
                     font-family: $primaryFont;
@@ -40,11 +46,21 @@ header{
                     text-decoration: none;
                     font-size: 18px;
                 }
+
+                a:hover{
+                    font-weight: 900;
+                }
+
                 .home{
                     font-weight: 900;
                 }
             }
         }
+    }
+
+    nav.scrolled{
+        background: white;
+        transition: ease-in-out 0.3s;
     }
 }
 
@@ -58,10 +74,10 @@ header{
 // Landing Section
 
 .landing{
-    width: 100%;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     article{
         display: flex;
@@ -84,7 +100,7 @@ header{
             z-index: 1;
 
             h1{
-                font-size: 65px;
+                font-size: 4.0625em; //deafult is 16px
                 margin: 40px 0;
                 font-family: $secondaryFont;
                 font-weight: 700;
@@ -93,7 +109,7 @@ header{
 
             p{
                 margin: 20px 0;
-                font-size: 18px;
+                font-size: 1.125em; //18px
                 line-height: 26px;
             }
 
@@ -101,7 +117,7 @@ header{
                 background: $primary-color;
                 color: white;
                 cursor: pointer;
-                font-size: 25px;
+                font-size: 1.5625em; //25px
                 text-decoration: none;
                 font-weight: 700;
                 padding: 20px 60px;
@@ -134,10 +150,11 @@ header{
 // Information Section
 
 .information{
+    // display: none;
     width: 100%;
     background: $primary-color;
     
-    article{
+    .information-content{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -145,6 +162,7 @@ header{
 
         ul.information-ul{
             margin: 60px 0 0 0;
+            padding: 0 0 300px 0;
             list-style: none;
             display: flex;
             color: white;
@@ -179,38 +197,55 @@ header{
                 }
             }
         }
+    }
+}
 
-        figure{
-            width: 100%;
-            margin: 50px 0 0 0;
+// More Products
 
-            ul.categories{
-                list-style: none;
+section.more-products{
+    // display: none;
+    margin: -300px 0 0 0;
+    
+    figure{
+        width: 100%;
+        margin: 50px 0 0 0;
+
+        ul.more-products{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+
+            li{
+                width: 33%;
                 display: flex;
-                flex-direction: row;
-                align-content: center;
-                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
 
-                li{
-                    width: 33%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: flex-start;
+                img.products{
+                    width: 100%;
+                }
 
-                    a{
-                        // color: $primary-color;
-                        color: white;
-                        font-family: $secondaryFont;
-                        font-weight: 700;
-                        text-decoration: none;
-                        font-size: 28px; //Not using original size because I think it's too big
+                a{
+                    color: $primary-color;
+                    width: 100%;
+                    text-align: center;
+                    font-family: $secondaryFont;
+                    font-weight: 700;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-size: 28px; //Not using original size because I think it's too big
+
+                    img{
+                        width: 10%;
                     }
                 }
+            }
 
-                li.middle-category{
-                    margin: 100px 0 0 0;
-                }
+            li.middle-category{
+                margin: 100px 0 0 0;
             }
         }
     }
@@ -219,6 +254,7 @@ header{
 // About Us Section
 
 .about-us{
+    display: none;
     width: 100%;
     margin: 100px 0 0 0;
 

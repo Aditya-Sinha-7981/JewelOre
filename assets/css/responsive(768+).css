@@ -1,0 +1,80 @@
+@media screen and (max-width: 1140px) {
+  .landing article aside h1 {
+    font-size: 2.7em;
+    line-height: normal;
+  }
+  .landing article aside p {
+    font-size: 1em;
+    text-align: center;
+  }
+  .landing article aside a {
+    font-size: 1.25em;
+  }
+  .landing article .centered-div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .landing article .centered-div img {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .information .information-content ul.information-ul {
+    padding: 0 0 250px 0;
+  }
+  .information .information-content ul.information-ul li h5 {
+    font-size: 1.5em;
+  }
+  .information .information-content ul.information-ul li p {
+    font-size: 1em;
+  }
+  section.more-products {
+    margin: -250px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    background: white;
+  }
+  .landing article aside {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .landing article aside h1 {
+    font-size: 2em;
+    line-height: normal;
+  }
+  .landing article aside p {
+    text-align: center;
+  }
+  .landing article .centered-div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .landing article .centered-div img {
+    margin: 0;
+  }
+  .information .information-content ul.information-ul {
+    padding: 0 0 200px 0;
+  }
+  .information .information-content ul.information-ul li h5 {
+    font-size: 1.15em;
+  }
+  .information .information-content ul.information-ul li p {
+    font-size: 0.8em;
+  }
+  section.more-products {
+    margin: -200px 0 0 0;
+  }
+  section.more-products figure ul.more-products li a {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=responsive(768+).css.map */

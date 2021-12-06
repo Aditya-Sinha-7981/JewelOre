@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewel'ore</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive(768+).css">
+    <link rel="stylesheet" href="assets/css/responsive(768-).css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -15,9 +17,9 @@
     <!-- Navbar -->
 
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="#"><img src="assets/images/Logo.jpg" alt="Logo"></a></li>
+                <li><a href="#"><img src="assets/images/Logo.png" alt="Logo"></a></li>
                 <li><a href="#" class="home">Home</a></li>
                 <li><a href="#">About US</a></li>
                 <li><a href="#">Shop</a></li>
@@ -49,7 +51,7 @@
     <!-- Information Section -->
     <section class="information">
         <div class="center-div">
-            <article>
+            <div class="information-content">
                
                 <ul class="information-ul">  <!-- Information -->
                     <li>
@@ -74,23 +76,41 @@
                     </li>
                 </ul>
                 
-                <figure>
-                    <ul class="categories">
-                        <li>
-                            <img src="assets/images/earring.png" alt="">
-                            <a href="#">Earrings <img src="assets/images/right arrow vector.png" alt="Right vector arrow" class="vector-arrow"></a>
-                        </li>
-                        <li class="middle-category">
-                            <img src="assets/images/finger rings.png" alt="">
-                            <a href="#">Finger Rings <img src="assets/images/right arrow vector.png" alt="Right vector arrow" class="vector-arrow"></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/chains.png" alt="">
-                            <a href="#">Chains <img src="assets/images/right arrow vector.png" alt="Right vector arrow" class="vector-arrow"></a>
-                        </li>
-                    </ul>
-                </figure>
-            </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- More products: Earring, Finger Rings, Chains -->
+
+    <section class="more-products">
+        <div class="center-div">
+
+            <figure>
+                <ul class="more-products">
+                    <li>
+                        <img src="assets/images/earring.png" alt="Earrings" class="products">
+                        <a>
+                            Earrings
+                            <img src="assets/images/right arrow vector.png" alt="Right arrow after text">                            
+                        </a>
+                    </li>
+                    <li class="middle-category">
+                        <img src="assets/images/finger rings.png" alt="Finger Rings" class="products">
+                        <a>
+                            Finger Rings
+                            <img src="assets/images/right arrow vector.png" alt="Right arrow after text">                                                               
+                        </a>
+                    </li>
+                    <li>
+                        <img src="assets/images/chains.png" alt="Chains" class="products">
+                        <a>
+                            Chains
+                            <img src="assets/images/right arrow vector.png" alt="Right arrow after text">                               
+                        </a>
+                    </li>
+                </ul>
+            </figure>
+
         </div>
     </section>
 
@@ -120,5 +140,10 @@
             </article>
         </div>
     </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/javascript.js"></script>
 </body>
 </html>

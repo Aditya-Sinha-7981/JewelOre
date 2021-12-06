@@ -1,0 +1,172 @@
+// Phone Queries
+
+@media screen and (max-width: 580px) {
+    // Navbar
+
+    header{
+
+        nav{
+
+            ul{
+
+                li{
+
+                    a{
+                        font-size: 12px;
+
+                        img{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    // Section: Landing section
+
+   .landing{
+
+        article{
+
+            aside{
+
+                h1{
+                    font-size: 1.7em;
+                }
+            }
+
+            .centered-div{
+                width: 90vw;
+            }
+        }
+    } 
+
+    // Section: Information section
+
+    .information{
+
+        .information-content{
+
+            ul.information-ul{
+                padding: 0 0 150px 0;
+
+                li{
+
+                    h5{
+                        font-size: 0.8em;
+                    }
+
+                    p{
+                        font-size: 0.6em;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section: More prodcuts
+
+    section.more-products{
+        margin: -150px 0 0 0;
+
+        figure{
+
+            ul.more-products{
+
+                li{
+
+                    a{
+                        font-size: 20px;
+                    }
+                }
+
+                li.middle-category{
+                    margin: 80px 0 0 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:426px) {
+
+    // Section: Landing section
+
+    .landing{
+
+        article{
+
+            aside{
+
+                h1{
+                    font-size: 6.5vw;
+                }
+
+                p{
+                    font-size: 4.5vw;
+                }
+
+                a{
+                    font-size: 5vw;
+                }
+            }
+
+            .centered-div{
+                display: none;
+            }
+        }
+    }
+
+    // Section: Information section
+
+    .information{
+
+        .information-content{
+
+            ul.information-ul{
+                margin: 30px 0 0 0;
+                padding: 0 0 100px 0;
+
+                li{
+
+                    img{
+                        width: 30px;
+                    }
+
+                    h5{
+                        font-size: 0.6em;
+                    }
+
+                    p{
+                        font-size: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section: More prodcuts
+
+    section.more-products{
+        margin: -130px 0 0 0;
+
+        figure{
+
+            ul.more-products{
+
+                li{
+
+                    a{
+                        font-size: 16px;
+                    }
+                }
+
+                li.middle-category{
+                    margin: 60px 0 0 0;
+                }
+            }
+        }
+    }
+}
