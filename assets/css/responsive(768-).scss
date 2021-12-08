@@ -13,10 +13,6 @@
 
                     a{
                         font-size: 12px;
-
-                        img{
-                            width: 80%;
-                        }
                     }
                 }
             }
@@ -30,9 +26,11 @@
         article{
 
             aside{
+                width: 88vw;
+
 
                 h1{
-                    font-size: 1.7em;
+                    font-size: 1.5em;
                 }
             }
 
@@ -95,13 +93,14 @@
     // Section: Landing section
 
     .landing{
+        background-position: 65% 0%;
 
         article{
 
             aside{
 
                 h1{
-                    font-size: 6.5vw;
+                    font-size: 6vw;
                 }
 
                 p{
@@ -114,7 +113,7 @@
             }
 
             .centered-div{
-                display: none;
+                // display: none;
             }
         }
     }
@@ -127,20 +126,21 @@
 
             ul.information-ul{
                 margin: 30px 0 0 0;
-                padding: 0 0 100px 0;
+                padding: 0;
 
                 li{
+                    width: 100%;
 
                     img{
-                        width: 30px;
+                        // width: 30px;
                     }
 
                     h5{
-                        font-size: 0.6em;
+                        font-size: 25px;
                     }
 
                     p{
-                        font-size: 0.5em;
+                        font-size: 14px;
                     }
                 }
             }
@@ -150,21 +150,29 @@
     // Section: More prodcuts
 
     section.more-products{
-        margin: -130px 0 0 0;
+        margin: 0;
 
         figure{
 
             ul.more-products{
+                flex-direction: column;
+                align-items: center;
 
                 li{
+                    margin: 40px 0;
+                    width: 100%;
+
+                    img.products{
+                        width: 75%;
+                    }
 
                     a{
-                        font-size: 16px;
+                        font-size: 25px;
                     }
                 }
 
                 li.middle-category{
-                    margin: 60px 0 0 0;
+                    margin: 0;
                 }
             }
         }

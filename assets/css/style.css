@@ -9,11 +9,22 @@ header {
   z-index: 2;
 }
 
-header nav {
+header nav.navbar {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-header nav ul {
+header nav.navbar .logo {
+  z-index: 2;
+}
+
+header nav.navbar ul {
   width: 100%;
   list-style: none;
   font-size: 20px;
@@ -34,12 +45,12 @@ header nav ul {
           align-items: center;
 }
 
-header nav ul li {
+header nav.navbar ul li {
   list-style: none;
   margin: 5px 10px;
 }
 
-header nav ul li a {
+header nav.navbar ul li a {
   color: #073300;
   font-family: "Lora";
   text-transform: uppercase;
@@ -47,18 +58,81 @@ header nav ul li a {
   font-size: 18px;
 }
 
-header nav ul li a:hover {
+header nav.navbar ul li a:hover {
   font-weight: 900;
 }
 
-header nav ul li .home {
+header nav.navbar ul li .home {
   font-weight: 900;
+}
+
+header nav.navbar .hamburger {
+  display: none;
+}
+
+header nav.navbar .hamburger button i {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+header .hamburger-menu {
+  display: none;
 }
 
 header nav.scrolled {
   background: white;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+}
+
+header .hamburger-menu.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(45deg, #F45D1F, #ED4966 100%);
+}
+
+header .hamburger-menu.active ul {
+  list-style: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .hamburger-menu.active ul li {
+  margin: 20px 0;
+}
+
+header .hamburger-menu.active ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lora";
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .center-div {
@@ -86,9 +160,9 @@ header nav.scrolled {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   height: 100vh;
 }
 
@@ -111,7 +185,7 @@ header nav.scrolled {
       align-content: center;
   color: #073300;
   font-family: "Lora";
-  margin: 0 0 0 30px;
+  margin: 0 0 30px 30px;
   z-index: 1;
 }
 
@@ -287,7 +361,6 @@ section.more-products figure ul.more-products li img.products {
 
 section.more-products figure ul.more-products li a {
   color: #073300;
-  width: 100%;
   text-align: center;
   font-family: "Playfair Display";
   font-weight: 700;
