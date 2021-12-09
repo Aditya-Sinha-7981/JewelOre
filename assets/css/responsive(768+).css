@@ -1,484 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-
-header nav.navbar {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-header nav.navbar .logo {
-  z-index: 2;
-}
-
-header nav.navbar ul {
-  width: 100%;
-  list-style: none;
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header nav.navbar ul li {
-  list-style: none;
-  margin: 5px 10px;
-}
-
-header nav.navbar ul li a {
-  color: #073300;
-  font-family: "Lora";
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-header nav.navbar ul li a:hover {
-  font-weight: 900;
-}
-
-header nav.navbar ul li .home {
-  font-weight: 900;
-}
-
-header nav.navbar .hamburger {
-  display: none;
-}
-
-header nav.navbar .hamburger button i {
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-header .hamburger-menu {
-  display: none;
-}
-
-header nav.scrolled {
-  background: white;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-}
-
-header .hamburger-menu.active {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: linear-gradient(45deg, #F45D1F, #ED4966 100%);
-}
-
-header .hamburger-menu.active ul {
-  list-style: none;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .hamburger-menu.active ul li {
-  margin: 20px 0;
-}
-
-header .hamburger-menu.active ul li a {
-  color: white;
-  text-decoration: none;
-  font-family: "Lora";
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.center-div {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.landing {
-  background-image: url(../images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.landing article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 100vh;
-}
-
-.landing article aside {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  color: #073300;
-  font-family: "Lora";
-  margin: 0 0 30px 30px;
-  z-index: 1;
-}
-
-.landing article aside h1 {
-  font-size: 4.0625em;
-  margin: 40px 0;
-  font-family: "Playfair Display";
-  font-weight: 700;
-  line-height: 86px;
-}
-
-.landing article aside p {
-  margin: 20px 0;
-  font-size: 1.125em;
+p {
   line-height: 26px;
-}
-
-.landing article aside a {
-  background: #073300;
-  color: white;
-  cursor: pointer;
-  font-size: 1.5625em;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 20px 60px;
-  border: 1px solid #000000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 40px 0;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.landing article .centered-div {
-  position: absolute;
-  width: 570px;
-  height: 322px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background: #FFDAC5;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  z-index: 0;
-}
-
-.landing article .centered-div img {
-  margin: 0 25px 0 0;
-}
-
-.information {
-  width: 100%;
-  background: #073300;
-}
-
-.information .information-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.information .information-content ul.information-ul {
-  margin: 60px 0 0 0;
-  padding: 0 0 300px 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.information .information-content ul.information-ul li {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.information .information-content ul.information-ul li img {
-  background: #127402;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.information .information-content ul.information-ul li h5 {
-  margin: 10px 0;
-  font-family: "Playfair Display";
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.information .information-content ul.information-ul li p {
-  font-family: "Lora";
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-}
-
-section.more-products {
-  margin: -300px 0 0 0;
-}
-
-section.more-products figure {
-  width: 100%;
-  margin: 50px 0 0 0;
-}
-
-section.more-products figure ul.more-products {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section.more-products figure ul.more-products li {
-  width: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-section.more-products figure ul.more-products li img.products {
-  width: 100%;
-}
-
-section.more-products figure ul.more-products li a {
-  color: #073300;
-  text-align: center;
-  font-family: "Playfair Display";
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 28px;
-}
-
-section.more-products figure ul.more-products li a img {
-  width: 10%;
-}
-
-section.more-products figure ul.more-products li.middle-category {
-  margin: 100px 0 0 0;
-}
-
-.about-us {
-  display: none;
-  width: 100%;
-  margin: 100px 0 0 0;
-}
-
-.about-us article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.about-us article aside {
-  width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.about-us article aside h2 {
-  font-size: 50px;
-  font-family: "Playfair Display";
-  color: #073300;
-  font-weight: 700;
-}
-
-.about-us article aside p {
-  font-size: 18px;
-  margin: 40px 0 50px 0;
-  color: #073300;
-  font-family: "Lora";
-  font-weight: 400;
-}
-
-.about-us article aside ul {
-  list-style-image: url(../images/list-bullet.svg);
-}
-
-.about-us article aside ul li {
-  font-size: 18px;
-  font-family: "Lora";
-  color: #073300;
-  font-weight: 400;
-  margin: 15px 0;
-  line-height: 26px;
-}
-
-.about-us article aside a {
-  background: #073300;
-  color: white;
-  cursor: pointer;
-  font-size: 25px;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 20px 60px;
-  border: 1px solid #000000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 40px 0;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.about-us article figure {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.about-us article figure img {
-  z-index: 1;
-}
-
-.about-us article figure .orange-box {
-  height: 690px;
-  width: 420px;
-  background: #FFDAC5;
-  position: absolute;
-  right: 0%;
-  margin: 0 0 10px 0;
-  z-index: 0;
 }
 
 @media screen and (max-width: 1140px) {
@@ -499,6 +20,42 @@ section.more-products figure ul.more-products li.middle-category {
   }
   .landing article .centered-div img {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section.about-us .orange-box {
+    display: none;
+  }
+  section.about-us div.content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.about-us div.content .responsive-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.about-us div.content .responsive-image img {
+    display: block;
+    width: 80%;
+  }
+  section.about-us div.content aside {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.about-us div.content figure {
+    display: none;
   }
 }
 
@@ -543,7 +100,6 @@ section.more-products figure ul.more-products li.middle-category {
   }
   header nav.navbar .hamburger button i {
     font-size: 35px;
-    color: #073300;
   }
   .landing article {
     -webkit-box-pack: center;
@@ -589,12 +145,24 @@ section.more-products figure ul.more-products li.middle-category {
   }
   .information .information-content ul.information-ul li p {
     font-size: 0.8em;
-    width: 50%;
+    width: 100%;
   }
   section.more-products {
     margin: -200px 0 0 0;
   }
   section.more-products figure ul.more-products li a {
+    font-size: 20px;
+  }
+  section.about-us div.content aside {
+    padding: 0 20px;
+  }
+  section.about-us div.content aside p {
+    font-size: 16px;
+  }
+  section.about-us div.content aside ul li {
+    font-size: 16px;
+  }
+  section.about-us div.content aside a {
     font-size: 20px;
   }
 }

@@ -27,10 +27,15 @@
 
             aside{
                 width: 88vw;
+                margin-top: 130px;
 
 
                 h1{
                     font-size: 1.5em;
+                }
+
+                a{
+                    margin: 110px 0 0 0;
                 }
             }
 
@@ -98,9 +103,10 @@
         article{
 
             aside{
-
+                padding: 0 50px;
                 h1{
-                    font-size: 6vw;
+                    font-size: 35px;
+                    text-align: center;
                 }
 
                 p{
@@ -108,12 +114,15 @@
                 }
 
                 a{
-                    font-size: 5vw;
+                    font-size: 16px;
                 }
             }
 
             .centered-div{
-                // display: none;
+                
+                img{
+                    opacity: 50%;
+                }
             }
         }
     }
@@ -130,10 +139,6 @@
 
                 li{
                     width: 100%;
-
-                    img{
-                        // width: 30px;
-                    }
 
                     h5{
                         font-size: 25px;

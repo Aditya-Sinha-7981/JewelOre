@@ -25,3 +25,11 @@ Hamburger has been added to navbar and it's completely responsive, both navbar a
 Landing page is now completely responsive along with minor desing changes
 
 Information section and More products both are completely responsive along with minor design changes
+
+<----------Update 2:----------> 
+
+1. About us section done and completely responsive
+
+2. Navbar changed from display to scale and transition added
+
+3. Trending products section completed for pc

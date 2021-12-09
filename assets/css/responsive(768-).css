@@ -4,9 +4,13 @@
   }
   .landing article aside {
     width: 88vw;
+    margin-top: 130px;
   }
   .landing article aside h1 {
     font-size: 1.5em;
+  }
+  .landing article aside a {
+    margin: 110px 0 0 0;
   }
   .landing article .centered-div {
     width: 90vw;
@@ -35,14 +39,21 @@
   .landing {
     background-position: 65% 0%;
   }
+  .landing article aside {
+    padding: 0 50px;
+  }
   .landing article aside h1 {
-    font-size: 6vw;
+    font-size: 35px;
+    text-align: center;
   }
   .landing article aside p {
     font-size: 4.5vw;
   }
   .landing article aside a {
-    font-size: 5vw;
+    font-size: 16px;
+  }
+  .landing article .centered-div img {
+    opacity: 50%;
   }
   .information .information-content ul.information-ul {
     margin: 30px 0 0 0;
