@@ -182,4 +182,83 @@
             }
         }
     }
+
+    //Trending Products
+
+    section.trending-products{
+
+        .content{
+
+            h2{
+                font-size: 35px;
+            }
+
+            ul{
+                flex-direction: column;
+
+                li{
+                    width: 100%;
+                    font-size: 20px;
+                    margin: 20px 0;
+                    
+                    .products-image{
+                        max-width: 75%;
+
+                        img{
+                            max-width: 100%;
+                            max-height: 90%;
+                        }
+                    }
+
+                    a{
+                        font-size: 20px;
+                        padding: 15px 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Company Information
+
+    section.company-information{
+
+        ul{
+
+            li{
+                width: 90%;
+            }
+        }
+    }
+
+    //Most bought items 
+
+    section.most-bought{
+
+        article{
+
+            h2{
+                font-size: 28px;
+            }
+
+            .about-item{
+
+                figure{
+                    width: 90%;
+                }
+
+                .item-description{
+
+                    h3{
+                        font-size: 20px;
+                    }
+
+                    h5{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
 }

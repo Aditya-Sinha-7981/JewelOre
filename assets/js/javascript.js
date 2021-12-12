@@ -2,6 +2,7 @@ const navbar = document.querySelector('.navbar');
 const hamburgerButton = document.querySelector('.hamburger-btn');
 const hamburgerIcon = document.querySelector('#icon');
 const hamburgerClass = document.querySelector('.hamburger-menu');
+const counters = document.querySelectorAll('.counter');
 
 $(navbar).ready(function(){
     $(window).scroll(function(){
@@ -36,6 +37,24 @@ function hamburgerClassLogic(){
         y.classList.remove('fa-times');
         y.classList.add('fa-bars');
     }
+}
+
+
+//Number Counter
+for(let n of counters) {
+  const updateCount = () => {
+    const target = + n.getAttribute('data-target');
+    const count = + n.innerText;
+    const speed = 100000; // change animation speed here
+    const inc = target / speed; 
+    if(count < target) {
+      n.innerText = Math.ceil(count + inc);
+      setTimeout(updateCount, 1);
+    } else {
+      n.innerText = target;
+    }
+  }
+  updateCount();
 }
 
 hamburgerButton.addEventListener('click', hamburgerClassLogic);

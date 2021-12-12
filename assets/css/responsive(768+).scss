@@ -37,6 +37,40 @@
             }
         }
     }
+
+    // Trending Products
+
+    section.trending-products{
+
+        .content{
+
+            ul{
+
+                li{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    //Company Information
+
+    section.company-information{
+
+        ul{
+
+            li{
+
+                h3{
+                    font-size: 60px;
+                }
+
+                h5{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -101,6 +135,60 @@
 
     section.more-products{
         margin: -250px 0 0 0;
+    }
+
+    // Trending Products
+
+    section.trending-products{
+
+        .content{
+
+            ul{
+
+                li{
+                    font-size: 20px;
+
+                    a{
+                        font-size: 20px;
+                        padding: 20px 40px;;
+                    }
+                }
+            }
+        }
+    }
+
+    //Most Bought Item
+
+    section.most-bought{
+
+        article{
+
+            h2{
+                font-size: 50px;
+            }
+
+            .about-item{
+
+                .item-description{
+
+                    h3{
+                        font-size: 25px;
+                    }
+
+                    a{
+                        padding: 15px 40px;
+                        font-size: 20px;
+                    }
+
+                    .interact-buttons{
+
+                        button{
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -243,6 +331,107 @@
                 }
             }
 
+        }
+    }
+
+    // Trending Products
+
+    section.trending-products{
+
+        .content{
+
+            h2{
+                font-size: 45px;
+            }
+
+            ul{
+
+                li{
+                    font-size: 13px;
+
+                    h4{
+                        width: 90%;
+                    }
+
+                    .products-image{
+
+                        max-height: 246px;
+
+                        img{
+                            max-width: 70%;
+                            max-height: 80%;
+                        }
+                    }
+
+                    a{
+                        font-size: 15px;
+                        padding: 15px 20px;;
+                    }
+                }
+            }
+        }
+    }
+
+    //Company Information
+
+    section.company-information{
+
+        ul{
+            flex-wrap: wrap;
+
+            li{
+                width: 45%;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    //Most Bought Item
+
+    section.most-bought{
+
+        article{
+
+            h2{
+                font-size: 40px;
+            }
+
+            .about-item{
+                flex-direction: column;
+                align-items: center;
+
+                figure{
+                    width: 75%;
+                }
+
+                .item-description{
+                    margin-top: 30px;
+                    width: 90%;
+                    align-items: center;
+
+                    h5{
+                        font-size: 14px;
+                        text-align: center;
+                    }
+
+                    h3{
+                        font-size: 28px;
+                        margin: 20px 0;
+                    }
+
+                    .interact-buttons{
+                        margin-bottom: 20px;
+
+                        button{
+                            padding: 5px;
+                        }
+
+                        button:not(:first-child):not(:last-child){
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
         }
     }
 

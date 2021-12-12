@@ -21,6 +21,15 @@ p {
   .landing article .centered-div img {
     margin: 0;
   }
+  section.trending-products .content ul li {
+    font-size: 25px;
+  }
+  section.company-information ul li h3 {
+    font-size: 60px;
+  }
+  section.company-information ul li h5 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -71,6 +80,26 @@ p {
   }
   section.more-products {
     margin: -250px 0 0 0;
+  }
+  section.trending-products .content ul li {
+    font-size: 20px;
+  }
+  section.trending-products .content ul li a {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+  section.most-bought article h2 {
+    font-size: 50px;
+  }
+  section.most-bought article .about-item .item-description h3 {
+    font-size: 25px;
+  }
+  section.most-bought article .about-item .item-description a {
+    padding: 15px 40px;
+    font-size: 20px;
+  }
+  section.most-bought article .about-item .item-description .interact-buttons button {
+    padding: 15px;
   }
 }
 
@@ -164,6 +193,73 @@ p {
   }
   section.about-us div.content aside a {
     font-size: 20px;
+  }
+  section.trending-products .content h2 {
+    font-size: 45px;
+  }
+  section.trending-products .content ul li {
+    font-size: 13px;
+  }
+  section.trending-products .content ul li h4 {
+    width: 90%;
+  }
+  section.trending-products .content ul li .products-image {
+    max-height: 246px;
+  }
+  section.trending-products .content ul li .products-image img {
+    max-width: 70%;
+    max-height: 80%;
+  }
+  section.trending-products .content ul li a {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+  section.company-information ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.company-information ul li {
+    width: 45%;
+    margin: 20px 0;
+  }
+  section.most-bought article h2 {
+    font-size: 40px;
+  }
+  section.most-bought article .about-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.most-bought article .about-item figure {
+    width: 75%;
+  }
+  section.most-bought article .about-item .item-description {
+    margin-top: 30px;
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.most-bought article .about-item .item-description h5 {
+    font-size: 14px;
+    text-align: center;
+  }
+  section.most-bought article .about-item .item-description h3 {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+  section.most-bought article .about-item .item-description .interact-buttons {
+    margin-bottom: 20px;
+  }
+  section.most-bought article .about-item .item-description .interact-buttons button {
+    padding: 5px;
+  }
+  section.most-bought article .about-item .item-description .interact-buttons button:not(:first-child):not(:last-child) {
+    padding: 0 15px;
   }
 }
 /*# sourceMappingURL=responsive(768+).css.map */

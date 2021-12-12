@@ -33,3 +33,15 @@ Information section and More products both are completely responsive along with 
 2. Navbar changed from display to scale and transition added
 
 3. Trending products section completed for pc
+
+<----------Update 3:----------> 
+
+1. Trending products responsive design fully completed for tablet and mobile
+
+2. Company information section desktop desing completed
+
+3. Company information section is now fully responsive for mobile and tablet
+
+4. Most bought item section desingn done for desktop 
+
+5. Most bought item section design fully responsive for tablet and mobile
