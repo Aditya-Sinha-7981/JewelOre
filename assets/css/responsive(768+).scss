@@ -71,6 +71,21 @@
             }
         }
     }
+
+    //Subscribe Section
+
+    section.subscribe{
+
+        .subscribe-content{
+
+            .subscribe-text{
+
+                h2{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -186,6 +201,21 @@
                             padding: 15px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    //Subscribe Section
+
+    section.subscribe{
+
+        .subscribe-content{
+
+            .subscribe-text{
+
+                h2{
+                    font-size: 40px;
                 }
             }
         }
@@ -431,6 +461,57 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    //Testimonial Section
+
+    section.testimonials{
+
+        .testimonial-area{
+            
+            h2{
+                font-size: 40px;
+            }
+
+            .testimonial{
+
+                img{
+                    width: 20%;
+                }
+
+                .testimonial-content{
+                    width: 90%;
+
+                    h5{
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Subscribe Section
+
+    section.subscribe{
+
+        .subscribe-content{
+            flex-direction: column;
+            align-items: center;
+            background: $secondary-color url(../images/enevelope.png) center no-repeat;
+
+            .subscribe-text{
+                width: 100%;
+
+                h2{
+                    text-align: center;
+                }
+            }
+
+            .subscribe-btn{
+                width: 100%;
+                background: none;
             }
         }
     }

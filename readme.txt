@@ -34,7 +34,7 @@ Information section and More products both are completely responsive along with 
 
 3. Trending products section completed for pc
 
-<----------Update 3:----------> 
+<----------Update 3:---------->
 
 1. Trending products responsive design fully completed for tablet and mobile
 
@@ -45,3 +45,15 @@ Information section and More products both are completely responsive along with 
 4. Most bought item section desingn done for desktop 
 
 5. Most bought item section design fully responsive for tablet and mobile
+
+<----------Update 4:---------->
+
+1. Testimonial section desktop design completed 
+
+2. Testimonial section design fully responsive for tablet and mobile
+
+3. Subscribe section desktop design completed
+
+4. Subscribe section design fully responsive for tablet and mobile(golden eclipse not there)
+
+5. Recommended products section desktop design completed

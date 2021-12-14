@@ -1,3 +1,4 @@
+const header = document.querySelector(".nav-wrapper");
 const navbar = document.querySelector('.navbar');
 const hamburgerButton = document.querySelector('.hamburger-btn');
 const hamburgerIcon = document.querySelector('#icon');
@@ -8,9 +9,9 @@ $(navbar).ready(function(){
     $(window).scroll(function(){
         let scroll = $(window).scrollTop();
         if(scroll > 100){
-            navbar.classList.add('scrolled');
+            header.classList.add('scrolled');
         }else{
-            navbar.classList.remove('scrolled');
+            header.classList.remove('scrolled');
         }
     })
 })

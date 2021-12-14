@@ -226,7 +226,16 @@
         ul{
 
             li{
-                width: 90%;
+                width: 45%;
+                margin: 5px 0;
+
+                h3{
+                    font-size: 45px;
+                }
+
+                h5{
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -256,6 +265,58 @@
                     h5{
                         font-size: 16px;
                     }
+                }
+            }
+        }
+    }
+
+    //Testimonial Section
+
+    section.testimonials{
+
+        .testimonial-area{
+            
+            h2{
+                font-size: 30px;
+                margin: 0;
+            }
+
+            .testimonial{
+
+                img{
+                    width: 40%;
+                }
+
+                .testimonial-content{
+
+                    h5{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Subscribe Section
+
+    section.subscribe{
+
+        .subscribe-content{
+
+            .subscribe-text{
+                display: flex;
+                justify-content: center;
+
+                h2{
+                    font-size: 35px;
+                    width: 90%;
+                }
+            }
+
+            .subscribe-btn{
+
+                a{
+                    font-size: 20px;
                 }
             }
         }
