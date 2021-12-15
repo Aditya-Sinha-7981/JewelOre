@@ -1,4 +1,11 @@
-Trending products 2 in a row in tablet
+Space between image and text in Most bought section: done
 
-Company information 2 items in a row in mobile
+Decrease the size to fit it in 3 lines subscribe section: done
 
+Push it towards the right in Recommended product: done
+
+Make the boxes nearly sqaure in company information: done
+
+Remove the image and line(upper area): 
+
+About us heading above image: done

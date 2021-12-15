@@ -57,3 +57,15 @@ Information section and More products both are completely responsive along with 
 4. Subscribe section design fully responsive for tablet and mobile(golden eclipse not there)
 
 5. Recommended products section desktop design completed
+
+<----------Update 5:---------->
+
+1. Recommended products section design fully responsive for tablet and mobile
+
+2. Other products section desktop design completed
+
+3. Other products section desgin fully responsive for tablet and mobile
+
+4. Footer desktop design completed
+
+5. Footer desing fully responsive for tablet and mobile

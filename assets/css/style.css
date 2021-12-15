@@ -81,9 +81,15 @@ header nav.navbar .hamburger button i {
   transition: 2s;
 }
 
+header #hamburger {
+  display: none;
+}
+
 header .hamburger-menu {
   -webkit-transform: scale(0);
           transform: scale(0);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
   -webkit-transition: ease-in-out 0.1s;
   transition: ease-in-out 0.1s;
 }
@@ -141,6 +147,8 @@ header .hamburger-menu.active {
       -ms-flex-pack: center;
           justify-content: center;
   background: #FFDAC5;
+  -webkit-clip-path: circle(70% at 50% 50%);
+          clip-path: circle(70% at 50% 50%);
 }
 
 .center-div {
@@ -428,15 +436,6 @@ section.about-us div.content {
           align-items: center;
 }
 
-section.about-us div.content .responsive-image {
-  display: none;
-  width: 100%;
-}
-
-section.about-us div.content .responsive-image img {
-  display: none;
-}
-
 section.about-us div.content aside {
   width: 35%;
   display: -webkit-box;
@@ -460,6 +459,15 @@ section.about-us div.content aside h2 {
   font-family: "Playfair Display";
   color: #073300;
   font-weight: 700;
+}
+
+section.about-us div.content aside .responsive-image {
+  display: none;
+  width: 100%;
+}
+
+section.about-us div.content aside .responsive-image img {
+  display: none;
 }
 
 section.about-us div.content aside p {
@@ -518,11 +526,11 @@ section.about-us div.content figure img {
   z-index: 1;
 }
 
-section.trending-products {
+section.trending-other-products {
   margin-top: 150px;
 }
 
-section.trending-products .content {
+section.trending-other-products .trending-other-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,13 +546,13 @@ section.trending-products .content {
           align-items: center;
 }
 
-section.trending-products .content h2 {
+section.trending-other-products .trending-other-content h2 {
   font-family: "Playfair Display";
   font-size: 60px;
   color: #073300;
 }
 
-section.trending-products .content ul {
+section.trending-other-products .trending-other-content ul {
   margin-top: 50px;
   list-style-type: none;
   display: -webkit-box;
@@ -558,7 +566,7 @@ section.trending-products .content ul {
       align-content: center;
 }
 
-section.trending-products .content ul li {
+section.trending-other-products .trending-other-content ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,7 +581,7 @@ section.trending-products .content ul li {
           align-items: center;
 }
 
-section.trending-products .content ul li .products-image {
+section.trending-other-products .trending-other-content ul li .products-image {
   width: 90%;
   height: 368px;
   display: -webkit-box;
@@ -588,15 +596,15 @@ section.trending-products .content ul li .products-image {
   background: #FFF4EE;
 }
 
-section.trending-products .content ul li .products-image img {
+section.trending-other-products .trending-other-content ul li .products-image img {
   padding: 10px;
 }
 
-section.trending-products .content ul li img {
+section.trending-other-products .trending-other-content ul li img {
   margin: 20px 0;
 }
 
-section.trending-products .content ul li h4 {
+section.trending-other-products .trending-other-content ul li h4 {
   font-family: "Playfair Display";
   font-weight: 700;
   color: #073300;
@@ -604,13 +612,13 @@ section.trending-products .content ul li h4 {
   width: 80%;
 }
 
-section.trending-products .content ul li span {
+section.trending-other-products .trending-other-content ul li span {
   color: #073300;
   font-family: "Playfair Display";
   font-weight: 900;
 }
 
-section.trending-products .content ul li a {
+section.trending-other-products .trending-other-content ul li a {
   background: #073300;
   color: white;
   cursor: pointer;
@@ -708,9 +716,8 @@ section.most-bought article .about-item {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 40px 0;
@@ -884,14 +891,14 @@ section.subscribe .subscribe-content {
 
 section.subscribe .subscribe-content .subscribe-text {
   padding: 40px 0;
-  width: 50%;
+  width: 60%;
 }
 
 section.subscribe .subscribe-content .subscribe-text h2 {
   font-family: "Playfair Display";
   color: #073300;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 section.subscribe .subscribe-content .subscribe-btn {
@@ -959,6 +966,7 @@ section.recommended-product .recommended .product-info {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 50%;
   margin: 200px 0;
 }
 
@@ -997,7 +1005,7 @@ section.recommended-product .recommended .product-info .cart-buttons button {
 }
 
 section.recommended-product .recommended .product-info .cart-buttons button:not(:first-child):not(:last-child) {
-  padding: 0 15px;
+  padding: 0 25px;
 }
 
 section.recommended-product .recommended .product-info a {
@@ -1014,5 +1022,209 @@ section.recommended-product .recommended .product-info a {
           box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  margin: 150px 0 20px 0;
+}
+
+footer .footer-area {
+  background: #073300;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-area .upper-area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-area .upper-area figure {
+  width: 35%;
+  margin-bottom: 40px;
+}
+
+footer .footer-area .upper-area figure img {
+  margin-top: -60px;
+  width: 100%;
+}
+
+footer .footer-area .upper-area .footer-links {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-area .upper-area .footer-links .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-area .upper-area .footer-links .social-media hr {
+  height: 0;
+  width: 50%;
+  background: #127402;
+  border: 1px solid #127402;
+  outline: none;
+  margin: 0;
+}
+
+footer .footer-area .upper-area .footer-links .social-media .icons {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-area .upper-area .footer-links .social-media .icons p {
+  color: white;
+  font-family: "Lora";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+footer .footer-area .upper-area .footer-links .social-media .icons a {
+  text-decoration: none;
+}
+
+footer .footer-area .upper-area .footer-links .social-media .icons a i {
+  cursor: pointer;
+  color: #FFDAC5;
+  background: #127402;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+footer .footer-area .upper-area .footer-links .other-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-area .upper-area .footer-links .other-links ul {
+  list-style: none;
+  width: 33.33%;
+}
+
+footer .footer-area .upper-area .footer-links .other-links ul h4 {
+  font-size: 22px;
+  font-family: "Playfair Display";
+  color: white;
+  font-weight: 700;
+}
+
+footer .footer-area .upper-area .footer-links .other-links ul li {
+  margin: 15px 0;
+}
+
+footer .footer-area .upper-area .footer-links .other-links ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Lora";
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-area .upper-area .footer-links .other-links ul li a i {
+  margin: 0 10px;
+}
+
+footer .footer-area hr {
+  height: 0;
+  width: 90%;
+  background: #127402;
+  border: 1px solid #127402;
+  outline: none;
+  margin: 0;
+}
+
+footer .footer-area .bottom-area {
+  width: 100%;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-area .bottom-area a {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+footer .footer-area .bottom-area p {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

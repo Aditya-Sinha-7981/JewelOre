@@ -38,11 +38,11 @@
         }
     }
 
-    // Trending Products
+    // Trending and Other Products
 
-    section.trending-products{
+    section.trending-other-products{
 
-        .content{
+        .trending-other-content{
 
             ul{
 
@@ -81,7 +81,59 @@
             .subscribe-text{
 
                 h2{
-                    font-size: 50px;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    //Footer
+
+    footer{
+
+        .footer-area{
+
+            .upper-area{
+
+                .footer-links{
+
+                    .social-media{
+                        
+                        .icons{
+                            
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .other-links{
+
+                        ul{
+
+                            h4{
+                                font-size: 18px;
+                            }
+
+                            li{
+
+                                a{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom-area{
+
+                a{
+                    font-size: 14px;
+                }
+
+                p{
+                    font-size: 14px;
                 }
             }
         }
@@ -89,6 +141,8 @@
 }
 
 @media screen and (max-width: 991px) {
+
+    //About Us section
 
     section.about-us{
 
@@ -100,19 +154,23 @@
             flex-direction: column;
             justify-content: center;
 
-            .responsive-image{
-                display: flex;
-                justify-content: center;
-
-                img{
-                    display: block;
-                    width: 80%;
-                }
-            }
-
             aside{
                 width: 80%;
                 align-items: center;
+
+                .responsive-image{
+                    display: flex;
+                    justify-content: center;
+    
+                    img{
+                        display: block;
+                        width: 80%;
+                    }
+                }
+
+                h2{
+                    margin-bottom: 30px;
+                }
             }
 
             figure{
@@ -152,11 +210,11 @@
         margin: -250px 0 0 0;
     }
 
-    // Trending Products
+    // Trending and Other Products
 
-    section.trending-products{
+    section.trending-other-products{
 
-        .content{
+        .trending-other-content{
 
             ul{
 
@@ -215,7 +273,7 @@
             .subscribe-text{
 
                 h2{
-                    font-size: 40px;
+                    font-size: 35px;
                 }
             }
         }
@@ -225,7 +283,13 @@
 @media screen and (max-width: 768px) {
     //navbar
 
+
+
     header{
+
+        #hamburger{
+            display: block;
+        }
 
         nav.navbar{
             justify-content: space-between;
@@ -336,7 +400,7 @@
         }
     }
 
-    //Section: ABout us
+    //Section: About us
 
     section.about-us{
 
@@ -364,20 +428,22 @@
         }
     }
 
-    // Trending Products
+    // Trending and Other Products
 
-    section.trending-products{
+    section.trending-other-products{
 
-        .content{
+        .trending-other-content{
 
             h2{
                 font-size: 45px;
             }
 
             ul{
+                flex-wrap: wrap;
 
                 li{
-                    font-size: 13px;
+                    width: 45%;
+                    font-size: 20px;
 
                     h4{
                         width: 90%;
@@ -394,8 +460,9 @@
                     }
 
                     a{
-                        font-size: 15px;
-                        padding: 15px 20px;;
+                        font-size: 20px;
+                        padding: 15px 30px;
+                        margin: 20px 0 40px 0;
                     }
                 }
             }
@@ -512,6 +579,99 @@
             .subscribe-btn{
                 width: 100%;
                 background: none;
+            }
+        }
+    }
+
+    //Recommended Products
+
+    section.recommended-product{
+        background-position: right;
+
+        .recommended{
+            justify-content: center;
+
+            .product-info{
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    //Footer
+
+    footer{
+        margin: 150px 10px 20px 10px;
+
+        .footer-area{
+
+            .upper-area{
+                margin: 20px 0;
+
+                figure{
+                    display: none;
+                }
+
+                .footer-links{
+                    width: 100%;
+
+                    .social-media{
+                        justify-content: center;
+                        margin-bottom: 20px;
+
+                        hr{
+                            display: none;
+                        }
+                        
+                        .icons{
+                            width: 70%;
+
+                            a{
+                                margin: 0 2px;
+                            }
+                            
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .other-links{
+                        justify-content: space-between;
+
+                        ul{
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+
+                            h4{
+                                font-size: 16px;
+                            }
+
+                            li{
+                                text-align: center;
+
+                                a{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom-area{
+                flex-wrap: wrap;
+
+                a{
+                    font-size: 16px;
+                    margin: 15px 5px;
+                }
+
+                p{
+                    font-size: 16px;
+                    margin: 15px 5px;
+                }
             }
         }
     }

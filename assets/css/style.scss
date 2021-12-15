@@ -76,8 +76,13 @@ header{
         
     }
 
+    #hamburger{
+        display: none;
+    }
+
     .hamburger-menu{
         transform: scale(0);
+        clip-path: circle(50.0% at 50% 50%);
         transition: ease-in-out 0.1s;
 
         ul{
@@ -116,6 +121,7 @@ header{
         align-content: center;
         justify-content: center;
         background: $secondary-color;
+        clip-path: circle(70% at 50% 50%);
     }
 }
 
@@ -329,15 +335,6 @@ section.about-us{
         justify-content: space-between;
         align-items: center;
 
-        .responsive-image{
-            display: none;
-            width: 100%;
-
-            img{
-                display: none;
-            }
-        }
-
         aside{
             width: 35%;
             display: flex;
@@ -351,6 +348,15 @@ section.about-us{
                 font-family: $secondaryFont;
                 color: $primary-color;
                 font-weight: 700;
+            }
+
+            .responsive-image{
+                display: none;
+                width: 100%;
+    
+                img{
+                    display: none;
+                }
             }
 
             p{
@@ -405,12 +411,12 @@ section.about-us{
     }
 }
 
-//Trending Products
+//Trending and Other Products
 
-section.trending-products{
+section.trending-other-products{
     margin-top: 150px;
 
-    .content{
+    .trending-other-content{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -543,7 +549,7 @@ section.most-bought{
         .about-item{
             display: flex;
             align-items: stretch;
-            justify-content: center;
+            justify-content: space-around;
             align-content: center;
             margin: 40px 0;
 
@@ -675,20 +681,15 @@ section.subscribe{
     .subscribe-content{
         display: flex;
 
-        // img{
-        //     position: absolute;
-        //     right: 43%;
-        // }
-
         .subscribe-text{
             padding: 40px 0;
-            width: 50%;
+            width: 60%;
 
             h2{
                 font-family: $secondaryFont;
                 color: $primary-color;
                 font-weight: 700;
-                font-size: 60px;
+                font-size: 50px;
             }
         }
     
@@ -734,6 +735,7 @@ section.recommended-product{
             align-content: center;
             justify-content: center;
             align-items: flex-start;
+            width: 50%;
             margin: 200px 0;
 
             h2{
@@ -768,7 +770,7 @@ section.recommended-product{
                 }
 
                 button:not(:first-child):not(:last-child) {
-                    padding: 0 15px;
+                    padding: 0 25px;
                 }
             }
 
@@ -784,6 +786,158 @@ section.recommended-product{
                 border: 1px solid #000000;
                 box-sizing: border-box;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
+
+//Other products is identical to Treding products
+
+//Footer
+
+footer{
+    margin: 150px 0 20px 0;
+
+    .footer-area{
+        background: $primary-color;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .upper-area{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: center;
+
+            figure{
+                width: 35%;
+                margin-bottom: 40px;
+
+                img{
+                    margin-top: -60px;
+                    width: 100%;
+                }
+            }
+
+            .footer-links{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+                .social-media{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    hr{
+                        height: 0;
+                        width: 50%;
+                        background: #127402;
+                        border: 1px solid #127402;
+                        outline: none;
+                        margin: 0;
+                    }
+
+                    .icons{
+                        width: 47%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        
+                        p{
+                            color: white;
+                            font-family: $primaryFont;
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+    
+                        a{
+                            text-decoration: none;
+
+                            i{
+                                cursor: pointer;
+                                color: #FFDAC5;
+                                background: #127402;
+                                border-radius: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                align-content: center;
+                                height: 40px;
+                                width: 40px;
+                            }
+                        }
+                    }
+                }
+
+                .other-links{
+                    display: flex;
+                    flex-direction: row;
+
+                    ul{
+                        list-style: none;
+                        width: 33.33%;
+
+                        h4{
+                            font-size: 22px;
+                            font-family: $secondaryFont;
+                            color: white;
+                            font-weight: 700;
+                        }
+
+                        li{
+                            margin: 15px 0;
+
+                            a{
+                                font-size: 18px;
+                                font-weight: 400;
+                                font-family: $primaryFont;
+                                color: white;
+                                text-decoration: none;
+
+                                i{
+                                    margin: 0 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        hr{
+            height: 0;
+            width: 90%;
+            background: #127402;
+            border: 1px solid #127402;
+            outline: none;
+            margin: 0;
+        }
+
+        .bottom-area{
+            width: 100%;
+            margin: 30px 0;
+            display: flex;
+            justify-content: space-around;
+
+            a{
+                font-family: $primaryFont;
+                font-weight: 400;
+                font-size: 18px;
+                color: white;
+            }
+
+            p{
+                font-family: $primaryFont;
+                font-weight: 400;
+                font-size: 18px;
+                color: white;
             }
         }
     }

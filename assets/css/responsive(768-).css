@@ -93,34 +93,35 @@
   section.more-products figure ul.more-products li.middle-category {
     margin: 0;
   }
-  section.trending-products .content h2 {
+  section.trending-other-products .trending-other-content h2 {
     font-size: 35px;
   }
-  section.trending-products .content ul {
+  section.trending-other-products .trending-other-content ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  section.trending-products .content ul li {
+  section.trending-other-products .trending-other-content ul li {
     width: 100%;
     font-size: 20px;
     margin: 20px 0;
   }
-  section.trending-products .content ul li .products-image {
+  section.trending-other-products .trending-other-content ul li .products-image {
     max-width: 75%;
   }
-  section.trending-products .content ul li .products-image img {
+  section.trending-other-products .trending-other-content ul li .products-image img {
     max-width: 100%;
     max-height: 90%;
   }
-  section.trending-products .content ul li a {
+  section.trending-other-products .trending-other-content ul li a {
     font-size: 20px;
     padding: 15px 40px;
   }
   section.company-information ul li {
     width: 45%;
-    margin: 5px 0;
+    margin: 6px 0;
+    padding: 50px 0;
   }
   section.company-information ul li h3 {
     font-size: 45px;
@@ -164,6 +165,38 @@
   }
   section.subscribe .subscribe-content .subscribe-btn a {
     font-size: 20px;
+  }
+  section.recommended-product .recommended .product-info a {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+  footer .footer-area .upper-area .footer-links .social-media .icons {
+    width: 100%;
+  }
+  footer .footer-area .upper-area .footer-links .other-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-area .upper-area .footer-links .other-links ul {
+    width: 90%;
+    margin: 20px 0;
+  }
+  footer .footer-area .upper-area .footer-links .other-links ul h4 {
+    font-size: 22px;
+  }
+  footer .footer-area .upper-area .footer-links .other-links ul li a {
+    font-size: 18px;
+  }
+  footer .footer-area .bottom-area p {
+    font-size: 14px;
+  }
+  footer .footer-area .bottom-area a {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=responsive(768-).css.map */

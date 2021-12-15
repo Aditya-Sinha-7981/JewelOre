@@ -183,11 +183,11 @@
         }
     }
 
-    //Trending Products
+    //Trending and Other Products
 
-    section.trending-products{
+    section.trending-other-products{
 
-        .content{
+        .trending-other-content{
 
             h2{
                 font-size: 35px;
@@ -227,7 +227,8 @@
 
             li{
                 width: 45%;
-                margin: 5px 0;
+                margin: 6px 0;
+                padding: 50px 0;
 
                 h3{
                     font-size: 45px;
@@ -317,6 +318,75 @@
 
                 a{
                     font-size: 20px;
+                }
+            }
+        }
+    }
+
+    //Recommended Product
+
+    section.recommended-product{
+
+        .recommended{
+
+            .product-info{
+
+                a{
+                    font-size: 20px;
+                    padding: 20px 40px;
+                }
+            }
+        }
+    }
+
+    //Footer
+
+    footer{
+
+        .footer-area{
+
+            .upper-area{
+
+                .footer-links{
+
+                    .social-media{
+
+                        .icons{
+                            width: 100%;
+                        }
+                    }
+
+                   .other-links{
+                       flex-direction: column;
+                       align-items: center;
+
+                       ul{
+                           width: 90%;
+                           margin: 20px 0;
+
+                            h4{
+                                font-size: 22px;
+                            }
+
+                            li{
+
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
+                       }
+                   } 
+                }
+            }
+
+            .bottom-area{
+
+                p{
+                    font-size: 14px;
+                }
+
+                a{
+                    font-size: 14px;
                 }
             }
         }
