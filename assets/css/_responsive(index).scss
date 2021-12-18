@@ -1,7 +1,3 @@
-//Importing Variables
-
-@import '_global.scss';
-
 // Tablet Queries
 
 @media screen and (max-width: 1140px) {
@@ -10,7 +6,6 @@
     .landing{
 
         article{
-
 
             aside{
 
@@ -80,7 +75,7 @@
 
             .subscribe-text{
 
-                h2{
+                h1{
                     font-size: 40px;
                 }
             }
@@ -168,7 +163,7 @@
                     }
                 }
 
-                h2{
+                h1{
                     margin-bottom: 30px;
                 }
             }
@@ -236,7 +231,7 @@
 
         article{
 
-            h2{
+            h1{
                 font-size: 50px;
             }
 
@@ -272,7 +267,7 @@
 
             .subscribe-text{
 
-                h2{
+                h1{
                     font-size: 35px;
                 }
             }
@@ -281,11 +276,19 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    
+    // Center div
+
+    .center-div{
+        max-width: 1400px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
     //navbar
 
-
-
-    header{
+    header.landing-page, header.other-pages{
 
         #hamburger{
             display: block;
@@ -434,7 +437,7 @@
 
         .trending-other-content{
 
-            h2{
+            h1{
                 font-size: 45px;
             }
 
@@ -489,7 +492,7 @@
 
         article{
 
-            h2{
+            h1{
                 font-size: 40px;
             }
 
@@ -514,6 +517,7 @@
                     h3{
                         font-size: 28px;
                         margin: 20px 0;
+                        text-align: center;
                     }
 
                     .interact-buttons{
@@ -538,8 +542,9 @@
 
         .testimonial-area{
             
-            h2{
+            h1{
                 font-size: 40px;
+                margin-top: -50px;
             }
 
             .testimonial{
@@ -571,7 +576,7 @@
             .subscribe-text{
                 width: 100%;
 
-                h2{
+                h1{
                     text-align: center;
                 }
             }
@@ -594,6 +599,7 @@
             .product-info{
                 align-items: center;
                 text-align: center;
+                width: auto;
             }
         }
     }
@@ -601,7 +607,7 @@
     //Footer
 
     footer{
-        margin: 150px 10px 20px 10px;
+        margin: 150px 0 20px 0;
 
         .footer-area{
 
@@ -676,4 +682,421 @@
         }
     }
 
+}
+
+// Phone Queries
+
+@media screen and (max-width: 580px) {
+    // Navbar
+
+    header.landing-page{
+
+        nav{
+
+            ul{
+
+                li{
+
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+   
+    // Section: Landing section
+
+   .landing{
+
+        article{
+
+            aside{
+                width: 88vw;
+                margin-top: 130px;
+
+
+                h1{
+                    font-size: 1.5em;
+                }
+
+                a{
+                    margin: 110px 0 0 0;
+                }
+            }
+
+            .centered-div{
+                width: 90vw;
+            }
+        }
+    } 
+
+    // Section: Information section
+
+    .information{
+
+        .information-content{
+
+            ul.information-ul{
+                padding: 0 0 150px 0;
+
+                li{
+
+                    h5{
+                        font-size: 0.8em;
+                    }
+
+                    p{
+                        font-size: 0.6em;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section: More prodcuts
+
+    section.more-products{
+        margin: -150px 0 0 0;
+
+        figure{
+
+            ul.more-products{
+
+                li{
+
+                    a{
+                        font-size: 20px;
+                    }
+                }
+
+                li.middle-category{
+                    margin: 80px 0 0 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:426px) {
+
+    // Section: Landing section
+
+    .landing{
+        background-position: 65% 0%;
+
+        article{
+
+            aside{
+                padding: 0 50px;
+
+                h1{
+                    font-size: 35px;
+                    text-align: center;
+                }
+
+                p{
+                    font-size: 4.5vw;
+                }
+
+                a{
+                    font-size: 16px;
+                    margin-top: 50px;
+                }
+            }
+
+            .centered-div{
+                
+                img{
+                    opacity: 50%;
+                }
+            }
+        }
+    }
+
+    //About Us
+
+    section.about-us{
+
+        div.content{
+
+            aside{
+
+                h1{
+                    font-size: 50px;
+                }
+
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    // Section: Information section
+
+    .information{
+
+        .information-content{
+
+            ul.information-ul{
+                margin: 30px 0 0 0;
+                padding: 0;
+
+                li{
+                    width: 100%;
+
+                    h5{
+                        font-size: 25px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section: More prodcuts
+
+    section.more-products{
+        margin: 0;
+
+        figure{
+
+            ul.more-products{
+                flex-direction: column;
+                align-items: center;
+
+                li{
+                    margin: 40px 0;
+                    width: 100%;
+
+                    img.products{
+                        width: 75%;
+                    }
+
+                    a{
+                        font-size: 25px;
+                    }
+                }
+
+                li.middle-category{
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    //Trending and Other Products
+
+    section.trending-other-products{
+
+        .trending-other-content{
+
+            h1{
+                font-size: 32px;
+            }
+
+            ul{
+                flex-direction: column;
+
+                li{
+                    width: 100%;
+                    font-size: 20px;
+                    margin: 20px 0;
+                    
+                    .products-image{
+                        max-width: 75%;
+
+                        img{
+                            max-width: 100%;
+                            max-height: 90%;
+                        }
+                    }
+
+                    a{
+                        font-size: 20px;
+                        padding: 15px 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Company Information
+
+    section.company-information{
+
+        ul{
+
+            li{
+                width: 45%;
+                margin: 6px 0;
+                padding: 50px 0;
+
+                h3{
+                    font-size: 45px;
+                }
+
+                h5{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    //Most bought items 
+
+    section.most-bought{
+
+        article{
+
+            h1{
+                font-size: 24px;
+            }
+
+            .about-item{
+
+                figure{
+                    width: 90%;
+                }
+
+                .item-description{
+
+                    h3{
+                        font-size: 20px;
+                    }
+
+                    h5{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Testimonial Section
+
+    section.testimonials{
+
+        .testimonial-area{
+            
+            h1{
+                font-size: 28px;
+                margin: 0;
+            }
+
+            .testimonial{
+
+                img{
+                    width: 40%;
+                }
+
+                .testimonial-content{
+
+                    h5{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Subscribe Section
+
+    section.subscribe{
+
+        .subscribe-content{
+
+            .subscribe-text{
+                display: flex;
+                justify-content: center;
+
+                h1{
+                    font-size: 35px;
+                    width: 90%;
+                }
+            }
+
+            .subscribe-btn{
+
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    //Recommended Product
+
+    section.recommended-product{
+
+        .recommended{
+
+            .product-info{
+
+                a{
+                    font-size: 20px;
+                    padding: 20px 40px;
+                }
+            }
+        }
+    }
+
+    //Footer
+
+    footer{
+
+        .footer-area{
+
+            .upper-area{
+
+                .footer-links{
+
+                    .social-media{
+
+                        .icons{
+                            width: 100%;
+                        }
+                    }
+
+                   .other-links{
+                       flex-direction: column;
+                       align-items: center;
+
+                       ul{
+                           width: 90%;
+                           margin: 20px 0;
+
+                            h4{
+                                font-size: 22px;
+                            }
+
+                            li{
+
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
+                       }
+                   } 
+                }
+            }
+
+            .bottom-area{
+
+                p{
+                    font-size: 14px;
+                }
+
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
 }

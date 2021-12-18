@@ -1,0 +1,136 @@
+//Tablet Queries
+
+@media screen and (max-width: 990px) {
+    
+    //Landing Seciton 
+
+    section.landing-section{
+
+        .orange-box{
+            width: 80%;
+        }
+
+        .content{
+
+            figure{
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .content-text{
+
+                a{
+                    padding: 20px 45px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    // Center div
+
+    .center-div{
+        max-width: 1400px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    //navbar
+
+    header.other-pages{
+
+        #hamburger{
+            display: block;
+        }
+
+        nav.navbar{
+            justify-content: space-between;
+            
+            ul{
+                display: none;
+            }
+
+            .hamburger{
+                display: flex;
+                align-items: center;
+                margin: 0 20px;
+                z-index: 2;
+
+                button{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+
+                    i{
+                        font-size: 35px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    //Landing Section
+
+    section.landing-section{
+
+        .orange-box{
+            height: 55%;
+            top: 50%;
+        }
+
+        .content{
+
+            figure{
+                display: none;
+            }
+
+            .content-text{
+                width: 100%;
+                align-items: center;
+                margin: 0;
+
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+//Phone Queries
+
+@media screen and (max-width: 468px) {
+
+    //Landing Section
+
+    section.landing-section{
+
+        .content{
+
+            .content-text{
+
+                h1{
+                    font-size: 50px;
+                }
+
+                p{
+                    font-size: 16px;
+                }
+
+                a{
+                    padding: 20px 30px;        
+                }
+            }
+        }
+    }
+}

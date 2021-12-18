@@ -69,3 +69,17 @@ Information section and More products both are completely responsive along with 
 4. Footer desktop design completed
 
 5. Footer desing fully responsive for tablet and mobile
+
+<----------Update 6:---------->
+
+1. Creation of mixins and global values in "_global.scss"
+
+2. All scss are now partials with "style.scss" being the only main scss
+
+3. About us page navbar desktop design completed
+
+4. About us page navbar and hamburger design fully responsive for tabet and mobile
+
+5. About us landing section desktop design completed
+
+6. ABout us landing section design fully responsive for tablet and mobile
