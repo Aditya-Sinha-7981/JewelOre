@@ -116,7 +116,7 @@ header.landing-page{
 
 // Landing Section
 
-.landing{
+section.landing{
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,7 +179,7 @@ header.landing-page{
 
 // Information Section
 
-.information{
+section.information{
     width: 100%;
     background: $primary-color;
     
@@ -385,6 +385,10 @@ section.trending-other-products{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h1{
+            text-align: center;
+        }
 
         ul{
             margin-top: 50px;

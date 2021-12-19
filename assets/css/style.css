@@ -160,14 +160,14 @@ header.landing-page .hamburger-menu.active {
   background: #FFDAC5;
 }
 
-.landing {
+section.landing {
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.landing article {
+section.landing article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +186,7 @@ header.landing-page .hamburger-menu.active {
   height: 100vh;
 }
 
-.landing article aside {
+section.landing article aside {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,18 +209,18 @@ header.landing-page .hamburger-menu.active {
   z-index: 1;
 }
 
-.landing article aside h1 {
+section.landing article aside h1 {
   font-size: 65px;
   margin: 40px 0 0 0;
 }
 
-.landing article aside p {
+section.landing article aside p {
   margin: 20px 0;
   font-size: 1.125em;
   line-height: 26px;
 }
 
-.landing article aside a {
+section.landing article aside a {
   background: #073300;
   color: white;
   cursor: pointer;
@@ -236,7 +236,7 @@ header.landing-page .hamburger-menu.active {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.landing article .centered-div {
+section.landing article .centered-div {
   position: absolute;
   width: 570px;
   height: 322px;
@@ -254,16 +254,16 @@ header.landing-page .hamburger-menu.active {
   z-index: 0;
 }
 
-.landing article .centered-div img {
+section.landing article .centered-div img {
   margin: 0 25px 0 0;
 }
 
-.information {
+section.information {
   width: 100%;
   background: #073300;
 }
 
-.information .information-content {
+section.information .information-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +278,7 @@ header.landing-page .hamburger-menu.active {
       align-content: center;
 }
 
-.information .information-content ul.information-ul {
+section.information .information-content ul.information-ul {
   margin: 60px 0 0 0;
   padding: 0 0 300px 0;
   list-style: none;
@@ -291,7 +291,7 @@ header.landing-page .hamburger-menu.active {
           justify-content: space-evenly;
 }
 
-.information .information-content ul.information-ul li {
+section.information .information-content ul.information-ul li {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,20 +310,20 @@ header.landing-page .hamburger-menu.active {
       align-content: center;
 }
 
-.information .information-content ul.information-ul li img {
+section.information .information-content ul.information-ul li img {
   background: #127402;
   padding: 5px;
   border-radius: 50%;
 }
 
-.information .information-content ul.information-ul li h5 {
+section.information .information-content ul.information-ul li h5 {
   margin: 10px 0;
   font-family: "Playfair Display";
   font-size: 30px;
   font-weight: 700;
 }
 
-.information .information-content ul.information-ul li p {
+section.information .information-content ul.information-ul li p {
   font-family: "Lora";
   font-size: 18px;
   font-weight: 400;
@@ -535,6 +535,10 @@ section.trending-other-products .trending-other-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+section.trending-other-products .trending-other-content h1 {
+  text-align: center;
 }
 
 section.trending-other-products .trending-other-content ul {
@@ -1206,22 +1210,22 @@ footer .footer-area .bottom-area p {
 }
 
 @media screen and (max-width: 1140px) {
-  .landing article aside h1 {
+  section.landing article aside h1 {
     font-size: 2.7em;
     line-height: normal;
   }
-  .landing article aside p {
+  section.landing article aside p {
     font-size: 1em;
   }
-  .landing article aside a {
+  section.landing article aside a {
     font-size: 1.25em;
   }
-  .landing article .centered-div {
+  section.landing article .centered-div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .landing article .centered-div img {
+  section.landing article .centered-div img {
     margin: 0;
   }
   section.trending-other-products .trending-other-content ul li {
@@ -1293,13 +1297,13 @@ footer .footer-area .bottom-area p {
 }
 
 @media screen and (max-width: 900px) {
-  .information .information-content ul.information-ul {
+  section.information .information-content ul.information-ul {
     padding: 0 0 250px 0;
   }
-  .information .information-content ul.information-ul li h5 {
+  section.information .information-content ul.information-ul li h5 {
     font-size: 1.5em;
   }
-  .information .information-content ul.information-ul li p {
+  section.information .information-content ul.information-ul li p {
     font-size: 1em;
   }
   section.more-products {
@@ -1365,7 +1369,7 @@ footer .footer-area .bottom-area p {
   header.landing-page nav.navbar .hamburger button i, header.other-pages nav.navbar .hamburger button i {
     font-size: 35px;
   }
-  .landing article {
+  section.landing article {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1373,41 +1377,41 @@ footer .footer-area .bottom-area p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .landing article aside {
+  section.landing article aside {
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
   }
-  .landing article aside h1 {
+  section.landing article aside h1 {
     font-size: 2em;
     line-height: normal;
   }
-  .landing article aside p {
+  section.landing article aside p {
     text-align: center;
   }
-  .landing article .centered-div {
+  section.landing article .centered-div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .landing article .centered-div img {
+  section.landing article .centered-div img {
     margin: 0;
   }
-  .information .information-content ul.information-ul {
+  section.information .information-content ul.information-ul {
     padding: 0 0 200px 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .information .information-content ul.information-ul li {
+  section.information .information-content ul.information-ul li {
     width: 40%;
     margin: 20px;
   }
-  .information .information-content ul.information-ul li h5 {
+  section.information .information-content ul.information-ul li h5 {
     font-size: 1.15em;
   }
-  .information .information-content ul.information-ul li p {
+  section.information .information-content ul.information-ul li p {
     font-size: 0.8em;
     width: 100%;
   }
@@ -1625,26 +1629,26 @@ footer .footer-area .bottom-area p {
   header.landing-page nav ul li a {
     font-size: 12px;
   }
-  .landing article aside {
+  section.landing article aside {
     width: 88vw;
     margin-top: 130px;
   }
-  .landing article aside h1 {
+  section.landing article aside h1 {
     font-size: 1.5em;
   }
-  .landing article aside a {
+  section.landing article aside a {
     margin: 110px 0 0 0;
   }
-  .landing article .centered-div {
+  section.landing article .centered-div {
     width: 90vw;
   }
-  .information .information-content ul.information-ul {
+  section.information .information-content ul.information-ul {
     padding: 0 0 150px 0;
   }
-  .information .information-content ul.information-ul li h5 {
+  section.information .information-content ul.information-ul li h5 {
     font-size: 0.8em;
   }
-  .information .information-content ul.information-ul li p {
+  section.information .information-content ul.information-ul li p {
     font-size: 0.6em;
   }
   section.more-products {
@@ -1659,24 +1663,24 @@ footer .footer-area .bottom-area p {
 }
 
 @media screen and (max-width: 426px) {
-  .landing {
+  section.landing {
     background-position: 65% 0%;
   }
-  .landing article aside {
+  section.landing article aside {
     padding: 0 50px;
   }
-  .landing article aside h1 {
+  section.landing article aside h1 {
     font-size: 35px;
     text-align: center;
   }
-  .landing article aside p {
+  section.landing article aside p {
     font-size: 4.5vw;
   }
-  .landing article aside a {
+  section.landing article aside a {
     font-size: 16px;
     margin-top: 50px;
   }
-  .landing article .centered-div img {
+  section.landing article .centered-div img {
     opacity: 50%;
   }
   section.about-us div.content aside h1 {
@@ -1685,17 +1689,17 @@ footer .footer-area .bottom-area p {
   section.about-us div.content aside a {
     font-size: 16px;
   }
-  .information .information-content ul.information-ul {
+  section.information .information-content ul.information-ul {
     margin: 30px 0 0 0;
     padding: 0;
   }
-  .information .information-content ul.information-ul li {
+  section.information .information-content ul.information-ul li {
     width: 100%;
   }
-  .information .information-content ul.information-ul li h5 {
+  section.information .information-content ul.information-ul li h5 {
     font-size: 25px;
   }
-  .information .information-content ul.information-ul li p {
+  section.information .information-content ul.information-ul li p {
     font-size: 14px;
   }
   section.more-products {
@@ -2067,6 +2071,168 @@ section.landing-section .content .content-text a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+section.our-story {
+  margin: 150px 0;
+}
+
+section.our-story article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.our-story article h1 {
+  margin: 50px;
+}
+
+section.our-story article .content-story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.our-story article .content-story figure {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.our-story article .content-story figure img {
+  width: 100%;
+}
+
+section.our-story article .content-story .content-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.our-story article .content-story .content-text .orange-box {
+  position: absolute;
+  height: 95%;
+  width: 30%;
+  left: 0;
+  background: #FFDAC5;
+  z-index: -1;
+  top: 140%;
+}
+
+section.our-story article .content-story .content-text ul {
+  list-style-image: url(../images/green-dot.png);
+}
+
+section.our-story article .content-story .content-text ul li {
+  font-family: "Lora";
+  font-weight: 400;
+  color: #073300;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+section.our-story article .content-story .content-text ul li span {
+  font-weight: 700;
+}
+
+section.our-story article .content-story .content-text .about-writer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.our-story article .content-story .content-text .about-writer p {
+  font-style: italic;
+  font-size: 18px;
+  font-family: "Lora";
+  color: #073300;
+  font-weight: 400;
+}
+
+section.our-story article .content-story .content-text .about-writer h2 {
+  font-family: "Lora";
+  color: #073300;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+section.our-story article .content-story .content-text .about-writer h2 span {
+  font-weight: 700;
+}
+
+section.information .information-content ul.information-ul {
+  padding: 0;
+  margin: 60px 0;
+}
+
+section.shop-all-products {
+  margin: 150px 0;
+}
+
+section.shop-all-products .link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.shop-all-products .link a {
+  font-size: 60px;
+  font-weight: 700;
+  color: #073300;
+  font-family: "Playfair Display";
+}
+
+@media screen and (max-width: 1100px) {
+  section.our-story article .content-story .orange-box {
+    height: 85%;
+    top: 122%;
+  }
+}
+
 @media screen and (max-width: 990px) {
   section.landing-section .orange-box {
     width: 80%;
@@ -2077,6 +2243,10 @@ section.landing-section .content .content-text a {
   section.landing-section .content .content-text a {
     padding: 20px 45px;
     font-size: 20px;
+  }
+  section.our-story article .content-story .content-text .orange-box {
+    height: 85%;
+    top: 143%;
   }
 }
 
@@ -2132,6 +2302,33 @@ section.landing-section .content .content-text a {
   section.landing-section .content .content-text p {
     text-align: center;
   }
+  section.our-story article .content-story {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.our-story article .content-story figure {
+    width: 90%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  section.our-story article .content-story figure img {
+    width: 80%;
+  }
+  section.our-story article .content-story .content-text {
+    width: 75%;
+  }
+  section.our-story article .content-story .content-text .orange-box {
+    display: none;
+  }
+  section.shop-all-products .link a {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 468px) {
@@ -2143,6 +2340,33 @@ section.landing-section .content .content-text a {
   }
   section.landing-section .content .content-text a {
     padding: 20px 30px;
+  }
+  section.our-story article h1 {
+    margin: 50px 0;
+    font-size: 40px;
+  }
+  section.our-story article .content-story figure img {
+    width: 90%;
+  }
+  section.our-story article .content-story .content-text ul li {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  section.our-story article .content-story .content-text .about-writer {
+    margin-top: 40px;
+  }
+  section.our-story article .content-story .content-text .about-writer p {
+    font-size: 16px;
+  }
+  section.our-story article .content-story .content-text .about-writer h2 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  section.shop-all-products {
+    margin: 50px 0;
+  }
+  section.shop-all-products .link a {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

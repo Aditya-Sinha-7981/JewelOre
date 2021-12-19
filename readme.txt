@@ -17,7 +17,7 @@ Information section: Desktop, Tablet and Mobile done
 More-products: Desktop,Tablet and Mobile done
 
 
-<----------Update 1:----------> 
+<----------Update 1----------> 
 
 
 Hamburger has been added to navbar and it's completely responsive, both navbar and hamburger, transition needs to be added
@@ -26,7 +26,9 @@ Landing page is now completely responsive along with minor desing changes
 
 Information section and More products both are completely responsive along with minor design changes
 
-<----------Update 2:----------> 
+
+<----------Update 2----------> 
+
 
 1. About us section done and completely responsive
 
@@ -34,7 +36,9 @@ Information section and More products both are completely responsive along with 
 
 3. Trending products section completed for pc
 
-<----------Update 3:---------->
+
+<----------Update 3---------->
+
 
 1. Trending products responsive design fully completed for tablet and mobile
 
@@ -46,7 +50,9 @@ Information section and More products both are completely responsive along with 
 
 5. Most bought item section design fully responsive for tablet and mobile
 
-<----------Update 4:---------->
+
+<----------Update 4---------->
+
 
 1. Testimonial section desktop design completed 
 
@@ -58,7 +64,9 @@ Information section and More products both are completely responsive along with 
 
 5. Recommended products section desktop design completed
 
-<----------Update 5:---------->
+
+<----------Update 5---------->
+
 
 1. Recommended products section design fully responsive for tablet and mobile
 
@@ -70,7 +78,9 @@ Information section and More products both are completely responsive along with 
 
 5. Footer desing fully responsive for tablet and mobile
 
-<----------Update 6:---------->
+
+<----------Update 6---------->
+
 
 1. Creation of mixins and global values in "_global.scss"
 
@@ -82,4 +92,20 @@ Information section and More products both are completely responsive along with 
 
 5. About us landing section desktop design completed
 
-6. ABout us landing section design fully responsive for tablet and mobile
+6. About us landing section design fully responsive for tablet and mobile
+
+
+<----------Update 7---------->
+
+
+1. About us our story section desktop design completed
+
+2. About us our story section design fully responsive for tablet and mobile
+
+3. About us company information section completed 
+
+4. About us take a gleaming tour section completed 
+
+5. About us testimonial section completed 
+
+6. About us footer completed 
