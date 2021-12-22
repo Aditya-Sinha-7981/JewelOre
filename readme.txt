@@ -109,3 +109,17 @@ Information section and More products both are completely responsive along with 
 5. About us testimonial section completed 
 
 6. About us footer completed 
+
+<----------Update 8---------->
+
+1. Contact us page Initialization completed
+
+2. Contact us landing page desktop design completed
+
+3. Contact us landing page design completely responsive for tablet and mobile 
+
+4. Contact us our story desktop design completed
+
+5. Contact us our story design completely responsive for tablet and mobile 
+
+6. Minor bug fixes along with responsive issues in index and about us page

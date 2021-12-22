@@ -178,7 +178,7 @@
 @media screen and (max-width: 900px) {
     // Information Section
     
-    section.information{
+    section.information, section.information-other-pages{
 
         .information-content{
 
@@ -359,11 +359,11 @@
 
     // Section: Information Section
 
-    section.information{
+    section.information, section.information-other-pages{
 
         .information-content{
 
-            ul.information-ul{
+            ul.information-ul, ul.contact-ul{
                 padding: 0 0 200px 0;
                 flex-wrap: wrap;
 
@@ -556,8 +556,11 @@
                 .testimonial-content{
                     width: 90%;
 
-                    h5{
-                        margin-top: 40px;
+                    .carousel-item{
+
+                        h5{
+                            margin-top: 40px;
+                        }
                     }
                 }
             }
@@ -610,6 +613,7 @@
         margin: 150px 0 20px 0;
 
         .footer-area{
+            padding: 0 40px;
 
             .upper-area{
                 margin: 20px 0;
@@ -623,21 +627,26 @@
 
                     .social-media{
                         justify-content: center;
-                        margin-bottom: 20px;
+                        margin: 0 0 20px 0;
 
                         hr{
                             display: none;
                         }
                         
                         .icons{
-                            width: 70%;
+                            width: 60%;
+                            flex-wrap: wrap;
+                            justify-content: center;
 
                             a{
-                                margin: 0 2px;
+                                margin: 0 10px;
                             }
                             
                             p{
                                 font-size: 18px;
+                                flex-basis: 100%;
+                                text-align: center;
+                                margin-bottom: 20px;
                             }
                         }
                     }
@@ -647,15 +656,17 @@
 
                         ul{
                             display: flex;
-                            align-items: center;
+                            align-items: flex-start;
                             flex-direction: column;
 
                             h4{
                                 font-size: 16px;
+                                margin-bottom: 22px;
                             }
 
                             li{
                                 text-align: center;
+                                margin: 10px 0;
 
                                 a{
                                     font-size: 14px;
@@ -685,6 +696,63 @@
 }
 
 // Phone Queries
+
+@media screen and (max-width: 630px) {
+    
+    //Footer
+
+    footer{
+
+        .footer-area{
+
+            .upper-area{
+
+                .footer-links{
+
+                    .social-media{
+
+                        .icons{
+                            width: 100%;
+                        }
+                    }
+
+                   .other-links{
+                       flex-direction: column;
+                       align-items: center;
+
+                       ul{
+                           width: 90%;
+                           margin: 20px 0;
+                           align-items: center;
+
+                            h4{
+                                font-size: 22px;
+                            }
+
+                            li{
+
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
+                       }
+                   } 
+                }
+            }
+
+            .bottom-area{
+
+                p{
+                    font-size: 14px;
+                }
+
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 580px) {
     // Navbar
@@ -733,11 +801,11 @@
 
     // Section: Information section
 
-    section.information{
+    section.information, section.information-other-pages{
 
         .information-content{
 
-            ul.information-ul{
+            ul.information-ul, ul.contact-ul{
                 padding: 0 0 150px 0;
 
                 li{
@@ -746,7 +814,7 @@
                         font-size: 0.8em;
                     }
 
-                    p{
+                    p, a{
                         font-size: 0.6em;
                     }
                 }
@@ -836,12 +904,12 @@
 
     // Section: Information section
 
-    section.information{
+    section.information, section.information-other-pages{
 
         .information-content{
 
             ul.information-ul{
-                margin: 30px 0 0 0;
+                margin: 30px 0;
                 padding: 0;
 
                 li{
@@ -1052,48 +1120,11 @@
 
         .footer-area{
 
-            .upper-area{
-
-                .footer-links{
-
-                    .social-media{
-
-                        .icons{
-                            width: 100%;
-                        }
-                    }
-
-                   .other-links{
-                       flex-direction: column;
-                       align-items: center;
-
-                       ul{
-                           width: 90%;
-                           margin: 20px 0;
-
-                            h4{
-                                font-size: 22px;
-                            }
-
-                            li{
-
-                                a{
-                                    font-size: 18px;
-                                }
-                            }
-                       }
-                   } 
-                }
-            }
-
             .bottom-area{
 
                 p{
-                    font-size: 14px;
-                }
-
-                a{
-                    font-size: 14px;
+                    text-align: center;
+                    flex-basis: 100%;
                 }
             }
         }

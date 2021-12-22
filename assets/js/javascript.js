@@ -5,18 +5,41 @@ const hamburgerIcon = document.querySelector('#icon');
 const hamburgerClass = document.querySelector('.hamburger-menu');
 const counters = document.querySelectorAll('.counter');
 
-$(navbar).ready(function(){
-    $(window).scroll(function(){
-        let scroll = $(window).scrollTop();
-        if(scroll > 100){
-            header.classList.add('scrolled');
-        }else{
-            header.classList.remove('scrolled');
-        }
-    })
-})
+//For ddding background adter scroll in navbar
+
+window.onscroll = () => {
+    if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+};
+
+
 
 //Functions
+
+//Testimonial carousel
+// const slider = tns({
+//     container: "#carousel",
+//     loop: true,
+//     items: 1,
+//     mouseDrag: true,
+//     slideBy: 'page',
+//     autoplay: false,
+//     controls: false,
+//     nav: false,
+//     autoplayButtonOutput: false,
+//     responsive: {
+//         426:{
+//             items: 1
+//         }
+//     }
+// });
+
+
+
+//Hamburger Function
 
 function hamburgerClassLogic(){
     //Removal or addition of "active" class for hamburger
@@ -57,5 +80,7 @@ for(let n of counters) {
   }
   updateCount();
 }
+
+
 
 hamburgerButton.addEventListener('click', hamburgerClassLogic);

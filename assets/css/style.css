@@ -226,6 +226,7 @@ section.landing article aside a {
   cursor: pointer;
   font-size: 25px;
   text-decoration: none;
+  font-family: "Lora";
   font-weight: 700;
   padding: 20px 60px;
   border: 1px solid #000000;
@@ -258,12 +259,12 @@ section.landing article .centered-div img {
   margin: 0 25px 0 0;
 }
 
-section.information {
+section.information, section.information-other-pages {
   width: 100%;
   background: #073300;
 }
 
-section.information .information-content {
+section.information .information-content, section.information-other-pages .information-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +279,7 @@ section.information .information-content {
       align-content: center;
 }
 
-section.information .information-content ul.information-ul {
+section.information .information-content ul.information-ul, section.information .information-content ul.contact-ul, section.information-other-pages .information-content ul.information-ul, section.information-other-pages .information-content ul.contact-ul {
   margin: 60px 0 0 0;
   padding: 0 0 300px 0;
   list-style: none;
@@ -291,7 +292,7 @@ section.information .information-content ul.information-ul {
           justify-content: space-evenly;
 }
 
-section.information .information-content ul.information-ul li {
+section.information .information-content ul.information-ul li, section.information .information-content ul.contact-ul li, section.information-other-pages .information-content ul.information-ul li, section.information-other-pages .information-content ul.contact-ul li {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,20 +311,20 @@ section.information .information-content ul.information-ul li {
       align-content: center;
 }
 
-section.information .information-content ul.information-ul li img {
+section.information .information-content ul.information-ul li img, section.information .information-content ul.contact-ul li img, section.information-other-pages .information-content ul.information-ul li img, section.information-other-pages .information-content ul.contact-ul li img {
   background: #127402;
   padding: 5px;
   border-radius: 50%;
 }
 
-section.information .information-content ul.information-ul li h5 {
+section.information .information-content ul.information-ul li h5, section.information .information-content ul.contact-ul li h5, section.information-other-pages .information-content ul.information-ul li h5, section.information-other-pages .information-content ul.contact-ul li h5 {
   margin: 10px 0;
   font-family: "Playfair Display";
   font-size: 30px;
   font-weight: 700;
 }
 
-section.information .information-content ul.information-ul li p {
+section.information .information-content ul.information-ul li p, section.information .information-content ul.contact-ul li p, section.information-other-pages .information-content ul.information-ul li p, section.information-other-pages .information-content ul.contact-ul li p {
   font-family: "Lora";
   font-size: 18px;
   font-weight: 400;
@@ -472,6 +473,10 @@ section.about-us div.content aside p {
   font-weight: 400;
 }
 
+section.about-us div.content aside ul {
+  list-style: none;
+}
+
 section.about-us div.content aside ul li {
   font-size: 18px;
   font-family: "Lora";
@@ -479,7 +484,10 @@ section.about-us div.content aside ul li {
   font-weight: 400;
   margin: 15px 0;
   line-height: 26px;
-  list-style-image: url(../images/list-bullet.svg);
+}
+
+section.about-us div.content aside ul li::before {
+  content: url(../images/list-bullet.svg);
 }
 
 section.about-us div.content aside a {
@@ -488,6 +496,7 @@ section.about-us div.content aside a {
   cursor: pointer;
   font-size: 25px;
   text-decoration: none;
+  font-family: "Lora";
   font-weight: 700;
   padding: 20px 60px;
   border: 1px solid #000000;
@@ -613,6 +622,7 @@ section.trending-other-products .trending-other-content ul li a {
   cursor: pointer;
   font-size: 25px;
   text-decoration: none;
+  font-family: "Lora";
   font-weight: 700;
   padding: 20px 60px;
   border: 1px solid #000000;
@@ -780,6 +790,7 @@ section.most-bought article .about-item .item-description a {
   cursor: pointer;
   font-size: 25px;
   text-decoration: none;
+  font-family: "Lora";
   font-weight: 700;
   padding: 20px 60px;
   border: 1px solid #000000;
@@ -843,22 +854,27 @@ section.testimonials .testimonial-area .testimonial .testimonial-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 0 50px 0;
 }
 
-section.testimonials .testimonial-area .testimonial .testimonial-content p {
+section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item div p {
   width: 90%;
   text-align: center;
 }
 
-section.testimonials .testimonial-area .testimonial .testimonial-content h5 {
+section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item div h5 {
   margin-top: 40px;
 }
 
@@ -903,6 +919,7 @@ section.subscribe .subscribe-content .subscribe-btn a {
   cursor: pointer;
   font-size: 25px;
   text-decoration: none;
+  font-family: "Lora";
   font-weight: 700;
   padding: 20px 60px;
   border: 1px solid #000000;
@@ -995,6 +1012,7 @@ section.recommended-product .recommended .product-info a {
   cursor: pointer;
   font-size: 25px;
   text-decoration: none;
+  font-family: "Lora";
   font-weight: 700;
   padding: 20px 60px;
   border: 1px solid #000000;
@@ -1173,7 +1191,7 @@ footer .footer-area .upper-area .footer-links .other-links ul li a {
 }
 
 footer .footer-area .upper-area .footer-links .other-links ul li a i {
-  margin: 0 10px;
+  margin: 0 10px 0 0;
 }
 
 footer .footer-area hr {
@@ -1297,13 +1315,13 @@ footer .footer-area .bottom-area p {
 }
 
 @media screen and (max-width: 900px) {
-  section.information .information-content ul.information-ul {
+  section.information .information-content ul.information-ul, section.information-other-pages .information-content ul.information-ul {
     padding: 0 0 250px 0;
   }
-  section.information .information-content ul.information-ul li h5 {
+  section.information .information-content ul.information-ul li h5, section.information-other-pages .information-content ul.information-ul li h5 {
     font-size: 1.5em;
   }
-  section.information .information-content ul.information-ul li p {
+  section.information .information-content ul.information-ul li p, section.information-other-pages .information-content ul.information-ul li p {
     font-size: 1em;
   }
   section.more-products {
@@ -1399,19 +1417,19 @@ footer .footer-area .bottom-area p {
   section.landing article .centered-div img {
     margin: 0;
   }
-  section.information .information-content ul.information-ul {
+  section.information .information-content ul.information-ul, section.information .information-content ul.contact-ul, section.information-other-pages .information-content ul.information-ul, section.information-other-pages .information-content ul.contact-ul {
     padding: 0 0 200px 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  section.information .information-content ul.information-ul li {
+  section.information .information-content ul.information-ul li, section.information .information-content ul.contact-ul li, section.information-other-pages .information-content ul.information-ul li, section.information-other-pages .information-content ul.contact-ul li {
     width: 40%;
     margin: 20px;
   }
-  section.information .information-content ul.information-ul li h5 {
+  section.information .information-content ul.information-ul li h5, section.information .information-content ul.contact-ul li h5, section.information-other-pages .information-content ul.information-ul li h5, section.information-other-pages .information-content ul.contact-ul li h5 {
     font-size: 1.15em;
   }
-  section.information .information-content ul.information-ul li p {
+  section.information .information-content ul.information-ul li p, section.information .information-content ul.contact-ul li p, section.information-other-pages .information-content ul.information-ul li p, section.information-other-pages .information-content ul.contact-ul li p {
     font-size: 0.8em;
     width: 100%;
   }
@@ -1517,7 +1535,7 @@ footer .footer-area .bottom-area p {
   section.testimonials .testimonial-area .testimonial .testimonial-content {
     width: 90%;
   }
-  section.testimonials .testimonial-area .testimonial .testimonial-content h5 {
+  section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item h5 {
     margin-top: 40px;
   }
   section.subscribe .subscribe-content {
@@ -1558,6 +1576,9 @@ footer .footer-area .bottom-area p {
   footer {
     margin: 150px 0 20px 0;
   }
+  footer .footer-area {
+    padding: 0 40px;
+  }
   footer .footer-area .upper-area {
     margin: 20px 0;
   }
@@ -1571,19 +1592,28 @@ footer .footer-area .bottom-area p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
   }
   footer .footer-area .upper-area .footer-links .social-media hr {
     display: none;
   }
   footer .footer-area .upper-area .footer-links .social-media .icons {
-    width: 70%;
+    width: 60%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer .footer-area .upper-area .footer-links .social-media .icons a {
-    margin: 0 2px;
+    margin: 0 10px;
   }
   footer .footer-area .upper-area .footer-links .social-media .icons p {
     font-size: 18px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
   }
   footer .footer-area .upper-area .footer-links .other-links {
     -webkit-box-pack: justify;
@@ -1594,9 +1624,9 @@ footer .footer-area .bottom-area p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1604,9 +1634,11 @@ footer .footer-area .bottom-area p {
   }
   footer .footer-area .upper-area .footer-links .other-links ul h4 {
     font-size: 16px;
+    margin-bottom: 22px;
   }
   footer .footer-area .upper-area .footer-links .other-links ul li {
     text-align: center;
+    margin: 10px 0;
   }
   footer .footer-area .upper-area .footer-links .other-links ul li a {
     font-size: 14px;
@@ -1622,6 +1654,40 @@ footer .footer-area .bottom-area p {
   footer .footer-area .bottom-area p {
     font-size: 16px;
     margin: 15px 5px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  footer .footer-area .upper-area .footer-links .social-media .icons {
+    width: 100%;
+  }
+  footer .footer-area .upper-area .footer-links .other-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-area .upper-area .footer-links .other-links ul {
+    width: 90%;
+    margin: 20px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-area .upper-area .footer-links .other-links ul h4 {
+    font-size: 22px;
+  }
+  footer .footer-area .upper-area .footer-links .other-links ul li a {
+    font-size: 18px;
+  }
+  footer .footer-area .bottom-area p {
+    font-size: 14px;
+  }
+  footer .footer-area .bottom-area a {
+    font-size: 14px;
   }
 }
 
@@ -1642,13 +1708,13 @@ footer .footer-area .bottom-area p {
   section.landing article .centered-div {
     width: 90vw;
   }
-  section.information .information-content ul.information-ul {
+  section.information .information-content ul.information-ul, section.information .information-content ul.contact-ul, section.information-other-pages .information-content ul.information-ul, section.information-other-pages .information-content ul.contact-ul {
     padding: 0 0 150px 0;
   }
-  section.information .information-content ul.information-ul li h5 {
+  section.information .information-content ul.information-ul li h5, section.information .information-content ul.contact-ul li h5, section.information-other-pages .information-content ul.information-ul li h5, section.information-other-pages .information-content ul.contact-ul li h5 {
     font-size: 0.8em;
   }
-  section.information .information-content ul.information-ul li p {
+  section.information .information-content ul.information-ul li p, section.information .information-content ul.information-ul li a, section.information .information-content ul.contact-ul li p, section.information .information-content ul.contact-ul li a, section.information-other-pages .information-content ul.information-ul li p, section.information-other-pages .information-content ul.information-ul li a, section.information-other-pages .information-content ul.contact-ul li p, section.information-other-pages .information-content ul.contact-ul li a {
     font-size: 0.6em;
   }
   section.more-products {
@@ -1689,17 +1755,17 @@ footer .footer-area .bottom-area p {
   section.about-us div.content aside a {
     font-size: 16px;
   }
-  section.information .information-content ul.information-ul {
-    margin: 30px 0 0 0;
+  section.information .information-content ul.information-ul, section.information-other-pages .information-content ul.information-ul {
+    margin: 30px 0;
     padding: 0;
   }
-  section.information .information-content ul.information-ul li {
+  section.information .information-content ul.information-ul li, section.information-other-pages .information-content ul.information-ul li {
     width: 100%;
   }
-  section.information .information-content ul.information-ul li h5 {
+  section.information .information-content ul.information-ul li h5, section.information-other-pages .information-content ul.information-ul li h5 {
     font-size: 25px;
   }
-  section.information .information-content ul.information-ul li p {
+  section.information .information-content ul.information-ul li p, section.information-other-pages .information-content ul.information-ul li p {
     font-size: 14px;
   }
   section.more-products {
@@ -1804,33 +1870,10 @@ footer .footer-area .bottom-area p {
     font-size: 20px;
     padding: 20px 40px;
   }
-  footer .footer-area .upper-area .footer-links .social-media .icons {
-    width: 100%;
-  }
-  footer .footer-area .upper-area .footer-links .other-links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .footer-area .upper-area .footer-links .other-links ul {
-    width: 90%;
-    margin: 20px 0;
-  }
-  footer .footer-area .upper-area .footer-links .other-links ul h4 {
-    font-size: 22px;
-  }
-  footer .footer-area .upper-area .footer-links .other-links ul li a {
-    font-size: 18px;
-  }
   footer .footer-area .bottom-area p {
-    font-size: 14px;
-  }
-  footer .footer-area .bottom-area a {
-    font-size: 14px;
+    text-align: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -2061,6 +2104,7 @@ section.landing-section .content .content-text a {
   cursor: pointer;
   font-size: 25px;
   text-decoration: none;
+  font-family: "Lora";
   font-weight: 700;
   padding: 20px 60px;
   border: 1px solid #000000;
@@ -2093,6 +2137,7 @@ section.our-story article h1 {
 }
 
 section.our-story article .content-story {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2195,7 +2240,7 @@ section.our-story article .content-story .content-text .about-writer h2 span {
   font-weight: 700;
 }
 
-section.information .information-content ul.information-ul {
+section.information-other-pages .information-content ul.information-ul, section.information-other-pages .information-content ul.contact-ul {
   padding: 0;
   margin: 60px 0;
 }
@@ -2367,6 +2412,209 @@ section.shop-all-products .link a {
   }
   section.shop-all-products .link a {
     font-size: 30px;
+  }
+}
+
+section.write-to-us {
+  margin: 150px 0;
+}
+
+section.write-to-us article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.write-to-us article h1 {
+  margin: 50px;
+}
+
+section.write-to-us article .content-write {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.write-to-us article .content-write figure {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.write-to-us article .content-write figure img {
+  width: 100%;
+}
+
+section.write-to-us article .content-write .content-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.write-to-us article .content-write .content-text .orange-box {
+  position: absolute;
+  height: 95%;
+  width: 30%;
+  left: 0;
+  background: #FFDAC5;
+  z-index: -1;
+  top: 140%;
+}
+
+section.write-to-us article .content-write .content-text form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+section.write-to-us article .content-write .content-text form input {
+  background: #F0F0F0;
+  outline: none;
+  border: none;
+  height: 88px;
+  width: 90%;
+  font-family: "Lora";
+  font-weight: 400;
+  margin: 20px 0;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+section.write-to-us article .content-write .content-text form a {
+  background: #073300;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Lora";
+  font-weight: 700;
+  padding: 20px 60px;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 40px 0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 95%;
+}
+
+section.information-other-pages .information-content ul.contact-ul li a {
+  font-family: "Lora";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+  section.write-to-us article .content-write .orange-box {
+    height: 85%;
+    top: 122%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  section.write-to-us article .content-write .content-text .orange-box {
+    height: 85%;
+    top: 143%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.write-to-us article h1 {
+    font-size: 50px;
+  }
+  section.write-to-us article .content-write {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.write-to-us article .content-write figure {
+    width: 90%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  section.write-to-us article .content-write figure img {
+    width: 80%;
+  }
+  section.write-to-us article .content-write .content-text {
+    width: 75%;
+  }
+  section.write-to-us article .content-write .content-text .orange-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  section.write-to-us article h1 {
+    margin: 50px 0;
+    font-size: 40px;
+  }
+  section.write-to-us article .content-write figure img {
+    width: 90%;
+  }
+  section.information-other-pages .information-content ul.contact-ul {
+    margin: 30px 0;
+    padding: 0;
+  }
+  section.information-other-pages .information-content ul.contact-ul li {
+    width: 100%;
+  }
+  section.information-other-pages .information-content ul.contact-ul li h5 {
+    font-size: 25px;
+  }
+  section.information-other-pages .information-content ul.contact-ul li a {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

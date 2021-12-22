@@ -179,7 +179,7 @@ section.landing{
 
 // Information Section
 
-section.information{
+section.information, section.information-other-pages{
     width: 100%;
     background: $primary-color;
     
@@ -189,7 +189,7 @@ section.information{
         justify-content: center;
         align-content: center;
 
-        ul.information-ul{
+        ul.information-ul, ul.contact-ul{
             margin: 60px 0 0 0;
             padding: 0 0 300px 0;
             list-style: none;
@@ -333,7 +333,7 @@ section.about-us{
             }
 
             ul{
-                // list-style: none;
+                list-style: none;
 
 
                 li{
@@ -343,16 +343,16 @@ section.about-us{
                     font-weight: 400;
                     margin: 15px 0;
                     line-height: 26px;
-                    list-style-image: url(../images/list-bullet.svg);
+                    // list-style-image: url(../images/list-bullet.svg);
                 }
 
                 // li::marker{
                 //     margin: 20px;
                 // }
 
-                // li::before{
-                //     content: url(../images/list-bullet.svg)
-                // }
+                li::before{
+                    content: url(../images/list-bullet.svg)
+                }
             }
 
             a{
@@ -592,17 +592,28 @@ section.testimonials{
                 width: 708px;
                 font-family: $primaryFont;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
                 padding: 100px 0 50px 0;
 
-                p{
-                    width: 90%;
-                    text-align: center;
-                }
-
-                h5{
-                    margin-top: 40px;
+                .carousel-item{
+                    display: flex;
+                    align-items: center;
+                    
+                    div{
+                        // display: flex;
+                        // align-items: center;
+                        // flex-direction: column;
+                        // max-width: 95%;
+                        
+                        p{
+                            width: 90%;
+                            text-align: center;
+                        }
+        
+                        h5{
+                            margin-top: 40px;
+                        }
+                    }
                 }
             }
         }
@@ -817,7 +828,7 @@ footer{
                                 text-decoration: none;
 
                                 i{
-                                    margin: 0 10px;
+                                    margin: 0 10px 0 0;
                                 }
                             }
                         }
