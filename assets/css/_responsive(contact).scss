@@ -76,6 +76,34 @@
             }
         }
     }
+
+    //Let's connect
+
+    section.connect{
+
+        .content{
+
+            h1{
+                font-size: 45px;
+                text-align: center;
+            }
+
+            ul{
+                margin-top: 50px;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                li{
+                    width: 45%;
+                    margin-top: 50px;
+
+                    img{
+                        margin-left: 15%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 //Phone Queries 
@@ -125,6 +153,25 @@
                     a{
                         font-size: 14px;
                     }
+                }
+            }
+        }
+    }
+
+    //Let's connect
+
+    section.connect{
+
+        .content{
+
+            h1{
+                font-size: 35px;
+            }
+
+            ul{
+
+                li{
+                    width: 90%;
                 }
             }
         }

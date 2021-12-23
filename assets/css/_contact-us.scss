@@ -101,3 +101,44 @@ section.information-other-pages{
         }
     }
 }
+
+//Let's Connect
+
+section.connect{
+    margin: 150px 0;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+        ul{
+            list-style: none;
+            display: flex;
+            margin-top: 100px;
+            justify-content: space-around;
+
+            li{
+                width: 30%;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .orange-box{
+                    position: absolute;
+                    width: 50%;
+                    height: 100%;
+                    z-index: -1;
+                    background: $secondary-color;
+                }
+
+                img{
+                    margin-left: 50px;
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+        }
+    }
+}

@@ -123,3 +123,19 @@ Information section and More products both are completely responsive along with 
 5. Contact us our story design completely responsive for tablet and mobile 
 
 6. Minor bug fixes along with responsive issues in index and about us page
+
+<----------Update 9---------->
+
+1. Initialization of shop all page
+
+2. Shop all page landing section desktop desgin completed
+
+3. Shop all page landing section completely responsive for tablet and mobile
+
+4. Shop all page all accessories desktop desgin completed
+
+5. Shop all page all accessories completely responsive for tablet and mobile
+
+6. Contact page let's connect section design completed for desktop
+
+7. Contact page let's connect section design fully responsive for tablet and mobile
