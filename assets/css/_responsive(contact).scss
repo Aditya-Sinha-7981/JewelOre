@@ -67,7 +67,7 @@
                 }
 
                 .content-text{
-                    width: 75%;
+                    width: 100%;
 
                     .orange-box{
                         display: none;
@@ -95,11 +95,8 @@
 
                 li{
                     width: 45%;
+                    margin: 0;
                     margin-top: 50px;
-
-                    img{
-                        margin-left: 15%;
-                    }
                 }
             }
         }
@@ -127,6 +124,16 @@
 
                     img{
                         width: 90%;
+                    }
+                }
+
+                .content-text{
+
+                    form{
+
+                        a{
+                            width: 100%;
+                        }
                     }
                 }
             }

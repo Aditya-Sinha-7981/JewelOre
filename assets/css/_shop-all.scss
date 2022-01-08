@@ -17,6 +17,17 @@ section.trending-other-products{
             }
         }
 
+        ul{
+            justify-content: space-between;
+
+            li{
+
+                .products-image{
+                    width: 100%;
+                }
+            }
+        }
+
         .responsive-link{
             display: none;
         }

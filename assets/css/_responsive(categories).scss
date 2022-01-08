@@ -1,0 +1,147 @@
+//Tablet Queries
+
+@media screen and (max-width: 768px) {
+    
+    //Landing Section 
+
+    section.landing-section{
+
+        .content-categories{
+
+            .content-text{
+                width: 90%;
+                margin: 0;
+
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    //More Categories
+
+    section.more-categories{
+
+        .layout{
+
+            .left-bar{
+                display: none;
+            }
+
+            .right-section{
+                width: 100%;
+
+                .upper-part{
+                    align-items: center;
+                    justify-content: normal;
+
+                    .pagination{
+                        margin-left: auto;
+                    }
+
+                    .hamburger{
+                        display: flex;
+                        align-items: center;
+                        margin: 0 20px;
+                        z-index: 1;
+        
+                        button{
+                            background: transparent;
+                            outline: none;
+                            border: none;
+        
+                            i{
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .left-bar.active{
+            
+            .hamburger{
+                display: flex;
+                align-items: center;
+                margin: 0 20px;
+                z-index: 1;
+
+                button{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+
+                    i{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Phone Queries
+
+@media screen and (max-width: 426px) {
+    
+    //Landing Section 
+
+    section.landing-section{
+
+        .content-categories{
+
+            .content-text{
+
+                h1{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    //More Categories
+
+    section.more-categories{
+
+        .layout{
+
+            .right-section{
+
+                .upper-part{
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .pagination{
+                        flex-basis: 100%;
+                        justify-content: center;
+                        margin: 0;
+                        margin-top: 40px;
+                    }
+                }
+
+                .lower-part{
+
+                    .products{
+
+                        ul{
+
+                            li{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .leftBar{
+            width: 100%;
+        }
+    }
+
+    section.pagination{
+        display: none;
+    }
+}

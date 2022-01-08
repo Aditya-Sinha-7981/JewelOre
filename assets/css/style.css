@@ -70,6 +70,7 @@ header.landing-page nav.navbar ul li {
 }
 
 header.landing-page nav.navbar ul li a {
+  position: relative;
   color: #073300;
   font-family: "Lora";
   text-transform: uppercase;
@@ -77,8 +78,34 @@ header.landing-page nav.navbar ul li a {
   font-size: 18px;
 }
 
-header.landing-page nav.navbar ul li a:hover {
-  font-weight: 900;
+header.landing-page nav.navbar ul li a::before, header.landing-page nav.navbar ul li a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: #127402;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header.landing-page nav.navbar ul li a::before {
+  top: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+header.landing-page nav.navbar ul li a::after {
+  bottom: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+header.landing-page nav.navbar ul li a:hover::before, header.landing-page nav.navbar ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 header.landing-page nav.navbar ul li .home {
@@ -95,10 +122,27 @@ header.landing-page nav.navbar .hamburger button i {
 }
 
 header.landing-page .hamburger-menu {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: ease-in-out 0.1s;
-  transition: ease-in-out 0.1s;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFDAC5;
 }
 
 header.landing-page .hamburger-menu ul {
@@ -132,32 +176,11 @@ header.landing-page .hamburger-menu ul li a {
   font-size: 20px;
 }
 
-header.landing-page #hamburger {
-  display: none;
-}
-
 header.landing-page .hamburger-menu.active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #FFDAC5;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 section.landing {
@@ -483,11 +506,16 @@ section.about-us div.content aside ul li {
   color: #073300;
   font-weight: 400;
   margin: 15px 0;
+  position: relative;
+  padding-left: 30px;
   line-height: 26px;
 }
 
 section.about-us div.content aside ul li::before {
   content: url(../images/list-bullet.svg);
+  position: absolute;
+  left: 0;
+  top: 10%;
 }
 
 section.about-us div.content aside a {
@@ -1376,7 +1404,6 @@ footer .footer-area .bottom-area p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 20px;
     z-index: 2;
   }
   header.landing-page nav.navbar .hamburger button, header.other-pages nav.navbar .hamburger button {
@@ -1745,6 +1772,7 @@ footer .footer-area .bottom-area p {
   section.landing article aside a {
     font-size: 16px;
     margin-top: 50px;
+    text-align: center;
   }
   section.landing article .centered-div img {
     opacity: 50%;
@@ -1931,6 +1959,7 @@ header.other-pages nav.navbar ul li {
 }
 
 header.other-pages nav.navbar ul li a {
+  position: relative;
   color: #073300;
   font-family: "Lora";
   text-transform: uppercase;
@@ -1938,8 +1967,34 @@ header.other-pages nav.navbar ul li a {
   font-size: 18px;
 }
 
-header.other-pages nav.navbar ul li a:hover {
-  font-weight: 900;
+header.other-pages nav.navbar ul li a::before, header.other-pages nav.navbar ul li a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: #127402;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header.other-pages nav.navbar ul li a::before {
+  top: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+header.other-pages nav.navbar ul li a::after {
+  bottom: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+header.other-pages nav.navbar ul li a:hover::before, header.other-pages nav.navbar ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 header.other-pages nav.navbar ul li .home {
@@ -1956,10 +2011,27 @@ header.other-pages nav.navbar .hamburger button i {
 }
 
 header.other-pages .hamburger-menu {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: ease-in-out 0.1s;
-  transition: ease-in-out 0.1s;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFDAC5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 header.other-pages .hamburger-menu ul {
@@ -1993,32 +2065,11 @@ header.other-pages .hamburger-menu ul li a {
   font-size: 20px;
 }
 
-header.other-pages #hamburger {
-  display: none;
-}
-
 header.other-pages .hamburger-menu.active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #FFDAC5;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 section.landing-section {
@@ -2039,7 +2090,7 @@ section.landing-section .orange-box {
   background: #FFDAC5;
 }
 
-section.landing-section .content {
+section.landing-section .content, section.landing-section .content-categories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2057,9 +2108,9 @@ section.landing-section .content {
   height: 100vh;
 }
 
-section.landing-section .content figure {
+section.landing-section .content figure, section.landing-section .content-categories figure {
   z-index: 1;
-  width: 50%;
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2071,7 +2122,7 @@ section.landing-section .content figure {
           justify-content: center;
 }
 
-section.landing-section .content .content-text {
+section.landing-section .content .content-text, section.landing-section .content-categories .content-text {
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2090,7 +2141,7 @@ section.landing-section .content .content-text {
           justify-content: center;
 }
 
-section.landing-section .content .content-text p {
+section.landing-section .content .content-text p, section.landing-section .content-categories .content-text p {
   font-family: "Lora";
   font-weight: 500;
   font-size: 18px;
@@ -2098,7 +2149,7 @@ section.landing-section .content .content-text p {
   width: 70%;
 }
 
-section.landing-section .content .content-text a {
+section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
   background: #073300;
   color: white;
   cursor: pointer;
@@ -2191,20 +2242,42 @@ section.our-story article .content-story .content-text .orange-box {
   top: 140%;
 }
 
-section.our-story article .content-story .content-text ul {
-  list-style-image: url(../images/green-dot.png);
+section.our-story article .content-story .content-text .about-products {
+  position: relative;
 }
 
-section.our-story article .content-story .content-text ul li {
+section.our-story article .content-story .content-text .about-products ul {
+  list-style: none;
+}
+
+section.our-story article .content-story .content-text .about-products ul li {
   font-family: "Lora";
   font-weight: 400;
   color: #073300;
   font-size: 18px;
   margin: 30px 0;
+  position: relative;
+  padding-left: 30px;
 }
 
-section.our-story article .content-story .content-text ul li span {
+section.our-story article .content-story .content-text .about-products ul li span {
   font-weight: 700;
+}
+
+section.our-story article .content-story .content-text .about-products ul li::before {
+  content: url(../images/green-dot.png);
+  position: absolute;
+  left: 0;
+  top: 5%;
+}
+
+section.our-story article .content-story .content-text .about-products ul::before {
+  content: "";
+  position: absolute;
+  height: 60%;
+  border-left: 2px solid #127402;
+  top: 35px;
+  left: 10px;
 }
 
 section.our-story article .content-story .content-text .about-writer {
@@ -2282,10 +2355,10 @@ section.shop-all-products .link a {
   section.landing-section .orange-box {
     width: 80%;
   }
-  section.landing-section .content figure img {
+  section.landing-section .content figure img, section.landing-section .content-categories figure img {
     width: 100%;
   }
-  section.landing-section .content .content-text a {
+  section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
     padding: 20px 45px;
     font-size: 20px;
   }
@@ -2319,7 +2392,6 @@ section.shop-all-products .link a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 20px;
     z-index: 2;
   }
   header.other-pages nav.navbar .hamburger button {
@@ -2334,17 +2406,17 @@ section.shop-all-products .link a {
     height: 55%;
     top: 50%;
   }
-  section.landing-section .content figure {
+  section.landing-section .content figure, section.landing-section .content-categories figure {
     display: none;
   }
-  section.landing-section .content .content-text {
+  section.landing-section .content .content-text, section.landing-section .content-categories .content-text {
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
   }
-  section.landing-section .content .content-text p {
+  section.landing-section .content .content-text p, section.landing-section .content-categories .content-text p {
     text-align: center;
   }
   section.our-story article .content-story {
@@ -2377,13 +2449,13 @@ section.shop-all-products .link a {
 }
 
 @media screen and (max-width: 468px) {
-  section.landing-section .content .content-text h1 {
+  section.landing-section .content .content-text h1, section.landing-section .content-categories .content-text h1 {
     font-size: 50px;
   }
-  section.landing-section .content .content-text p {
+  section.landing-section .content .content-text p, section.landing-section .content-categories .content-text p {
     font-size: 16px;
   }
-  section.landing-section .content .content-text a {
+  section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
     padding: 20px 30px;
   }
   section.our-story article h1 {
@@ -2393,9 +2465,12 @@ section.shop-all-products .link a {
   section.our-story article .content-story figure img {
     width: 90%;
   }
-  section.our-story article .content-story .content-text ul li {
+  section.our-story article .content-story .content-text .about-products ul li {
     font-size: 16px;
     margin: 20px 0;
+  }
+  section.our-story article .content-story .content-text .about-products ul::before {
+    height: 65%;
   }
   section.our-story article .content-story .content-text .about-writer {
     margin-top: 40px;
@@ -2416,7 +2491,7 @@ section.shop-all-products .link a {
 }
 
 section.write-to-us {
-  margin: 150px 0;
+  margin-bottom: 150px;
 }
 
 section.write-to-us article {
@@ -2586,6 +2661,7 @@ section.connect .content ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2593,14 +2669,13 @@ section.connect .content ul li {
 
 section.connect .content ul li .orange-box {
   position: absolute;
-  width: 50%;
+  width: 60%;
   height: 100%;
   z-index: -1;
   background: #FFDAC5;
 }
 
 section.connect .content ul li img {
-  margin-left: 50px;
   width: 90%;
   height: 90%;
 }
@@ -2642,7 +2717,7 @@ section.connect .content ul li img {
     width: 80%;
   }
   section.write-to-us article .content-write .content-text {
-    width: 75%;
+    width: 100%;
   }
   section.write-to-us article .content-write .content-text .orange-box {
     display: none;
@@ -2661,10 +2736,8 @@ section.connect .content ul li img {
   }
   section.connect .content ul li {
     width: 45%;
+    margin: 0;
     margin-top: 50px;
-  }
-  section.connect .content ul li img {
-    margin-left: 15%;
   }
 }
 
@@ -2675,6 +2748,9 @@ section.connect .content ul li img {
   }
   section.write-to-us article .content-write figure img {
     width: 90%;
+  }
+  section.write-to-us article .content-write .content-text form a {
+    width: 100%;
   }
   section.information-other-pages .information-content ul.contact-ul {
     margin: 30px 0;
@@ -2714,6 +2790,16 @@ section.trending-other-products .trending-other-content .heading a {
   color: #073300;
 }
 
+section.trending-other-products .trending-other-content ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.trending-other-products .trending-other-content ul li .products-image {
+  width: 100%;
+}
+
 section.trending-other-products .trending-other-content .responsive-link {
   display: none;
 }
@@ -2748,6 +2834,521 @@ section.trending-other-products .trending-other-content .responsive-link {
 @media screen and (max-width: 426px) {
   section.trending-other-products .trending-other-content .responsive-link a {
     font-size: 32px;
+  }
+}
+
+section.landing-section .content-categories figure {
+  width: 35%;
+}
+
+section.landing-section .content-categories .content-text {
+  margin-top: 50px;
+}
+
+section.more-categories {
+  position: relative;
+}
+
+section.more-categories .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.more-categories .layout .left-bar {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section.more-categories .layout .left-bar h2 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 700;
+  color: #073300;
+}
+
+section.more-categories .layout .left-bar input {
+  background: #F0F0F0;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  font-family: "Lora";
+  color: #BDBDBD;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+
+section.more-categories .layout .left-bar .category-box, section.more-categories .layout .left-bar .price-box {
+  background: #F0F0F0;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px;
+}
+
+section.more-categories .layout .left-bar .category-box hr, section.more-categories .layout .left-bar .price-box hr {
+  width: 30%;
+  height: 0;
+  border: 1px solid #127402;
+  background: #127402;
+  outline: none;
+  margin: 10px 0;
+}
+
+section.more-categories .layout .left-bar .category-box a, section.more-categories .layout .left-bar .price-box a {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lora";
+  text-decoration: none;
+  color: #073300;
+  margin: 10px 0;
+}
+
+section.more-categories .layout .left-bar .price-box hr {
+  width: 60%;
+}
+
+section.more-categories .layout .left-bar .price-box p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lora";
+  text-decoration: none;
+  color: #073300;
+  margin: 10px 0;
+}
+
+section.more-categories .layout .right-section {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.more-categories .layout .right-section .upper-part {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.more-categories .layout .right-section .upper-part .hamburger {
+  display: none;
+}
+
+section.more-categories .layout .right-section .upper-part label {
+  display: none;
+}
+
+section.more-categories .layout .right-section .upper-part select {
+  outline: none;
+  border: none;
+  font-family: "Lora";
+  font-weight: 500;
+  font-size: 18px;
+  color: #073300;
+  background: #F0F0F0;
+  padding: 10px;
+}
+
+section.more-categories .layout .right-section .upper-part select option {
+  border: none;
+}
+
+section.more-categories .layout .right-section .upper-part .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.more-categories .layout .right-section .upper-part .pagination a {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-decoration: none;
+  color: #073300;
+  font-size: 30px;
+  margin: 0 15px 15px 15px;
+}
+
+section.more-categories .layout .right-section .upper-part .pagination a i {
+  font-size: 20px;
+}
+
+section.more-categories .layout .right-section .lower-part .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul {
+  margin-top: 30px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  font-size: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul li .products-image {
+  width: 100%;
+  height: 368px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFF4EE;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul li .products-image img {
+  padding: 10px;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul li img {
+  margin: 20px 0;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul li h4 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: #073300;
+  text-align: center;
+  width: 80%;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul li span {
+  color: #073300;
+  font-family: "Playfair Display";
+  font-weight: 900;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul li a {
+  background: #073300;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Lora";
+  font-weight: 700;
+  padding: 20px 60px;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 40px 0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.more-categories .leftBar {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+  background: #FFF4EE;
+}
+
+section.more-categories .leftBar span {
+  color: #073300;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+section.more-categories .leftBar span::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00d";
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+section.more-categories .leftBar h2 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 700;
+  color: #073300;
+}
+
+section.more-categories .leftBar input {
+  background: #F0F0F0;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  font-family: "Lora";
+  color: #BDBDBD;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+
+section.more-categories .leftBar .category-box, section.more-categories .leftBar .price-box {
+  background: #F0F0F0;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px;
+}
+
+section.more-categories .leftBar .category-box hr, section.more-categories .leftBar .price-box hr {
+  width: 30%;
+  height: 0;
+  border: 1px solid #127402;
+  background: #127402;
+  outline: none;
+  margin: 10px 0;
+}
+
+section.more-categories .leftBar .category-box a, section.more-categories .leftBar .price-box a {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lora";
+  text-decoration: none;
+  color: #073300;
+  margin: 10px 0;
+}
+
+section.more-categories .leftBar .price-box hr {
+  width: 60%;
+}
+
+section.more-categories .leftBar .price-box p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lora";
+  text-decoration: none;
+  color: #073300;
+  margin: 10px 0;
+}
+
+section.more-categories .leftBar.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.pagination {
+  width: 100%;
+}
+
+section.pagination .links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.pagination .links a {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-decoration: none;
+  color: #073300;
+  font-size: 60px;
+  margin: 15px 40px;
+}
+
+section.pagination .links a i {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  section.landing-section .content-categories .content-text {
+    width: 90%;
+    margin: 0;
+  }
+  section.landing-section .content-categories .content-text h1 {
+    text-align: center;
+  }
+  section.more-categories .layout .left-bar {
+    display: none;
+  }
+  section.more-categories .layout .right-section {
+    width: 100%;
+  }
+  section.more-categories .layout .right-section .upper-part {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  section.more-categories .layout .right-section .upper-part .pagination {
+    margin-left: auto;
+  }
+  section.more-categories .layout .right-section .upper-part .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 20px;
+    z-index: 1;
+  }
+  section.more-categories .layout .right-section .upper-part .hamburger button {
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  section.more-categories .layout .right-section .upper-part .hamburger button i {
+    font-size: 35px;
+  }
+  section.more-categories .left-bar.active .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 20px;
+    z-index: 1;
+  }
+  section.more-categories .left-bar.active .hamburger button {
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  section.more-categories .left-bar.active .hamburger button i {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.landing-section .content-categories .content-text h1 {
+    font-size: 40px;
+  }
+  section.more-categories .layout .right-section .upper-part {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.more-categories .layout .right-section .upper-part .pagination {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    margin-top: 40px;
+  }
+  section.more-categories .layout .right-section .lower-part .products ul li {
+    width: 100%;
+  }
+  section.more-categories .leftBar {
+    width: 100%;
+  }
+  section.pagination {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

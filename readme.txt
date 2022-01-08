@@ -2,20 +2,6 @@ Type: Template
 
 Name: Jewel'ore
 
-Progress: 
-
-Initialized the template along with landing section and information section done
-
-
-<----------Section:---------->
-
-
-Landing page: Desktop, Tablet and Mobile done 
-
-Information section: Desktop, Tablet and Mobile done
-
-More-products: Desktop,Tablet and Mobile done
-
 
 <----------Update 1----------> 
 
@@ -139,3 +125,23 @@ Information section and More products both are completely responsive along with 
 6. Contact page let's connect section design completed for desktop
 
 7. Contact page let's connect section design fully responsive for tablet and mobile
+
+<----------Update 10---------->
+
+1. Header issues fixed
+
+2. Initialization of categories page
+
+3. Landing section of categories page fully completed and responsive
+
+4. Category section desktop design completed
+
+5. Category section responsive design completed for mobile and tablet
+
+6. Hamburger added for category section
+
+7. Hover animation added in navbar 
+
+8. Category navbar completed
+
+9. Category navbar design responsive for mobile and tablet

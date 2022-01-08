@@ -304,7 +304,6 @@
             .hamburger{
                 display: flex;
                 align-items: center;
-                margin: 0 20px;
                 z-index: 2;
 
                 button{
@@ -871,6 +870,7 @@
                 a{
                     font-size: 16px;
                     margin-top: 50px;
+                    text-align: center;
                 }
             }
 

@@ -1,7 +1,7 @@
 //Our Story
 
 section.write-to-us{
-    margin: 150px 0;
+    margin-bottom: 150px;
 
     article{
         display: flex;
@@ -123,18 +123,19 @@ section.connect{
                 width: 30%;
                 position: relative;
                 display: flex;
+                margin: 20px;
                 align-items: center;
 
                 .orange-box{
                     position: absolute;
-                    width: 50%;
+                    width: 60%;
                     height: 100%;
                     z-index: -1;
                     background: $secondary-color;
                 }
 
                 img{
-                    margin-left: 50px;
+                    // margin-left: 50px;
                     width: 90%;
                     height: 90%;
                 }

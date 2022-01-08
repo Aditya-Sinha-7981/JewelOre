@@ -34,6 +34,7 @@ header.landing-page{
                 margin: 5px 10px;
 
                 a{
+                    position: relative;
                     color: $primary-color;
                     font-family: $primaryFont;
                     text-transform: uppercase;
@@ -41,8 +42,29 @@ header.landing-page{
                     font-size: 18px;
                 }
 
-                a:hover{
-                    font-weight: 900;
+                a::before, a::after{
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    background: $accent;
+                    left: 0;
+                    transform: scaleX(0);
+                    transition: all 0.3s;
+                }
+
+                a::before{
+                    top: 0;
+                    transform-origin: left;
+                }
+
+                a::after{
+                    bottom: 0;
+                    transform-origin: right;
+                }
+
+                a:hover::before, a:hover::after{
+                    transform: scaleX(1);
                 }
 
                 .home{
@@ -66,8 +88,18 @@ header.landing-page{
     }
 
     .hamburger-menu{
-        transform: scale(0);
-        transition: ease-in-out 0.1s;
+        transform: translateX(200%);
+        transition: all 0.3s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background: $secondary-color;
 
         ul{
             list-style: none;
@@ -92,25 +124,9 @@ header.landing-page{
         }
     }
 
-    #hamburger{
-        display: none;
-        // overflow: hidden;
-        // transform: scale(0);
-    }
-
     .hamburger-menu.active{
-        transform: scale(1);
-        transition: ease-in-out 0.3s;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        background: $secondary-color;
+        transform: translateX(0%);
+        transition: all 0.3s;
     }
 }
 
@@ -311,10 +327,6 @@ section.about-us{
             align-items: flex-start;
             padding: 0 40px;
 
-            // h1{
-            //     font-size: 50px;
-            // }
-
             .responsive-image{
                 display: none;
                 width: 100%;
@@ -342,16 +354,16 @@ section.about-us{
                     color: $primary-color;
                     font-weight: 400;
                     margin: 15px 0;
+                    position: relative;
+                    padding-left: 30px;
                     line-height: 26px;
-                    // list-style-image: url(../images/list-bullet.svg);
                 }
 
-                // li::marker{
-                //     margin: 20px;
-                // }
-
                 li::before{
-                    content: url(../images/list-bullet.svg)
+                    content: url(../images/list-bullet.svg);
+                    position: absolute;
+                    left: 0;
+                    top: 10%;
                 }
             }
 

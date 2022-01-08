@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Categories</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+
     <!-- Navbar for other pages -->
 
     <header class="other-pages">
@@ -52,105 +52,136 @@
         <div class="center-div">
             <div class="orange-box"></div>
 
-            <div class="content">
+            <div class="content-categories">
                 <figure>
-                    <img src="assets/images/big ring2.png" alt="Landing section big ring">
+                    <img src="assets/images/model wearing necklace.png" alt="Landing section model with necklace">
                 </figure>
 
                 <div class="content-text">
-                    <h1>Contact Us</h1>
-                    <p>Gete your queries answered within 24 hrs of form submission</p>
-                    <a href="#">Check Jewels</a>
+                    <h1>Neck Accessories</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Our story -->
+    <!-- More Categories -->
 
-    <section class="write-to-us">
+    <section class="more-categories">
         <div class="center-div">
 
-            <article>
-                <h1>Write to us</h1>
-                <div class="content-write">
-                    <figure>
-                        <img src="assets/images/heart-shaped-pendant.png" alt="Cover photo for our story section">
-                    </figure>
-
-                    <div class="content-text">
-                        <div class="orange-box"></div>
-                        <form>
-                            <input type="text" name="Name" placeholder="Your Name">
-                            <input type="text" name="Email" placeholder="Your email id">
-                            <input type="tel" name="Phone Number" placeholder="Phone Number" maxlength="10">
-                            <input type="text" name="Query" placeholder="Your Query">
-                            <a href="#">Submit</a>
-                        </form>
+            <!-- Layout as outer div for right and left side -->
+            <div class="layout">
+                <div class="left-bar">
+                    <input type="text" placeholder="Search Here" name="Search-bar">
+                    <div class="category-box">
+                        <h2>Categories</h2>
+                        <hr>
+                        <a href="#">Ear Accessories</a>
+                        <a href="#">Finger Accessories</a>
+                    </div>
+                    <div class="price-box">
+                        <h2>Price Range</h2>
+                        <hr>
+                        <p>Rs.400 - Rs.5000</p>
                     </div>
                 </div>
-            </article>
+                <div class="right-section">
+                    <div class="upper-part">
+                        <div class="hamburger">
+                            <button class="category-btn"><i class="fas fa-bars" id="category-icon"></i></button>
+                        </div>
+                        <label for="sort" placeholder="Default Sorting"></label>
+                        <select name="sort" id="sort">
+                            <option value="">Sort Here</option>
+                            <option value="ears">Ears</option>
+                            <option value="neck">Neck</option>
+                            <option value="finger">Finger</option>
+                        </select>
+                        <div class="pagination">
+                            <a href="#"><i class="fas fa-arrow-left"></i></a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="lower-part">
+                        <div class="products">
+                            <ul>
+                                <li>
+                                    <div class="products-image">
+                                        <img src="assets/images/gold finger ring.png" alt="Gold finger ring">
+                                    </div>
+                                    <img src="assets/images/5-stars.png" alt="5-stars">
+                                    <h4>Gold finger ring</h4>
+                                    <span>Rs.637/-</span>
+                                    <a href="#">Add to cart</a>
+                                </li>
+                                <li>
+                                    <div class="products-image">
+                                        <img src="assets/images/fun filled silver ring.png" alt="Fun filled silver finger ring">
+                                    </div>
+                                    <img src="assets/images/5-stars.png" alt="5-stars">
+                                    <h4>Fun filler silver finger ring</h4>
+                                    <span>Rs.400/-</span>
+                                    <a href="#">Add to cart</a>
+                                </li>
+                                <li>
+                                    <div class="products-image">
+                                        <img src="assets/images/white stone earring.png" alt="White stone earring">
+                                    </div>
+                                    <img src="assets/images/5-stars.png" alt="5-stars">
+                                    <h4>White stone earring </h4>
+                                    <span>Rs.400/-</span>
+                                    <a href="#">Add to cart</a>
+                                </li>
+                                <li>
+                                    <div class="products-image">
+                                        <img src="assets/images/white stone earring.png" alt="White stone earring">
+                                    </div>
+                                    <img src="assets/images/5-stars.png" alt="5-stars">
+                                    <h4>White stone earring </h4>
+                                    <span>Rs.400/-</span>
+                                    <a href="#">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-    </section>
 
-    <!-- Information Section for other pages -->
-    
-    <section class="information-other-pages">
-        <div class="center-div">
-            <div class="information-content">
-               
-                <ul class="contact-ul">  <!-- Information -->
-                    <li>
-                        <img src="assets/images/truck-icon.png" alt="Truck Icon">
-                        <h5>Phone</h2>
-                        <a href="#">+91 9099089897</a>
-                    </li>
-                    <li>
-                        <img src="assets/images/left-arrow-icon.png" alt="Left Arrow Icon">
-                        <h5>Email us</h2>
-                        <a href="#">reach@jewellore.com</a>
-                    </li>
-                    <li>
-                        <img src="assets/images/heart-icon.png" alt="Heart Icon">
-                        <h5>Write us feedback</h2>
-                        <a href="#">Write your impressive points</a>
-                    </li>
-                    <li>
-                        <img src="assets/images/shield-icon.png" alt="Shield Icon">
-                        <h5>Address</h2>
-                        <a href="#">Banglore, Karnataka</a>
-                    </li>
-                </ul>
-                
+        <!-- hamburger categories -->
+
+        <div class="leftBar" id="leftBar">
+            <span class="hide">Hide Filters</span>
+            <input type="text" placeholder="Search Here" name="Search-bar">
+            <div class="category-box">
+                <h2>Categories</h2>
+                <hr>
+                <a href="#">Ear Accessories</a>
+                <a href="#">Finger Accessories</a>
+            </div>
+            <div class="price-box">
+                <h2>Price Range</h2>
+                <hr>
+                <p>Rs.400 - Rs.5000</p>
             </div>
         </div>
     </section>
 
-    <!-- Let's Connect -->
+    <!-- shop.htmlagination -->
 
-    <section class="connect">
+    <section class="pagination">
         <div class="center-div">
-
-            <div class="content">
-                <h1>Let's connect on Instagram</h1>
-                <ul>
-                    <li>
-                        <div class="orange-box"></div>
-                        <img src="assets/images/instagram post.png" alt="Connect posts">
-                    </li>
-                    <li>
-                        <div class="orange-box"></div>
-                        <img src="assets/images/instagram post.png" alt="Connect posts">
-                    </li>
-                    <li>
-                        <div class="orange-box"></div>
-                        <img src="assets/images/instagram post.png" alt="Connect posts">
-                    </li>
-                </ul>
+            <div class="links">
+                <a href="#"><i class="fas fa-arrow-left"></i></a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
             </div>
-
         </div>
     </section>
 
@@ -216,8 +247,6 @@
 
         </div>
     </footer>
-
-
 
 
     <script src="assets/js/javascript.js"></script>
