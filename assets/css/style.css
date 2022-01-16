@@ -16,6 +16,14 @@ h1 {
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .center-div {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
 header.landing-page {
   position: fixed;
   width: 100%;
@@ -200,9 +208,9 @@ section.landing article {
           flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -211,6 +219,14 @@ section.landing article {
 
 section.landing article aside {
   width: 40%;
+  margin: 100px 0 30px 30px;
+  z-index: 1;
+  background: #FFDAC5 url(../images/golden-circle.png) no-repeat;
+  background-position: right;
+  background-position-y: top;
+}
+
+section.landing article aside .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,22 +244,22 @@ section.landing article aside {
       align-content: center;
   color: #073300;
   font-family: "Lora";
-  margin: 100px 0 30px 30px;
-  z-index: 1;
+  margin-left: -420px;
+  width: 100%;
 }
 
-section.landing article aside h1 {
+section.landing article aside .container h1 {
   font-size: 65px;
   margin: 40px 0 0 0;
 }
 
-section.landing article aside p {
+section.landing article aside .container p {
   margin: 20px 0;
   font-size: 1.125em;
   line-height: 26px;
 }
 
-section.landing article aside a {
+section.landing article aside .container a {
   background: #073300;
   color: white;
   cursor: pointer;
@@ -260,26 +276,20 @@ section.landing article aside a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-section.landing article .centered-div {
-  position: absolute;
-  width: 570px;
-  height: 322px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background: #FFDAC5;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  z-index: 0;
+section.landing article aside .container a:hover {
+  background: #127402;
 }
 
-section.landing article .centered-div img {
-  margin: 0 25px 0 0;
+@media screen and (max-width: 768px) {
+  section.landing article aside .container a {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.landing article aside .container a {
+    font-size: 18px;
+  }
 }
 
 section.information, section.information-other-pages {
@@ -535,6 +545,22 @@ section.about-us div.content aside a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+section.about-us div.content aside a:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.about-us div.content aside a {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.about-us div.content aside a {
+    font-size: 18px;
+  }
+}
+
 section.about-us div.content figure {
   width: 50%;
   display: -webkit-box;
@@ -609,7 +635,6 @@ section.trending-other-products .trending-other-content ul li {
 
 section.trending-other-products .trending-other-content ul li .products-image {
   width: 90%;
-  height: 368px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,7 +669,7 @@ section.trending-other-products .trending-other-content ul li span {
   font-weight: 900;
 }
 
-section.trending-other-products .trending-other-content ul li a {
+section.trending-other-products .trending-other-content ul li a.button {
   background: #073300;
   color: white;
   cursor: pointer;
@@ -659,6 +684,22 @@ section.trending-other-products .trending-other-content ul li a {
   margin: 40px 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.trending-other-products .trending-other-content ul li a.button:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.trending-other-products .trending-other-content ul li a.button {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.trending-other-products .trending-other-content ul li a.button {
+    font-size: 18px;
+  }
 }
 
 section.company-information {
@@ -829,6 +870,22 @@ section.most-bought article .about-item .item-description a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+section.most-bought article .about-item .item-description a:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.most-bought article .about-item .item-description a {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.most-bought article .about-item .item-description a {
+    font-size: 18px;
+  }
+}
+
 section.testimonials {
   margin-top: 200px;
   width: 100%;
@@ -888,6 +945,19 @@ section.testimonials .testimonial-area .testimonial .testimonial-content {
   padding: 100px 0 50px 0;
 }
 
+section.testimonials .testimonial-area .testimonial .testimonial-content #carousel > .tns-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -904,6 +974,10 @@ section.testimonials .testimonial-area .testimonial .testimonial-content .carous
 
 section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item div h5 {
   margin-top: 40px;
+}
+
+section.testimonials .testimonial-area .testimonial .testimonial-content .tns-outer {
+  overflow: hidden !important;
 }
 
 section.subscribe {
@@ -956,6 +1030,22 @@ section.subscribe .subscribe-content .subscribe-btn a {
   margin: 40px 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.subscribe .subscribe-content .subscribe-btn a:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.subscribe .subscribe-content .subscribe-btn a {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.subscribe .subscribe-content .subscribe-btn a {
+    font-size: 18px;
+  }
 }
 
 section.recommended-product {
@@ -1049,6 +1139,22 @@ section.recommended-product .recommended .product-info a {
   margin: 40px 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.recommended-product .recommended .product-info a:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.recommended-product .recommended .product-info a {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.recommended-product .recommended .product-info a {
+    font-size: 18px;
+  }
 }
 
 footer {
@@ -1303,6 +1409,12 @@ footer .footer-area .bottom-area p {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  section.about-us div.content aside {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 991px) {
   section.about-us .orange-box {
     display: none;
@@ -1368,10 +1480,6 @@ footer .footer-area .bottom-area p {
   section.most-bought article .about-item .item-description h3 {
     font-size: 25px;
   }
-  section.most-bought article .about-item .item-description a {
-    padding: 15px 40px;
-    font-size: 20px;
-  }
   section.most-bought article .about-item .item-description .interact-buttons button {
     padding: 15px;
   }
@@ -1381,11 +1489,6 @@ footer .footer-area .bottom-area p {
 }
 
 @media screen and (max-width: 768px) {
-  .center-div {
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 90%;
-  }
   header.landing-page #hamburger, header.other-pages #hamburger {
     display: block;
   }
@@ -1466,17 +1569,11 @@ footer .footer-area .bottom-area p {
   section.more-products figure ul.more-products li a {
     font-size: 20px;
   }
-  section.about-us div.content aside {
-    padding: 0 20px;
-  }
   section.about-us div.content aside p {
     font-size: 16px;
   }
   section.about-us div.content aside ul li {
     font-size: 16px;
-  }
-  section.about-us div.content aside a {
-    font-size: 20px;
   }
   section.trending-other-products .trending-other-content h1 {
     font-size: 45px;
@@ -1492,15 +1589,10 @@ footer .footer-area .bottom-area p {
   section.trending-other-products .trending-other-content ul li h4 {
     width: 90%;
   }
-  section.trending-other-products .trending-other-content ul li .products-image {
-    max-height: 246px;
-  }
   section.trending-other-products .trending-other-content ul li .products-image img {
     max-width: 70%;
-    max-height: 80%;
   }
   section.trending-other-products .trending-other-content ul li a {
-    font-size: 20px;
     padding: 15px 30px;
     margin: 20px 0 40px 0;
   }
@@ -1777,8 +1869,14 @@ footer .footer-area .bottom-area p {
   section.landing article .centered-div img {
     opacity: 50%;
   }
+  section.about-us div.content aside {
+    width: 100%;
+  }
   section.about-us div.content aside h1 {
     font-size: 50px;
+  }
+  section.about-us div.content aside .responsive-image img {
+    width: 100%;
   }
   section.about-us div.content aside a {
     font-size: 16px;
@@ -1815,7 +1913,7 @@ footer .footer-area .bottom-area p {
   section.more-products figure ul.more-products li img.products {
     width: 75%;
   }
-  section.more-products figure ul.more-products li a {
+  section.more-products figure ul.more-products li a.button {
     font-size: 25px;
   }
   section.more-products figure ul.more-products li.middle-category {
@@ -1840,16 +1938,11 @@ footer .footer-area .bottom-area p {
   }
   section.trending-other-products .trending-other-content ul li .products-image img {
     max-width: 100%;
-    max-height: 90%;
-  }
-  section.trending-other-products .trending-other-content ul li a {
-    font-size: 20px;
-    padding: 15px 40px;
   }
   section.company-information ul li {
     width: 45%;
     margin: 6px 0;
-    padding: 50px 0;
+    padding: 35px 0;
   }
   section.company-information ul li h3 {
     font-size: 45px;
@@ -1858,7 +1951,8 @@ footer .footer-area .bottom-area p {
     font-size: 20px;
   }
   section.most-bought article h1 {
-    font-size: 24px;
+    font-size: 40px;
+    text-align: center;
   }
   section.most-bought article .about-item figure {
     width: 90%;
@@ -1874,7 +1968,7 @@ footer .footer-area .bottom-area p {
     margin: 0;
   }
   section.testimonials .testimonial-area .testimonial img {
-    width: 40%;
+    width: 50%;
   }
   section.testimonials .testimonial-area .testimonial .testimonial-content h5 {
     font-size: 20px;
@@ -1890,13 +1984,6 @@ footer .footer-area .bottom-area p {
   section.subscribe .subscribe-content .subscribe-text h1 {
     font-size: 35px;
     width: 90%;
-  }
-  section.subscribe .subscribe-content .subscribe-btn a {
-    font-size: 20px;
-  }
-  section.recommended-product .recommended .product-info a {
-    font-size: 20px;
-    padding: 20px 40px;
   }
   footer .footer-area .bottom-area p {
     text-align: center;
@@ -2078,18 +2165,6 @@ section.landing-section {
   background-size: auto;
 }
 
-section.landing-section .orange-box {
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 55%;
-  left: 50%;
-  width: 773px;
-  height: 468px;
-  z-index: 0;
-  background: #FFDAC5;
-}
-
 section.landing-section .content, section.landing-section .content-categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2128,7 +2203,7 @@ section.landing-section .content .content-text, section.landing-section .content
   display: -ms-flexbox;
   display: flex;
   margin-top: 150px;
-  width: 50%;
+  width: 35%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2139,6 +2214,14 @@ section.landing-section .content .content-text, section.landing-section .content
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #FFDAC5;
+  padding: 50px 0 50px 250px;
+  margin-left: -200px;
+  z-index: 0;
+}
+
+section.landing-section .content .content-text .responsive-image, section.landing-section .content-categories .content-text .responsive-image {
+  display: none;
 }
 
 section.landing-section .content .content-text p, section.landing-section .content-categories .content-text p {
@@ -2164,6 +2247,22 @@ section.landing-section .content .content-text a, section.landing-section .conte
   margin: 40px 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.landing-section .content .content-text a:hover, section.landing-section .content-categories .content-text a:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
+    font-size: 18px;
+  }
 }
 
 section.our-story {
@@ -2349,18 +2448,24 @@ section.shop-all-products .link a {
     height: 85%;
     top: 122%;
   }
-}
-
-@media screen and (max-width: 990px) {
-  section.landing-section .orange-box {
-    width: 80%;
-  }
-  section.landing-section .content figure img, section.landing-section .content-categories figure img {
-    width: 100%;
+  section.landing-section .content .content-text, section.landing-section .content-categories .content-text {
+    margin-top: 80px;
+    width: 45%;
+    margin-left: -200px;
+    z-index: 0;
   }
   section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
     padding: 20px 45px;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  section.landing-section .content figure, section.landing-section .content-categories figure {
+    width: 50%;
+  }
+  section.landing-section .content figure img, section.landing-section .content-categories figure img {
+    width: 100%;
   }
   section.our-story article .content-story .content-text .orange-box {
     height: 85%;
@@ -2402,10 +2507,6 @@ section.shop-all-products .link a {
   header.other-pages nav.navbar .hamburger button i {
     font-size: 35px;
   }
-  section.landing-section .orange-box {
-    height: 55%;
-    top: 50%;
-  }
   section.landing-section .content figure, section.landing-section .content-categories figure {
     display: none;
   }
@@ -2414,9 +2515,31 @@ section.shop-all-products .link a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0;
+    padding: 20px 0;
+    margin: 100px 0 0 0;
+  }
+  section.landing-section .content .content-text .responsive-image, section.landing-section .content-categories .content-text .responsive-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+  }
+  section.landing-section .content .content-text .responsive-image img, section.landing-section .content-categories .content-text .responsive-image img {
+    width: 50%;
+    margin: 15px 0;
+  }
+  section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
+    padding: 15px 30px;
+    font-size: 25px;
   }
   section.landing-section .content .content-text p, section.landing-section .content-categories .content-text p {
+    margin: 0;
     text-align: center;
   }
   section.our-story article .content-story {
@@ -2456,14 +2579,20 @@ section.shop-all-products .link a {
     font-size: 16px;
   }
   section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
-    padding: 20px 30px;
+    font-size: 18px;
   }
   section.our-story article h1 {
     margin: 50px 0;
     font-size: 40px;
   }
+  section.our-story article .content-story figure {
+    width: 100%;
+  }
   section.our-story article .content-story figure img {
     width: 90%;
+  }
+  section.our-story article .content-story .content-text {
+    width: 100%;
   }
   section.our-story article .content-story .content-text .about-products ul li {
     font-size: 16px;
@@ -2614,6 +2743,22 @@ section.write-to-us article .content-write .content-text form a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   width: 95%;
+}
+
+section.write-to-us article .content-write .content-text form a:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.write-to-us article .content-write .content-text form a {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.write-to-us article .content-write .content-text form a {
+    font-size: 18px;
+  }
 }
 
 section.information-other-pages .information-content ul.contact-ul li a {
@@ -3113,6 +3258,22 @@ section.more-categories .layout .right-section .lower-part .products ul li a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+section.more-categories .layout .right-section .lower-part .products ul li a:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.more-categories .layout .right-section .lower-part .products ul li a {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.more-categories .layout .right-section .lower-part .products ul li a {
+    font-size: 18px;
+  }
+}
+
 section.more-categories .leftBar {
   position: fixed;
   top: 0;
@@ -3349,6 +3510,306 @@ section.pagination .links a i {
   }
   section.pagination {
     display: none;
+  }
+}
+
+section.item-detail .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.item-detail .container .product-images {
+  width: 40%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.item-detail .container .product-images img {
+  background: #FFF4EE;
+}
+
+section.item-detail .container .product-images figure.upper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #FFF4EE;
+}
+
+section.item-detail .container .product-images div.bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+section.item-detail .container .product-images div.bottom div {
+  width: 30%;
+  background: #FFF4EE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.item-detail .container .product-images div.bottom div img {
+  margin: 20px 0;
+  cursor: pointer;
+  width: 80%;
+  max-width: 100%;
+}
+
+section.item-detail .container .about-product {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+section.item-detail .container .about-product .container-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #073300;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+section.item-detail .container .about-product .container-item h3 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Playfair Display";
+}
+
+section.item-detail .container .about-product .container-item h5 {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Lora";
+}
+
+section.item-detail .container .about-product .container-item .interact-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.item-detail .container .about-product .container-item .interact-buttons button {
+  background: transparent;
+  padding: 20px;
+  outline: none;
+  border: 1px solid #E0E0E0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+section.item-detail .container .about-product .container-item .interact-buttons button:not(:first-child):not(:last-child) {
+  padding: 0 30px;
+}
+
+section.item-detail .container .about-product .container-item a.cart {
+  background: #073300;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Lora";
+  font-weight: 700;
+  padding: 20px 60px;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 40px 0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.item-detail .container .about-product .container-item a.cart:hover {
+  background: #127402;
+}
+
+@media screen and (max-width: 768px) {
+  section.item-detail .container .about-product .container-item a.cart {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.item-detail .container .about-product .container-item a.cart {
+    font-size: 18px;
+  }
+}
+
+section.item-detail .container .about-product .container-item .tags {
+  font-family: "Lora";
+}
+
+section.item-detail .container .about-product .container-item .tags h6 {
+  font-size: 18px;
+  display: inline;
+}
+
+section.item-detail .container .about-product .container-item .tags span {
+  border: 1px solid #F0F0F0;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 0 5px;
+}
+
+section.item-detail .container .about-product .container-item .share {
+  font-family: "Lora";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+section.item-detail .container .about-product .container-item .share h6 {
+  font-size: 18px;
+  display: inline;
+}
+
+section.item-detail .container .about-product .container-item .share a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0 5px;
+}
+
+section.item-detail .container .about-product .container-item .share a i {
+  cursor: pointer;
+  color: #FFDAC5;
+  background: #127402;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  section.item-detail .container .product-images figure.upper img {
+    width: 80%;
+  }
+  section.item-detail .container .product-images figure.bottom img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.item-detail .container .about-product .container-item h3 {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+  section.item-detail .container .about-product .container-item h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 671px) {
+  section.item-detail .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.item-detail .container .product-images {
+    width: 100%;
+  }
+  section.item-detail .container .about-product {
+    width: 100%;
+  }
+  section.item-detail .container .about-product .container-item h3 {
+    font-size: 30px;
+  }
+  section.item-detail .container .about-product .container-item h5 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.item-detail .container .about-product .container-item .tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.item-detail .container .about-product .container-item .tags span {
+    margin: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

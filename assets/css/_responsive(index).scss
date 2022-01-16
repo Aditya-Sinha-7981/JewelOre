@@ -135,6 +135,21 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+
+    //About Us section
+
+    section.about-us{
+
+        div.content{
+
+            aside{
+                padding: 0;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 991px) {
 
     //About Us section
@@ -243,11 +258,6 @@
                         font-size: 25px;
                     }
 
-                    a{
-                        padding: 15px 40px;
-                        font-size: 20px;
-                    }
-
                     .interact-buttons{
 
                         button{
@@ -277,15 +287,6 @@
 
 @media screen and (max-width: 768px) {
 
-    
-    // Center div
-
-    .center-div{
-        max-width: 1400px;
-        margin: 0 auto;
-        width: 90%;
-    }
-    
     //navbar
 
     header.landing-page, header.other-pages{
@@ -409,7 +410,6 @@
         div.content{
 
             aside{
-                padding: 0 20px;
                 
                 p{
                     font-size: 16px;
@@ -420,10 +420,6 @@
                     li{
                         font-size: 16px;
                     }
-                }
-
-                a{
-                    font-size: 20px;
                 }
             }
 
@@ -453,16 +449,15 @@
 
                     .products-image{
 
-                        max-height: 246px;
+                        // max-height: 246px;
 
                         img{
                             max-width: 70%;
-                            max-height: 80%;
+                            // max-height: 80%;
                         }
                     }
 
                     a{
-                        font-size: 20px;
                         padding: 15px 30px;
                         margin: 20px 0 40px 0;
                     }
@@ -846,7 +841,7 @@
 
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width: 426px) {
 
     // Section: Landing section
 
@@ -890,9 +885,17 @@
         div.content{
 
             aside{
+                width: 100%;
 
                 h1{
                     font-size: 50px;
+                }
+
+                .responsive-image{
+                    
+                    img{
+                        width: 100%;
+                    }
                 }
 
                 a{
@@ -946,7 +949,7 @@
                         width: 75%;
                     }
 
-                    a{
+                    a.button{
                         font-size: 25px;
                     }
                 }
@@ -981,13 +984,8 @@
 
                         img{
                             max-width: 100%;
-                            max-height: 90%;
+                            // max-height: 90%;
                         }
-                    }
-
-                    a{
-                        font-size: 20px;
-                        padding: 15px 40px;
                     }
                 }
             }
@@ -1003,7 +1001,7 @@
             li{
                 width: 45%;
                 margin: 6px 0;
-                padding: 50px 0;
+                padding: 35px 0;
 
                 h3{
                     font-size: 45px;
@@ -1023,7 +1021,8 @@
         article{
 
             h1{
-                font-size: 24px;
+                font-size: 40px;
+                text-align: center;
             }
 
             .about-item{
@@ -1060,7 +1059,7 @@
             .testimonial{
 
                 img{
-                    width: 40%;
+                    width: 50%;
                 }
 
                 .testimonial-content{
@@ -1086,29 +1085,6 @@
                 h1{
                     font-size: 35px;
                     width: 90%;
-                }
-            }
-
-            .subscribe-btn{
-
-                a{
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-
-    //Recommended Product
-
-    section.recommended-product{
-
-        .recommended{
-
-            .product-info{
-
-                a{
-                    font-size: 20px;
-                    padding: 20px 40px;
                 }
             }
         }

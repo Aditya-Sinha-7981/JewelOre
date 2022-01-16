@@ -17,6 +17,26 @@
             }
         }
     }
+
+    //Landing Section
+
+    section.landing-section{
+
+        .content, .content-categories{
+
+            .content-text{
+                margin-top: 80px;
+                width: 45%;
+                margin-left: -200px;
+                z-index: 0;
+
+                a{
+                    padding: 20px 45px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -25,24 +45,13 @@
 
     section.landing-section{
 
-        .orange-box{
-            width: 80%;
-        }
-
         .content, .content-categories{
 
             figure{
+                width: 50%;
 
                 img{
                     width: 100%;
-                }
-            }
-
-            .content-text{
-
-                a{
-                    padding: 20px 45px;
-                    font-size: 20px;
                 }
             }
         }
@@ -118,11 +127,6 @@
 
     section.landing-section{
 
-        .orange-box{
-            height: 55%;
-            top: 50%;
-        }
-
         .content, .content-categories{
 
             figure{
@@ -132,9 +136,28 @@
             .content-text{
                 width: 100%;
                 align-items: center;
-                margin: 0;
+                padding: 20px 0;
+                margin: 100px 0 0 0;
+
+                .responsive-image{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50%;
+
+                    img{
+                        width: 50%;
+                        margin: 15px 0;
+                    }
+                }
+
+                a{
+                    padding: 15px 30px;
+                    font-size: 25px;
+                }
 
                 p{
+                    margin: 0;
                     text-align: center;
                 }
             }
@@ -207,7 +230,7 @@
                 }
 
                 a{
-                    padding: 20px 30px;        
+                    font-size: 18px;       
                 }
             }
         }
@@ -227,6 +250,7 @@
             .content-story{
 
                 figure{
+                    width: 100%;
 
                     img{
                         width: 90%;
@@ -234,6 +258,8 @@
                 }
 
                 .content-text{
+                    width: 100%;
+
                     
                     .about-products{
 

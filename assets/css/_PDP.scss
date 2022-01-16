@@ -1,0 +1,152 @@
+section.item-detail{
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        padding-top: 200px;
+        justify-content: space-between;
+
+        .product-images{
+            width: 40%;
+            // display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+
+            img{
+                background: #FFF4EE;
+            }
+
+            figure.upper{
+                width: 100%;
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+                align-content: center;
+                background: #FFF4EE;
+            }
+
+            div.bottom{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+
+                div{
+                    width: 30%;
+                    background: #FFF4EE;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        margin: 20px 0;
+                        cursor: pointer;
+                        width: 80%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .about-product{
+            width: 55%;
+            display: flex;
+            align-items: stretch;
+            
+
+            .container-item{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                color: $primary-color;
+                justify-content: space-evenly;
+                margin: 50px 0;
+
+                h3{
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-family: $secondaryFont;
+                }
+    
+                h5{
+                    font-weight: 400;
+                    font-size: 18px;
+                    font-family: $primaryFont;
+                } 
+    
+                .interact-buttons{
+                    display: flex;
+    
+                    button{
+                        background: transparent;
+                        padding: 20px;
+                        outline: none;
+                        border: 1px solid #E0E0E0;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+    
+                    button:not(:first-child):not(:last-child) {
+                        padding: 0 30px;
+                    }
+                }
+    
+                a.cart{
+                    @include button-properties;
+                }
+    
+                .tags{
+                    font-family: $primaryFont;
+    
+                    h6{
+                        font-size: 18px;
+                        display: inline;
+                    }
+    
+                    span{
+                        border: 1px solid #F0F0F0;
+                        padding: 5px 10px;
+                        border-radius: 30px;
+                        margin: 0 5px;
+                    }
+                }
+    
+                .share{
+                    font-family: $primaryFont;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 20px;
+    
+                    h6{
+                        font-size: 18px;
+                        display: inline;
+                    }
+    
+                    a{
+                        text-decoration: none;
+                        padding: 0;
+                        margin: 0 5px;
+    
+                        i{
+                            cursor: pointer;
+                            color: #FFDAC5;
+                            background: #127402;
+                            border-radius: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            align-content: center;
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

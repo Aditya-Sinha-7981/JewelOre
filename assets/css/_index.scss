@@ -142,52 +142,43 @@ section.landing{
         display: flex;
         flex-direction: row;
         align-content: center;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         height: 100vh;
 
         aside{
             width: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            align-content: center;
-            color: $primary-color;
-            font-family: $primaryFont;
             margin: 100px 0 30px 30px;
             z-index: 1;
+            background: #FFDAC5 url(../images/golden-circle.png) no-repeat;
+            background-position: right;
+            background-position-y: top;
 
-            h1{
-                font-size: 65px;
-                margin: 40px 0 0 0;
-            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                align-content: center;
+                color: $primary-color;
+                font-family: $primaryFont;
+                margin-left: -420px;
+                width: 100%;
 
-            p{
-                margin: 20px 0;
-                font-size: 1.125em; //18px
-                line-height: 26px;
-            }
-
-            a{
-                @include button-properties;
-            }
-        }
-
-        .centered-div{
-            position: absolute;
-            width: 570px;
-            height: 322px;
-            display: flex;
-            justify-content: flex-end;
-            background: $secondary-color;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            top: 50%;
-            z-index: 0;
-
-            img{
-                margin: 0 25px 0 0;
+                h1{
+                    font-size: 65px;
+                    margin: 40px 0 0 0;
+                }
+    
+                p{
+                    margin: 20px 0;
+                    font-size: 1.125em; //18px
+                    line-height: 26px;
+                }
+    
+                a{
+                    @include button-properties;
+                }
             }
         }
     }
@@ -419,7 +410,7 @@ section.trending-other-products{
 
                 .products-image{
                     width: 90%;
-                    height: 368px;
+                    // height: 368px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -448,7 +439,7 @@ section.trending-other-products{
                     font-weight: 900;
                 }
 
-                a{
+                a.button{
                     @include button-properties;
                 }
             }
@@ -607,6 +598,12 @@ section.testimonials{
                 align-items: center;
                 padding: 100px 0 50px 0;
 
+                #carousel > .tns-item{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
                 .carousel-item{
                     display: flex;
                     align-items: center;
@@ -626,6 +623,10 @@ section.testimonials{
                             margin-top: 40px;
                         }
                     }
+                }
+
+                .tns-outer{
+                    overflow: hidden !important;
                 }
             }
         }
@@ -880,3 +881,4 @@ footer{
         }
     }
 }
+

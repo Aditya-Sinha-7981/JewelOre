@@ -1,25 +1,9 @@
-about us section list styles: Done
-
-Carousel in testimonial section
-
-Line in our story section: Done
-
-button width 100% in contact us form : Done
-
-remove hamburger's margin in responsive : Done
-
-landing sections : Done
-
-pixel perfect accuracy in shop all pages: Done
-
-make width 100% in products in shop all : Done
-
 make pagination work in categories page: 
-
-position absolute and label in categories' search icon: 
 
 progress tag with js for prgoress bars/filters
 
-scroller to the left bar: done
+margin 15px top and bottom in image landing
 
-add hover animation with before and after in navbar: done
+background image and color in landing section
+
+What about orange box in about us section index.html

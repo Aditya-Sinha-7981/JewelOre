@@ -145,3 +145,7 @@ Information section and More products both are completely responsive along with 
 8. Category navbar completed
 
 9. Category navbar design responsive for mobile and tablet
+
+<----------Update 11---------->
+
+1. 

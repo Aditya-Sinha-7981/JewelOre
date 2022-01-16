@@ -20,29 +20,9 @@ window.onscroll = () => {
 
 
 
-//Functions
-
-// Testimonial carousel
-// const slider = tns({
-//     container: "#carousel",
-//     loop: true,
-//     items: 1,
-//     mouseDrag: true,
-//     slideBy: 'page',
-//     autoplay: false,
-//     controls: false,
-//     nav: false,
-//     autoplayButtonOutput: false,
-//     responsive: {
-//         426:{
-//             items: 1
-//         }
-//     }
-// });
 
 
-
-//Number Counter
+// Number Counter
 for(let n of counters) {
   const updateCount = () => {
     const target = + n.getAttribute('data-target');
@@ -83,10 +63,10 @@ hamburgerButton.addEventListener('click', () => {
   }
 });
 
-leftHamburger.addEventListener('click', () => {
-  leftBar.classList.add('active');
-})
+// leftHamburger.addEventListener('click', () => {
+//   leftBar.classList.add('active');
+// })
 
-hideBar.addEventListener('click', () => {
-  leftBar.classList.remove('active');
-})
+// hideBar.addEventListener('click', () => {
+//   leftBar.classList.remove('active');
+// })
