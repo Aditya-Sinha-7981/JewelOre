@@ -37,16 +37,20 @@ section.item-detail{
 
                 div{
                     width: 30%;
-                    background: #FFF4EE;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    
+                    div{        
+                        width: 100%;                
+                        background: #FFF4EE;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
-                    img{
-                        margin: 20px 0;
-                        cursor: pointer;
-                        width: 80%;
-                        max-width: 100%;
+                        img{
+                            margin: 20px 0;
+                            cursor: pointer;
+                            width: 50%;
+                            max-width: 100%;
+                        }
                     }
                 }
             }
@@ -145,6 +149,411 @@ section.item-detail{
                             width: 40px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+//Tabs
+
+section.tabs{
+    margin: 100px 0;
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        flex-direction: column;
+
+        ul.tab-ul{
+            width: 70%;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                width: 40%;
+                font-family: $secondaryFont;
+                color: $primary-color;
+                font-weight: 700;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            li:last-child{
+                width: 20%;
+            }
+
+            li:hover, li.active{
+                background: #FFF4EE;
+            }
+        }
+
+        @keyframes fadeTab {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        ul.tab-content{
+            width: 50%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            animation: fadeTab 1s;
+
+            li{
+                font-family: $primaryFont;
+                color: $primary-color;
+                font-size: 18px;
+                font-weight: 400;
+                margin: 20px 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    margin: 0 20px;
+                }
+
+                div{
+                    width: 80%;
+
+                    span{
+                        display: inline;
+                        font-weight: 700;
+                    }
+    
+                    p{
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+
+    .accordian{
+        display: none;
+        width: 100%;
+
+        button{
+            width: 100%;
+            font-family: $secondaryFont;
+            font-weight: 700;
+            font-size: 25px;
+            outline: none;
+            border: none;
+            background: #f0f0f0;
+            color: $primary-color;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+        }
+
+        button:after{
+            font-family: "Font Awesome 5 Free";
+            content: '\f067';
+            font-size: 25px;
+            position: absolute;
+            right: 10px;
+        }
+
+        button.active{
+            background: #FFF4EE;
+        }
+
+        button.active:after{
+            font-family: "Font Awesome 5 Free";
+            content: "\f068";
+        }
+
+        .accordian-content{
+            display: flex;
+            flex-direction: column;
+            background: #f0f0f0;
+
+            .panel{
+                display: flex;
+                margin: 20px;
+                align-items: flex-start;
+                justify-content: center;
+                justify-content: space-between;
+
+                img{
+                    width: 20%;
+                }
+    
+                div{
+                    width: 75%;
+                    
+                    span, p{
+                        font-family: $primaryFont;
+                        font-size: 16px;
+                        color: $primary-color;
+                        font-weight: 400;
+                        display: inline;
+                    }
+    
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//We Promise
+
+section.promise{
+
+    article{
+
+        .content-story{
+
+            .content-text{
+                justify-content: center;
+
+                .orange-box{
+                    top: 224%;
+                }
+
+                .about-products{
+
+                    h1{
+                        margin: 0 0 40px 0;
+                        text-align: left;
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Reviews
+
+section.reviews{
+    margin-top: 100px;
+
+    .container{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .view{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+
+            .stars{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                span{
+                    font-size: 35px;
+                    font-family: $secondaryFont;
+                    font-weight: 700;
+                    color: $primary-color;
+                    display: flex;
+                    align-items: flex-end;
+
+                    img{
+                        margin: 8px;
+                    }
+                }
+
+                p{
+                    font-weight: 400;
+                    font-family: $primaryFont;
+                    font-size: 20px;
+                    color: $primary-color;
+                    margin: 10px 0;
+                }
+
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    align-items: flex-start;
+
+                    li{
+                        width: 80%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: relative;
+                        margin: 5px 0;
+                        
+                        span{
+                            font-family: $primaryFont;
+                            font-size: 20px;
+                        }
+
+                        progress{
+                            appearance: none;
+                            width: 70%;
+                            border: 0;
+                        }
+
+                        progress[value]::-webkit-progress-bar{
+                            background-color: #F0F0F0;
+                        }
+
+                        progress[value]::-webkit-progress-value{
+                            background-color: $accent;
+                        }
+                    }
+
+                    li::after{
+                        position: absolute;
+                        content: '50%';
+                        left: 103%;
+                        color: $primary-color;
+                        font-weight: 400;
+                        font-family: $primaryFont;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .written{
+                width: 100%;
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+
+                div{
+                    width: 45%;
+                    display: flex;
+                    background: #F0F0F0;
+                    padding: 10px 20px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .user-info{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding: 10px 0;
+
+                        img.profile{
+                            width: 20%;
+                        }
+
+                        .name{
+                            width: 60%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: center;
+                            padding-right: 0;
+
+                            h4{
+                                font-family: $primaryFont;
+                                color: $primary-color;
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    .user-review{
+                        width: 100%;
+                        font-size: 16px;
+                        font-family: $primaryFont;
+                        font-weight: 400;
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+
+        .write{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            img{
+                margin: 10px 0;
+            }
+
+            span{
+                font-size: 15px;
+                font-weight: 500;
+                font-family: $primaryFont;
+                color: $primary-color;
+            }
+
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                p, input{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: $primaryFont;
+                    color: $primary-color;
+                }
+
+                p{
+                    margin: 20px 0 10px 0;
+                }
+
+                input[type='text']{
+                    width: 100%;
+                    padding: 5px 10px;
+                    border: none;
+                    outline: none;
+                    background: #f0f0f0;
+                }
+
+                span{
+                    font-size: 12px;
+                    margin: 15px 0;
+                }
+
+                button{
+                    width: 100%;
+                    border: none;
+                    background: $primary-color;
+                    font-size: 18px;
+                    color: white;
+                    font-weight: 700;
+                    font-family: $primaryFont;
+                    padding: 10px 0;
+                    margin: 20px 0 0 0;
                 }
             }
         }

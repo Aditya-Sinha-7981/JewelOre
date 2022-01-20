@@ -3,10 +3,6 @@ const navbar = document.querySelector('.navbar');
 const hamburgerButton = document.querySelector('.hamburger-btn');
 const hamburgerIcon = document.querySelector('#icon');
 const hamburgerClass = document.querySelector('.hamburger-menu');
-const counters = document.querySelectorAll('.counter');
-const leftBar = document.querySelector('#leftBar');
-const hideBar = document.querySelector('.hide');
-const leftHamburger = document.querySelector('#category-icon');
 
 //For ddding background adter scroll in navbar
 
@@ -17,27 +13,6 @@ window.onscroll = () => {
         header.classList.remove('scrolled');
     }
 };
-
-
-
-
-
-// Number Counter
-for(let n of counters) {
-  const updateCount = () => {
-    const target = + n.getAttribute('data-target');
-    const count = + n.innerText;
-    const speed = 100000; // change animation speed here
-    const inc = target / speed; 
-    if(count < target) {
-      n.innerText = Math.ceil(count + inc);
-      setTimeout(updateCount, 1);
-    } else {
-      n.innerText = target;
-    }
-  }
-  updateCount();
-}
 
 
 
@@ -63,10 +38,3 @@ hamburgerButton.addEventListener('click', () => {
   }
 });
 
-// leftHamburger.addEventListener('click', () => {
-//   leftBar.classList.add('active');
-// })
-
-// hideBar.addEventListener('click', () => {
-//   leftBar.classList.remove('active');
-// })

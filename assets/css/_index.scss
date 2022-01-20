@@ -166,13 +166,13 @@ section.landing{
                 width: 100%;
 
                 h1{
-                    font-size: 65px;
+                    text-align: left;
                     margin: 40px 0 0 0;
                 }
     
                 p{
                     margin: 20px 0;
-                    font-size: 1.125em; //18px
+                    font-size: 18px;
                     line-height: 26px;
                 }
     
@@ -569,8 +569,10 @@ section.testimonials{
         
     .testimonial-area{
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
         color: $primary-color;
 
         h1{
@@ -579,8 +581,10 @@ section.testimonials{
 
         .testimonial{
             display: flex;
+            width: 50%;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             margin: 120px 0;
 
             img{
@@ -592,27 +596,19 @@ section.testimonials{
                 background: $secondary-color url(../images/quote.png) no-repeat;
                 background-position: 0% 50%;
                 font-size: 18px;
-                width: 708px;
                 font-family: $primaryFont;
-                display: flex;
-                align-items: center;
                 padding: 100px 0 50px 0;
-
-                #carousel > .tns-item{
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                }
+                width: 100%;
+                max-width: 100;
 
                 .carousel-item{
                     display: flex;
                     align-items: center;
                     
                     div{
-                        // display: flex;
-                        // align-items: center;
-                        // flex-direction: column;
-                        // max-width: 95%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
                         
                         p{
                             width: 90%;
@@ -623,10 +619,6 @@ section.testimonials{
                             margin-top: 40px;
                         }
                     }
-                }
-
-                .tns-outer{
-                    overflow: hidden !important;
                 }
             }
         }

@@ -8,6 +8,7 @@ h1 {
   font-weight: 700;
   color: #073300;
   font-size: 60px;
+  text-align: center;
 }
 
 .center-div {
@@ -249,13 +250,13 @@ section.landing article aside .container {
 }
 
 section.landing article aside .container h1 {
-  font-size: 65px;
+  text-align: left;
   margin: 40px 0 0 0;
 }
 
 section.landing article aside .container p {
   margin: 20px 0;
-  font-size: 1.125em;
+  font-size: 18px;
   line-height: 26px;
 }
 
@@ -897,13 +898,18 @@ section.testimonials .testimonial-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: #073300;
 }
 
@@ -915,6 +921,7 @@ section.testimonials .testimonial-area .testimonial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -922,6 +929,9 @@ section.testimonials .testimonial-area .testimonial {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 120px 0;
 }
 
@@ -934,18 +944,22 @@ section.testimonials .testimonial-area .testimonial .testimonial-content {
   background: #FFDAC5 url(../images/quote.png) no-repeat;
   background-position: 0% 50%;
   font-size: 18px;
-  width: 708px;
   font-family: "Lora";
+  padding: 100px 0 50px 0;
+  width: 100%;
+  max-width: 100;
+}
+
+section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 0 50px 0;
 }
 
-section.testimonials .testimonial-area .testimonial .testimonial-content #carousel > .tns-item {
+section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,15 +972,6 @@ section.testimonials .testimonial-area .testimonial .testimonial-content #carous
           flex-direction: column;
 }
 
-section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item div p {
   width: 90%;
   text-align: center;
@@ -974,10 +979,6 @@ section.testimonials .testimonial-area .testimonial .testimonial-content .carous
 
 section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item div h5 {
   margin-top: 40px;
-}
-
-section.testimonials .testimonial-area .testimonial .testimonial-content .tns-outer {
-  overflow: hidden !important;
 }
 
 section.subscribe {
@@ -1648,6 +1649,9 @@ footer .footer-area .bottom-area p {
     font-size: 40px;
     margin-top: -50px;
   }
+  section.testimonials .testimonial-area .testimonial {
+    width: 90%;
+  }
   section.testimonials .testimonial-area .testimonial img {
     width: 20%;
   }
@@ -2265,11 +2269,11 @@ section.landing-section .content .content-text a:hover, section.landing-section 
   }
 }
 
-section.our-story {
+section.our-story, section.promise {
   margin: 150px 0;
 }
 
-section.our-story article {
+section.our-story article, section.promise article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2282,11 +2286,11 @@ section.our-story article {
           align-items: center;
 }
 
-section.our-story article h1 {
+section.our-story article h1, section.promise article h1 {
   margin: 50px;
 }
 
-section.our-story article .content-story {
+section.our-story article .content-story, section.promise article .content-story {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2299,7 +2303,7 @@ section.our-story article .content-story {
           justify-content: space-between;
 }
 
-section.our-story article .content-story figure {
+section.our-story article .content-story figure, section.promise article .content-story figure {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2314,11 +2318,11 @@ section.our-story article .content-story figure {
           justify-content: center;
 }
 
-section.our-story article .content-story figure img {
+section.our-story article .content-story figure img, section.promise article .content-story figure img {
   width: 100%;
 }
 
-section.our-story article .content-story .content-text {
+section.our-story article .content-story .content-text, section.promise article .content-story .content-text {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2331,7 +2335,7 @@ section.our-story article .content-story .content-text {
       justify-content: space-around;
 }
 
-section.our-story article .content-story .content-text .orange-box {
+section.our-story article .content-story .content-text .orange-box, section.promise article .content-story .content-text .orange-box {
   position: absolute;
   height: 95%;
   width: 30%;
@@ -2341,15 +2345,15 @@ section.our-story article .content-story .content-text .orange-box {
   top: 140%;
 }
 
-section.our-story article .content-story .content-text .about-products {
+section.our-story article .content-story .content-text .about-products, section.promise article .content-story .content-text .about-products {
   position: relative;
 }
 
-section.our-story article .content-story .content-text .about-products ul {
+section.our-story article .content-story .content-text .about-products ul, section.promise article .content-story .content-text .about-products ul {
   list-style: none;
 }
 
-section.our-story article .content-story .content-text .about-products ul li {
+section.our-story article .content-story .content-text .about-products ul li, section.promise article .content-story .content-text .about-products ul li {
   font-family: "Lora";
   font-weight: 400;
   color: #073300;
@@ -2359,18 +2363,18 @@ section.our-story article .content-story .content-text .about-products ul li {
   padding-left: 30px;
 }
 
-section.our-story article .content-story .content-text .about-products ul li span {
+section.our-story article .content-story .content-text .about-products ul li span, section.promise article .content-story .content-text .about-products ul li span {
   font-weight: 700;
 }
 
-section.our-story article .content-story .content-text .about-products ul li::before {
+section.our-story article .content-story .content-text .about-products ul li::before, section.promise article .content-story .content-text .about-products ul li::before {
   content: url(../images/green-dot.png);
   position: absolute;
   left: 0;
   top: 5%;
 }
 
-section.our-story article .content-story .content-text .about-products ul::before {
+section.our-story article .content-story .content-text .about-products ul::before, section.promise article .content-story .content-text .about-products ul::before {
   content: "";
   position: absolute;
   height: 60%;
@@ -2379,7 +2383,7 @@ section.our-story article .content-story .content-text .about-products ul::befor
   left: 10px;
 }
 
-section.our-story article .content-story .content-text .about-writer {
+section.our-story article .content-story .content-text .about-writer, section.promise article .content-story .content-text .about-writer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2392,7 +2396,7 @@ section.our-story article .content-story .content-text .about-writer {
           justify-content: center;
 }
 
-section.our-story article .content-story .content-text .about-writer p {
+section.our-story article .content-story .content-text .about-writer p, section.promise article .content-story .content-text .about-writer p {
   font-style: italic;
   font-size: 18px;
   font-family: "Lora";
@@ -2400,7 +2404,7 @@ section.our-story article .content-story .content-text .about-writer p {
   font-weight: 400;
 }
 
-section.our-story article .content-story .content-text .about-writer h2 {
+section.our-story article .content-story .content-text .about-writer h2, section.promise article .content-story .content-text .about-writer h2 {
   font-family: "Lora";
   color: #073300;
   font-size: 18px;
@@ -2408,7 +2412,7 @@ section.our-story article .content-story .content-text .about-writer h2 {
   margin-top: 40px;
 }
 
-section.our-story article .content-story .content-text .about-writer h2 span {
+section.our-story article .content-story .content-text .about-writer h2 span, section.promise article .content-story .content-text .about-writer h2 span {
   font-weight: 700;
 }
 
@@ -2444,7 +2448,7 @@ section.shop-all-products .link a {
 }
 
 @media screen and (max-width: 1100px) {
-  section.our-story article .content-story .orange-box {
+  section.our-story article .content-story .orange-box, section.promise article .content-story .orange-box {
     height: 85%;
     top: 122%;
   }
@@ -2467,7 +2471,7 @@ section.shop-all-products .link a {
   section.landing-section .content figure img, section.landing-section .content-categories figure img {
     width: 100%;
   }
-  section.our-story article .content-story .content-text .orange-box {
+  section.our-story article .content-story .content-text .orange-box, section.promise article .content-story .content-text .orange-box {
     height: 85%;
     top: 143%;
   }
@@ -2542,7 +2546,7 @@ section.shop-all-products .link a {
     margin: 0;
     text-align: center;
   }
-  section.our-story article .content-story {
+  section.our-story article .content-story, section.promise article .content-story {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2551,19 +2555,19 @@ section.shop-all-products .link a {
         -ms-flex-align: center;
             align-items: center;
   }
-  section.our-story article .content-story figure {
+  section.our-story article .content-story figure, section.promise article .content-story figure {
     width: 90%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  section.our-story article .content-story figure img {
+  section.our-story article .content-story figure img, section.promise article .content-story figure img {
     width: 80%;
   }
-  section.our-story article .content-story .content-text {
+  section.our-story article .content-story .content-text, section.promise article .content-story .content-text {
     width: 75%;
   }
-  section.our-story article .content-story .content-text .orange-box {
+  section.our-story article .content-story .content-text .orange-box, section.promise article .content-story .content-text .orange-box {
     display: none;
   }
   section.shop-all-products .link a {
@@ -2581,33 +2585,33 @@ section.shop-all-products .link a {
   section.landing-section .content .content-text a, section.landing-section .content-categories .content-text a {
     font-size: 18px;
   }
-  section.our-story article h1 {
+  section.our-story article h1, section.promise article h1 {
     margin: 50px 0;
     font-size: 40px;
   }
-  section.our-story article .content-story figure {
+  section.our-story article .content-story figure, section.promise article .content-story figure {
     width: 100%;
   }
-  section.our-story article .content-story figure img {
+  section.our-story article .content-story figure img, section.promise article .content-story figure img {
     width: 90%;
   }
-  section.our-story article .content-story .content-text {
+  section.our-story article .content-story .content-text, section.promise article .content-story .content-text {
     width: 100%;
   }
-  section.our-story article .content-story .content-text .about-products ul li {
+  section.our-story article .content-story .content-text .about-products ul li, section.promise article .content-story .content-text .about-products ul li {
     font-size: 16px;
     margin: 20px 0;
   }
-  section.our-story article .content-story .content-text .about-products ul::before {
+  section.our-story article .content-story .content-text .about-products ul::before, section.promise article .content-story .content-text .about-products ul::before {
     height: 65%;
   }
-  section.our-story article .content-story .content-text .about-writer {
+  section.our-story article .content-story .content-text .about-writer, section.promise article .content-story .content-text .about-writer {
     margin-top: 40px;
   }
-  section.our-story article .content-story .content-text .about-writer p {
+  section.our-story article .content-story .content-text .about-writer p, section.promise article .content-story .content-text .about-writer p {
     font-size: 16px;
   }
-  section.our-story article .content-story .content-text .about-writer h2 {
+  section.our-story article .content-story .content-text .about-writer h2, section.promise article .content-story .content-text .about-writer h2 {
     font-size: 16px;
     margin-top: 20px;
   }
@@ -2803,9 +2807,9 @@ section.connect .content ul {
 section.connect .content ul li {
   width: 30%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   margin: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3580,6 +3584,10 @@ section.item-detail .container .product-images div.bottom {
 
 section.item-detail .container .product-images div.bottom div {
   width: 30%;
+}
+
+section.item-detail .container .product-images div.bottom div div {
+  width: 100%;
   background: #FFF4EE;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3592,10 +3600,10 @@ section.item-detail .container .product-images div.bottom div {
           align-items: center;
 }
 
-section.item-detail .container .product-images div.bottom div img {
+section.item-detail .container .product-images div.bottom div div img {
   margin: 20px 0;
   cursor: pointer;
-  width: 80%;
+  width: 50%;
   max-width: 100%;
 }
 
@@ -3753,12 +3761,567 @@ section.item-detail .container .about-product .container-item .share a i {
   width: 40px;
 }
 
+section.tabs {
+  margin: 100px 0;
+}
+
+section.tabs .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.tabs .container ul.tab-ul {
+  width: 70%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.tabs .container ul.tab-ul li {
+  width: 40%;
+  font-family: "Playfair Display";
+  color: #073300;
+  font-weight: 700;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+}
+
+section.tabs .container ul.tab-ul li:last-child {
+  width: 20%;
+}
+
+section.tabs .container ul.tab-ul li:hover, section.tabs .container ul.tab-ul li.active {
+  background: #FFF4EE;
+}
+
+@-webkit-keyframes fadeTab {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeTab {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section.tabs .container ul.tab-content {
+  width: 50%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  -webkit-animation: fadeTab 1s;
+          animation: fadeTab 1s;
+}
+
+section.tabs .container ul.tab-content li {
+  font-family: "Lora";
+  color: #073300;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.tabs .container ul.tab-content li img {
+  margin: 0 20px;
+}
+
+section.tabs .container ul.tab-content li div {
+  width: 80%;
+}
+
+section.tabs .container ul.tab-content li div span {
+  display: inline;
+  font-weight: 700;
+}
+
+section.tabs .container ul.tab-content li div p {
+  display: inline;
+}
+
+section.tabs .accordian {
+  display: none;
+  width: 100%;
+}
+
+section.tabs .accordian button {
+  width: 100%;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  background: #f0f0f0;
+  color: #073300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+section.tabs .accordian button:after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f067';
+  font-size: 25px;
+  position: absolute;
+  right: 10px;
+}
+
+section.tabs .accordian button.active {
+  background: #FFF4EE;
+}
+
+section.tabs .accordian button.active:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+}
+
+section.tabs .accordian .accordian-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f0f0f0;
+}
+
+section.tabs .accordian .accordian-content .panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.tabs .accordian .accordian-content .panel img {
+  width: 20%;
+}
+
+section.tabs .accordian .accordian-content .panel div {
+  width: 75%;
+}
+
+section.tabs .accordian .accordian-content .panel div span, section.tabs .accordian .accordian-content .panel div p {
+  font-family: "Lora";
+  font-size: 16px;
+  color: #073300;
+  font-weight: 400;
+  display: inline;
+}
+
+section.tabs .accordian .accordian-content .panel div span {
+  font-weight: 700;
+}
+
+section.promise article .content-story .content-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.promise article .content-story .content-text .orange-box {
+  top: 224%;
+}
+
+section.promise article .content-story .content-text .about-products h1 {
+  margin: 0 0 40px 0;
+  text-align: left;
+  width: 70%;
+}
+
+section.reviews {
+  margin-top: 100px;
+}
+
+section.reviews .container {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.reviews .container .view {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.reviews .container .view .stars {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.reviews .container .view .stars span {
+  font-size: 35px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: #073300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+section.reviews .container .view .stars span img {
+  margin: 8px;
+}
+
+section.reviews .container .view .stars p {
+  font-weight: 400;
+  font-family: "Lora";
+  font-size: 20px;
+  color: #073300;
+  margin: 10px 0;
+}
+
+section.reviews .container .view .stars ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.reviews .container .view .stars ul li {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin: 5px 0;
+}
+
+section.reviews .container .view .stars ul li span {
+  font-family: "Lora";
+  font-size: 20px;
+}
+
+section.reviews .container .view .stars ul li progress {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 70%;
+  border: 0;
+}
+
+section.reviews .container .view .stars ul li progress[value]::-webkit-progress-bar {
+  background-color: #F0F0F0;
+}
+
+section.reviews .container .view .stars ul li progress[value]::-webkit-progress-value {
+  background-color: #127402;
+}
+
+section.reviews .container .view .stars ul li::after {
+  position: absolute;
+  content: '50%';
+  left: 103%;
+  color: #073300;
+  font-weight: 400;
+  font-family: "Lora";
+  font-size: 20px;
+}
+
+section.reviews .container .view .written {
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.reviews .container .view .written div {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F0F0F0;
+  padding: 10px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.reviews .container .view .written div .user-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+section.reviews .container .view .written div .user-info img.profile {
+  width: 20%;
+}
+
+section.reviews .container .view .written div .user-info .name {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 0;
+}
+
+section.reviews .container .view .written div .user-info .name h4 {
+  font-family: "Lora";
+  color: #073300;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+section.reviews .container .view .written div .user-review {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Lora";
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+section.reviews .container .write {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.reviews .container .write img {
+  margin: 10px 0;
+}
+
+section.reviews .container .write span {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Lora";
+  color: #073300;
+}
+
+section.reviews .container .write form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.reviews .container .write form p, section.reviews .container .write form input {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Lora";
+  color: #073300;
+}
+
+section.reviews .container .write form p {
+  margin: 20px 0 10px 0;
+}
+
+section.reviews .container .write form input[type='text'] {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+
+section.reviews .container .write form span {
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+section.reviews .container .write form button {
+  width: 100%;
+  border: none;
+  background: #073300;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  font-family: "Lora";
+  padding: 10px 0;
+  margin: 20px 0 0 0;
+}
+
+@media screen and (max-width: 1034px) {
+  section.tabs .container ul.tab-ul {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   section.item-detail .container .product-images figure.upper img {
     width: 80%;
   }
   section.item-detail .container .product-images figure.bottom img {
     width: 60%;
+  }
+  section.reviews .container .view .written div {
+    width: 40%;
   }
 }
 
@@ -3769,6 +4332,46 @@ section.item-detail .container .about-product .container-item .share a i {
   }
   section.item-detail .container .about-product .container-item h5 {
     font-size: 16px;
+  }
+  section.tabs .container ul.tab-ul li {
+    font-size: 22px;
+  }
+  section.tabs .container ul.tab-content {
+    width: 90%;
+  }
+  section.promise article .content-story .content-text .about-products h1 {
+    text-align: center;
+    width: 100%;
+  }
+  section.reviews .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section.reviews .container .view {
+    width: 60%;
+  }
+  section.reviews .container .view .stars ul {
+    width: 100%;
+  }
+  section.reviews .container .view .stars ul li span {
+    font-size: 18px;
+  }
+  section.reviews .container .view .stars ul li::after {
+    left: 101%;
+  }
+  section.reviews .container .view .written {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.reviews .container .view .written div {
+    width: 100%;
+    margin: 10px 0;
+  }
+  section.reviews .container .write {
+    width: 35%;
   }
 }
 
@@ -3793,6 +4396,56 @@ section.item-detail .container .about-product .container-item .share a i {
   }
 }
 
+@media screen and (max-width: 500px) {
+  section.reviews .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.reviews .container .view {
+    width: 100%;
+  }
+  section.reviews .container .view .stars ul {
+    width: 100%;
+  }
+  section.reviews .container .view .stars ul li {
+    width: 90%;
+  }
+  section.reviews .container .view .stars ul li span {
+    font-size: 16px;
+  }
+  section.reviews .container .view .stars ul li::after {
+    left: 103%;
+  }
+  section.reviews .container .view .written {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.reviews .container .view .written div {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  section.reviews .container .view .written div .user-info, section.reviews .container .view .written div .user-review {
+    margin: 0;
+  }
+  section.reviews .container .view .written div .user-info img.profile {
+    width: 25%;
+  }
+  section.reviews .container .write {
+    width: 100%;
+    margin-top: 50px;
+  }
+  section.reviews .container .write form {
+    width: 100%;
+  }
+  section.reviews .container .write form input[type='text'] {
+    padding: 5px 0;
+  }
+}
+
 @media screen and (max-width: 426px) {
   section.item-detail .container .about-product .container-item .tags {
     display: -webkit-box;
@@ -3810,6 +4463,15 @@ section.item-detail .container .about-product .container-item .share a i {
   }
   section.item-detail .container .about-product .container-item .tags span {
     margin: 5px;
+  }
+  section.tabs .container {
+    display: none;
+  }
+  section.tabs .accordian {
+    display: block;
+  }
+  section.promise article .content-story .content-text .about-products h1 {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

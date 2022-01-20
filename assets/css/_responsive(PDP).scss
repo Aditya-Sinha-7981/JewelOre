@@ -1,5 +1,19 @@
 //Tablet queries
 
+@media screen and (max-width: 1034px) {
+    
+    //Tabs
+
+    section.tabs{
+
+        .container{
+
+            ul.tab-ul{
+                width: 100%;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1024px) {
     
@@ -22,6 +36,24 @@
 
                     img{
                         width: 60%;
+                    }
+                }
+            }
+        }
+    }
+
+    //Reviews
+
+    section.reviews{
+
+        .container{
+
+            .view{
+
+                .written{
+
+                    div{
+                        width: 40%;
                     }
                 }
             }
@@ -50,6 +82,91 @@
                         font-size: 16px;
                     }
                 }
+            }
+        }
+    }
+
+    //Tabs
+
+    section.tabs{
+
+        .container{
+
+            ul.tab-ul{
+
+                li{
+                    font-size: 22px;
+                }
+            }
+
+            ul.tab-content{
+                width: 90%;
+            }
+        }
+    }
+
+    //We Promise
+
+    section.promise{
+
+        article{
+
+            .content-story{
+
+                .content-text{
+
+                    .about-products{
+
+                        h1{
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Reviews
+
+    section.reviews{
+
+        .container{
+            align-items: flex-start;
+
+            .view{
+                width: 60%;
+
+                .stars{
+
+                    ul{
+                        width: 100%;
+
+                        li{
+
+                            span{
+                                font-size: 18px;
+                            }
+                        }
+
+                        li::after{
+                            left: 101%;
+                        }
+                    }
+                }
+
+                .written{
+                    flex-direction: column;
+
+                    div{
+                        width: 100%;
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+            .write{
+                width: 35%;
             }
         }
     }
@@ -90,6 +207,74 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+
+    //Reviews
+
+    section.reviews{
+
+        .container{
+            flex-direction: column;
+
+            .view{
+                width: 100%;
+
+                .stars{
+
+                    ul{
+                        width: 100%;
+
+                        li{
+                            width: 90%;
+
+                            span{
+                                font-size: 16px;
+                            }
+                        }
+
+                        li::after{
+                            left: 103%;
+                        }
+                    }
+                }
+
+                .written{
+                    flex-direction: column;
+
+                    div{
+                        width: 90%;
+                        margin-bottom: 20px;
+
+                        .user-info, .user-review{
+                            margin: 0;
+                        }
+
+                        .user-info{
+
+                            img.profile{
+                                width: 25%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .write{
+                width: 100%;
+                margin-top: 50px;
+
+                form{
+                    width: 100%;
+
+                    input[type='text']{
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 426px) {
     
     //Item Detail
@@ -110,6 +295,40 @@
 
                         span{
                             margin: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Tabs
+
+    section.tabs{
+
+        .container{
+            display: none;
+        }
+
+        .accordian{
+            display: block;
+        }
+    }
+
+    //We Promise
+
+    section.promise{
+
+        article{
+
+            .content-story{
+
+                .content-text{
+
+                    .about-products{
+
+                        h1{
+                            margin: 0;
                         }
                     }
                 }
