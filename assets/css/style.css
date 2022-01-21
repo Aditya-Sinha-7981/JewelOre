@@ -2000,6 +2000,7 @@ header.other-pages {
   position: fixed;
   width: 100%;
   z-index: 2;
+  top: 0;
 }
 
 header.other-pages .nav-wrapper.scrolled {
@@ -4473,5 +4474,11 @@ section.reviews .container .write form button {
   section.promise article .content-story .content-text .about-products h1 {
     margin: 0;
   }
+}
+
+section.trending-other-products #search {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */
