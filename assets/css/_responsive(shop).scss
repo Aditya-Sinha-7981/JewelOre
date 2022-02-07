@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+    
+    //Neck Accessories 
+
+    section.trending-other-products{
+
+        .trending-other-content{
+
+            .heading{
+                justify-content: center;
+
+                a{
+                    display: none;
+                }
+            }
+
+            .responsive-link{
+                display: flex;
+                margin-top: 20px;
+                width: 100%;
+                justify-content: center;
+
+                a{
+                    font-family: $secondaryFont;
+                    font-weight: 700;
+                    font-size: 45px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    
+    //Neck Accessories 
+
+    section.trending-other-products{
+
+        .trending-other-content{
+
+            .responsive-link{
+
+                a{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}

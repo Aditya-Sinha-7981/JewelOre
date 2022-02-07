@@ -1,0 +1,77 @@
+// Variable
+
+$primary-color: #073300;
+$secondary-color: #FFDAC5;
+$accent: #127402;
+
+$primaryFont: 'Lora';
+$secondaryFont: 'Playfair Display';
+
+//Root
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+// Global Values
+
+h1{
+    font-family: $secondaryFont;
+    font-weight: 700;
+    color: $primary-color;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+// Center div
+
+.center-div{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+//Mixins
+
+@mixin button-properties{
+    background: $primary-color;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: $primaryFont;
+    font-weight: 700;
+    padding: 20px 60px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin: 40px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &:hover{
+        background: $accent;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 15px 30px;
+    }
+
+    @media screen and (max-width: 426px) {
+        font-size: 18px;
+    }
+}
+
+//Media queries 
+
+@media screen and (max-width: 1024px){
+
+    // Center div
+
+    .center-div{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+    }
+}

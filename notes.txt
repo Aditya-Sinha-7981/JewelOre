@@ -1,0 +1,9 @@
+make pagination work in categories page: 
+
+progress tag with js for prgoress bars/filters
+
+margin 15px top and bottom in image landing
+
+background image and color in landing section
+
+What about orange box in about us section index.html

@@ -1,0 +1,35 @@
+//Neck Accessories 
+
+section.trending-other-products{
+
+    .trending-other-content{
+
+        .heading{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            a{
+                font-family: $secondaryFont;
+                font-weight: 700;
+                font-size: 60px;
+                color: $primary-color;
+            }
+        }
+
+        ul{
+            justify-content: space-between;
+
+            li{
+
+                .products-image{
+                    width: 100%;
+                }
+            }
+        }
+
+        .responsive-link{
+            display: none;
+        }
+    }
+}
