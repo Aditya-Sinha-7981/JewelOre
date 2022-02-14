@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </head>
 <body>
     
@@ -52,115 +50,137 @@
         </div>
     </header>
 
-    <!-- Landing Section -->
+    <!-- Cart -->
 
-    <section class="landing-section">
+    <section class="cart">
         <div class="center-div">
 
-            <div class="content">
-                <figure>
-                    <img src="assets/images/big ring2.png" alt="Landing section big ring">
-                </figure>
+            <div class="container">
+                <div class="cart-items">
+                    <ul>
+                        <li>Image</li>
+                        <li>Product</li>
+                        <li>Price</li>
+                        <li>Quantity</li>
+                        <li>Subtotal</li>
+                    </ul>
+                    <hr class="line">
 
-                <div class="content-text">
-                    <h1>Contact Us</h1>
-                    <div class="responsive-image">
-                        <img src="assets/images/big ring2.png" alt="Landing section big ring">
+                    <!-- Products only visible till 550px -->
+
+                    <div class="products">
+                        <div>
+                            <img src="assets/images/white stone earring.png" alt="Product Image">
+                        </div>
+                        <div class="products__container">
+                            <h4>White Stone Earring</h4>
+                            <p>Rs 400</p>
+                            <span>1</span>
+                            <p>Rs 400</p>
+                        </div>
                     </div>
-                    <p>Gete your queries answered within 24 hrs of form submission</p>
-                    <a href="#">Check Jewels</a>
-                </div>
-            </div>
 
-        </div>
-    </section>
-
-    <!-- Our story -->
-
-    <section class="write-to-us">
-        <div class="orange-box contact"></div>
-        <div class="center-div">
-
-            <article>
-                <h1>Write to us</h1>
-                <div class="content-write">
-                    <figure>
-                        <img src="assets/images/peacock feather.png" alt="Cover photo for our story section">
-                    </figure>
-
-                    <div class="content-text">
-                        <form>
-                            <input type="text" name="Name" placeholder="Your Name">
-                            <input type="text" name="Email" placeholder="Your email id">
-                            <input type="tel" name="Phone Number" placeholder="Phone Number" maxlength="10">
-                            <input type="text" name="Query" placeholder="Your Query">
-                            <a href="#">Submit</a>
-                        </form>
+                    <div class="products">
+                        <div>
+                            <img src="assets/images/white stone earring.png" alt="Product Image">
+                        </div>
+                        <div class="products__container">
+                            <h4>White Stone Earring</h4>
+                            <p>Rs 400</p>
+                            <span>1</span>
+                            <p>Rs 400</p>
+                        </div>
                     </div>
+
+                    <div class="products">
+                        <div>
+                            <img src="assets/images/white stone earring.png" alt="Product Image">
+                        </div>
+                        <div class="products__container">
+                            <h4>White Stone Earring</h4>
+                            <p>Rs 400</p>
+                            <span>1</span>
+                            <p>Rs 400</p>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <input type="text" placeholder="Coupon Code">
+                        <a href="#">Apply Coupon</a>
+                        <a href="#">Update Cart</a>
+                    </div>
+
+                    <!-- Responsive products only visible on 550px or below -->
+
+                    <div class="products-responsive">
+                        <div>
+                            <img src="assets/images/white stone earring.png" alt="Product Image">
+                        </div>
+                        <div class="products-responsive__container">
+                            <h4>White Stone Earring</h4>
+                            <hr>
+                            <p><span>PRICE:</span> Rs 400</p>
+                            <hr>
+                            <span><span>QUANTITY:</span> 1</span>
+                            <hr>
+                            <p><span>SUBTOTAL:</span> Rs 400</p>
+                        </div>
+                    </div>
+
+                    <div class="products-responsive">
+                        <div>
+                            <img src="assets/images/white stone earring.png" alt="Product Image">
+                        </div>
+                        <div class="products-responsive__container">
+                            <h4>White Stone Earring</h4>
+                            <hr>
+                            <p><span>PRICE:</span> Rs 400</p>
+                            <hr>
+                            <span><span>QUANTITY:</span> 1</span>
+                            <hr>
+                            <p><span>SUBTOTAL:</span> Rs 400</p>
+                        </div>
+                    </div>
+
+                    <div class="products-responsive">
+                        <div>
+                            <img src="assets/images/white stone earring.png" alt="Product Image">
+                        </div>
+                        <div class="products-responsive__container">
+                            <h4>White Stone Earring</h4>
+                            <hr>
+                            <p><span>PRICE:</span> Rs 400</p>
+                            <hr>
+                            <span><span>QUANTITY:</span> 1</span>
+                            <hr>
+                            <p><span>SUBTOTAL:</span> Rs 400</p>
+                        </div>
+                    </div>
+
+                    <div class="buttons-responsive">
+                        <a href="#">Update Cart</a>
+                        <div class="buttons-responsive__wrapper">
+                            <input type="text" placeholder="Coupon Code">
+                            <a href="#">Apply Coupon</a>
+                        </div>
+                    </div>
+
                 </div>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- Information Section for other pages -->
-    
-    <section class="information-other-pages">
-        <div class="center-div">
-            <div class="information-content">
-               
-                <ul class="contact-ul">  <!-- Information -->
-                    <li>
-                        <img src="assets/images/truck-icon.png" alt="Truck Icon">
-                        <h5>Phone</h2>
-                        <a href="#">+91 9099089897</a>
-                    </li>
-                    <li>
-                        <img src="assets/images/left-arrow-icon.png" alt="Left Arrow Icon">
-                        <h5>Email us</h2>
-                        <a href="#">reach@jewellore.com</a>
-                    </li>
-                    <li>
-                        <img src="assets/images/heart-icon.png" alt="Heart Icon">
-                        <h5>Write us feedback</h2>
-                        <a href="#">Write your impressive points</a>
-                    </li>
-                    <li>
-                        <img src="assets/images/shield-icon.png" alt="Shield Icon">
-                        <h5>Address</h2>
-                        <a href="#">Banglore, Karnataka</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Let's Connect -->
-
-    <section class="connect">
-        <div class="center-div">
-
-            <div class="content">
-                <h1>Let's connect on Instagram</h1>
-                <ul class="carousel-connect">
-                    <li>
-                        <div class="orange_box"></div>
-                        <img src="assets/images/instagram post.png" alt="Connect posts">
-                    </li>
-                    <li>
-                        <div class="orange_box"></div>
-                        <img src="assets/images/instagram post.png" alt="Connect posts">
-                    </li>
-                    <li>
-                        <div class="orange_box"></div>
-                        <img src="assets/images/instagram post.png" alt="Connect posts">
-                    </li>
-                    <li>
-                        <div class="orange_box"></div>
-                        <img src="assets/images/instagram post.png" alt="Connect posts">
-                    </li>
-                </ul>
+                <div class="proceed">
+                    <span>
+                        <h5>Subtotal</h5> 
+                        <p>Rs 400</p>
+                    </span>
+                    <span>
+                        <h5>Shipping</h5> 
+                        <p>Free Shipping</p>
+                    </span>
+                    <span>
+                        <h5>Total</h5> 
+                        <p>Rs.400 Includes Rs.40 GST</p>
+                    </span>
+                    <a href="checkout.html">Proceed to checkout</a>
+                </div>
             </div>
 
         </div>
@@ -229,10 +249,6 @@
         </div>
     </footer>
 
-
-
-
     <script src="assets/js/javascript.js"></script>
-    <script src="assets/js/contact.js"></script>
 </body>
 </html>

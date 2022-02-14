@@ -1,0 +1,109 @@
+//Tablet Media Queries
+
+@media screen and (max-width: 1024px) {
+    
+    //Checkout
+
+    section.checkout{
+
+        .container{
+
+            .order{
+
+                &__container{
+                   
+                    h3{
+                        font-size: 35px;
+                    }
+
+                    h4{
+                        font-size: 16px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 851px) {
+    
+    //Checkout
+
+    section.checkout{
+
+        .container{
+            flex-direction: column;
+
+            .details{
+                width: 100%;
+            }
+
+            .order{
+                margin-top: 100px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    //Checkout
+
+    section.checkout{
+
+        .container{
+
+            .details{
+
+                h1{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+//Phone Media Queries 
+
+@media screen and (max-width: 521px) {
+    
+    //Checkout
+
+    section.checkout{
+        margin-top: 150px;
+
+        .container{
+
+            .details{
+
+                h1{
+                    font-size: 40px;
+                }
+
+                .inputs{
+
+                    .name{
+
+                        .first, .last{
+                            width: 100%;
+                        }
+
+                        .first{
+
+                            input{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

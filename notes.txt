@@ -1,9 +1,46 @@
-make pagination work in categories page: 
+<-----To Do----->
 
-progress tag with js for prgoress bars/filters
+Slider: try to make it work or use direct images: Done
 
-margin 15px top and bottom in image landing
+change text in information section 426+: Done
 
-background image and color in landing section
+orange box in landing page and other that: Done
 
-What about orange box in about us section index.html
+reduce spaces in between sections 426+ for tablet around 50px, for mobile near about 0: from 600
+
+golden eclipse in subscribe section: On hold
+
+most bought section change button to "view product": Done
+
+add search and cart icons to navbar right of contact and left of hamburger: Done
+
+fix landing section in categories and shop page: Done
+
+Hamburger in other pages 
+
+Golden ellipse(if possible)
+
+
+
+
+<-----Testing----->
+
+Index: Done
+About: Done
+Contact: Done
+Shop all: Done
+Categories: Done
+PDP: Done
+Search: Done
+Cart: Done
+Checkout: Done
+404, Thank you: Done
+
+
+<-----To ask----->
+
+Height in categories landing section add padding for clarity
+
+Categories landing page 768px+: Done
+
+golden ellipse responsive: Done

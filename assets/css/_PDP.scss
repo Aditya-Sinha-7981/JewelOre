@@ -8,16 +8,6 @@ section.item-detail{
 
         .product-images{
             width: 40%;
-            // display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            align-content: center;
-
-            img{
-                background: #FFF4EE;
-            }
 
             figure.upper{
                 width: 100%;
@@ -33,24 +23,41 @@ section.item-detail{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-top: 30px;
 
-                div{
-                    width: 30%;
-                    
-                    div{        
-                        width: 100%;                
+                img.arrow{
+                    width: 5%;
+                    background: none;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+
+                img.arrow:hover{
+                    opacity: .5;
+                }
+
+                &__slider{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    overflow: hidden;
+                    scroll-behavior: smooth;
+
+                    img.thumbnail{
+                        margin: 20px 0;
+                        cursor: pointer;
+                        width: 70%;
+                        max-width: 100%;
+                        opacity: 0.5;
                         background: #FFF4EE;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        width: 25%;
+                        margin-right: 20px;
+                    }
 
-                        img{
-                            margin: 20px 0;
-                            cursor: pointer;
-                            width: 50%;
-                            max-width: 100%;
-                        }
+                    img.thumbnail.active{
+                        opacity: 1;
+                    }
+
+                    img.thumbnail:hover{
+                        opacity: 1;
                     }
                 }
             }
@@ -116,6 +123,7 @@ section.item-detail{
                         padding: 5px 10px;
                         border-radius: 30px;
                         margin: 0 5px;
+                        cursor: pointer;
                     }
                 }
     
@@ -328,10 +336,6 @@ section.promise{
             .content-text{
                 justify-content: center;
 
-                .orange-box{
-                    top: 224%;
-                }
-
                 .about-products{
 
                     h1{
@@ -339,6 +343,10 @@ section.promise{
                         text-align: left;
                         width: 70%;
                     }
+                }
+
+                .responsive-image{
+                    display: none;
                 }
             }
         }
@@ -554,6 +562,11 @@ section.reviews{
                     font-family: $primaryFont;
                     padding: 10px 0;
                     margin: 20px 0 0 0;
+                    cursor: pointer;
+                }
+
+                button:hover{
+                    background: $accent;
                 }
             }
         }

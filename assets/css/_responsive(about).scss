@@ -1,22 +1,6 @@
 //Tablet Queries
 
 @media screen and (max-width: 1100px) {
-    
-    //Our Story
-
-    section.our-story, section.promise{
-
-        article{
-
-            .content-story{
-
-                .orange-box{
-                    height: 85%;
-                    top: 122%;
-                }
-            }
-        }
-    }
 
     //Landing Section
 
@@ -37,9 +21,26 @@
             }
         }
     }
+
+    //Our Story
+
+    section.our-story, section.promise{
+
+        .orange-box.about{
+            height: 80%;
+            width: 30%;
+            top: 23%;
+        }
+
+        .orange-box.promise{
+            height: 110%;
+            width: 30%;
+            top: -5%;
+        }
+    }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
     
     //Landing Seciton 
 
@@ -60,17 +61,25 @@
     //Our Story
 
     section.our-story, section.promise{
+        margin: 50px 0;
 
         article{
 
             .content-story{
+                flex-direction: column;
+                align-items: center;
+
+                figure{
+                    width: 90%;
+                    justify-content: flex-start;
+
+                    img{
+                        width: 80%;
+                    }
+                }
 
                 .content-text{
-
-                    .orange-box{
-                        height: 85%;
-                        top: 143%;
-                    }
+                    width: 75%;
                 }
             }
         }
@@ -161,42 +170,27 @@
                     text-align: center;
                 }
             }
-        }
-    }
 
-    //Our Story
+            .content-text.nobtn{
+                padding: 20px 0;
 
-    section.our-story, section.promise{
-
-        article{
-
-            .content-story{
-                flex-direction: column;
-                align-items: center;
-
-                figure{
-                    width: 90%;
-                    justify-content: flex-start;
-
-                    img{
-                        width: 80%;
-                    }
-                }
-
-                .content-text{
+                .responsive-image{
                     width: 75%;
-
-                    .orange-box{
-                        display: none;
-                    }
                 }
             }
         }
     }
 
+    //Testimonials
+
+    section.testimonials{
+        margin-top: 100px;
+    }
+
     //Shop all products
 
     section.shop-all-products{
+        margin: 0;
 
         .link{
 

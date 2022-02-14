@@ -1,0 +1,293 @@
+//Tablet Media Queries 
+
+@media screen and (max-width: 1024px) {
+    
+    //Cart 
+
+    section.cart{
+
+        .container{
+
+            .cart-items{
+
+                ul{
+
+                    li{
+                        font-size: 16px;
+                    }
+                }
+
+                .buttons{
+                    
+                    a{
+                        font-size: 20px;
+                    }
+                }
+
+                .products{
+
+                    &__container{
+
+                        h4,p,span{
+                        font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .proceed{
+
+                span{
+
+                    h5{
+                        font-size: 16px;
+                    }
+
+                    p{
+                        font-size: 18px;
+                    }
+                }
+
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    //Cart
+
+    section.cart{
+
+        .container{
+            flex-direction: column;
+
+            .cart-items{
+                width: 100%;
+
+                ul{
+
+                    li{
+                        font-size: 18px;
+                    }
+                }
+
+                .buttons{
+                    
+                    a{
+                        font-size: 22px;
+                    }
+                }
+
+                .products{
+
+                    &__container{
+
+                        h4,p,span{
+                        font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .proceed{
+                width: 100%;
+                margin-top: 100px;
+
+                span{
+
+                    h5{
+                        font-size: 18px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                    }
+                }
+
+                a{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    //Cart 
+
+    section.cart{
+
+        .container{
+
+            .cart-items{
+
+                ul{
+
+                    li{
+                        font-size: 16px;
+                    }
+                }
+
+                .buttons{
+                    
+                    a{
+                        font-size: 20px;
+                    }
+                }
+
+                .products{
+
+                    &__container{
+
+                        h4,p,span{
+                        font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .proceed{
+
+                span{
+
+                    h5{
+                        font-size: 16px;
+                    }
+
+                    p{
+                        font-size: 18px;
+                    }
+                }
+
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 551px) {
+    
+    //Cart
+
+    section.cart{
+        margin-top: 150px;
+
+        .container{
+
+            .cart-items{
+
+                .products, ul, hr.line, .buttons{
+                    display: none;
+                }
+
+                .products-responsive{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    padding: 20px 0;
+
+                    div:first-child{
+                        width: 45%;
+                        background: #FFF4EE;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    &__container{
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        margin: 0 20px;
+
+                        h4, p, span{
+                            text-align: start;
+                            font-family: $primaryFont;
+                            color: $primary-color;
+                            font-weight: 500;
+                            font-size: 12px;
+                            position: relative;
+
+                            span{
+                                font-weight: 400;
+                            }
+                        }
+
+                        hr{
+                            margin: 0;
+                            border: 0px;
+                        }
+                    }
+                }
+
+                .products-responsive::after{
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 100%;
+                    background-color: #F0F0F0;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                .buttons-responsive{
+                    margin-top: 30px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    a{
+                        @include button-properties;
+                        padding: 15px 0;
+                        width: 25%;
+                        text-align: center;
+                        margin: 0;
+                        flex-basis: 100%;
+                    }
+
+                    &__wrapper{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 50px;
+                        border: 2px solid #F0F0F0;
+
+                        input{
+                            margin: 20px 0;
+                            width: 80%;
+                            background: #F0F0F0;
+                            outline: none;
+                            border: none;
+                            font-family: $primaryFont;
+                            color: $primary-color;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+
+                        input[type="text"]{
+                            padding: 15px;
+                        }
+
+                        a{
+                            margin-bottom: 20px;
+                            width: 80%;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

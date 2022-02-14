@@ -37,3 +37,13 @@
 //Scss file for "Search"
 
 @import '_search.scss';
+
+//Scss file for "Cart"
+
+@import '_cart.scss';
+@import '_responsive(cart).scss';
+
+//Scss file for "Checkout"
+
+@import '_checkout.scss';
+@import '_responsive(checkout).scss';

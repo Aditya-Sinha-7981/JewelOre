@@ -1,7 +1,14 @@
 //Our Story
 
 section.write-to-us{
+    position: relative;
     margin-bottom: 150px;
+
+    .orange-box.contact{
+        height: 90%;
+        top: 18%;
+        z-index: -1;
+    }
 
     article{
         display: flex;
@@ -35,16 +42,6 @@ section.write-to-us{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-
-                .orange-box{
-                    position: absolute;
-                    height: 95%;
-                    width: 30%;
-                    left: 0;
-                    background: $secondary-color;
-                    z-index: -1;
-                    top: 140%;
-                }
 
                 form{
                     width: 100%;
@@ -126,7 +123,7 @@ section.connect{
                 margin: 20px;
                 align-items: center;
 
-                .orange-box{
+                .orange_box{
                     position: absolute;
                     width: 60%;
                     height: 100%;
@@ -135,7 +132,6 @@ section.connect{
                 }
 
                 img{
-                    // margin-left: 50px;
                     width: 90%;
                     height: 90%;
                 }

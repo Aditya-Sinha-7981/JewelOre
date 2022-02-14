@@ -6,46 +6,20 @@
 
     section.write-to-us{
 
-        article{
-
-            .content-write{
-
-                .orange-box{
-                    height: 85%;
-                    top: 122%;
-                }
-            }
+        .orange-box.contact{
+            height: 70%;
+            width: 30%;
+            top: 23%;
         }
     }
 }
 
-@media screen and (max-width: 990px) {
-    
+@media screen and (max-width: 991px) {
+
     //Write to us
 
     section.write-to-us{
-
-        article{
-
-            .content-write{
-
-                .content-text{
-
-                    .orange-box{
-                        height: 85%;
-                        top: 143%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    
-    //Write to us
-
-    section.write-to-us{
+        margin-bottom: 100px;
 
         article{
             
@@ -67,15 +41,21 @@
                 }
 
                 .content-text{
-                    width: 100%;
+                    width: 90%;
 
-                    .orange-box{
-                        display: none;
+                    form{
+
+                        input{
+                            width: 100%;
+                        }
                     }
                 }
             }
         }
     }
+}
+
+@media screen and (max-width: 768px) {
 
     //Let's connect
 
@@ -168,6 +148,7 @@
     //Let's connect
 
     section.connect{
+        margin: 50px 0;
 
         .content{
 
