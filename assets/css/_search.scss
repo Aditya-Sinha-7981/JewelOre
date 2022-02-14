@@ -4,3 +4,19 @@ section.trending-other-products{
         align-items: flex-start;
     }
 }
+
+@media screen and (max-width: 426px) {
+    
+    //Trending other products
+
+    section.trending-other-products{
+
+        #search{
+            
+            h1{
+                width: 100%;
+                margin-top: 100px;
+            }
+        }
+    }
+}

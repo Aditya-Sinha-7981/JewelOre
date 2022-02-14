@@ -61,6 +61,47 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    
+    //We Promise
+
+    section.promise{
+
+        article{
+
+            .content-story{
+
+                figure{
+                    display: none;
+                }
+
+                .content-text{
+
+                    .about-products{
+
+                        h1{
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+
+                    .responsive-image{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: center;
+                        margin-bottom: 50px;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     
     //Item detail
@@ -101,28 +142,6 @@
 
             ul.tab-content{
                 width: 90%;
-            }
-        }
-    }
-
-    //We Promise
-
-    section.promise{
-
-        article{
-
-            .content-story{
-
-                .content-text{
-
-                    .about-products{
-
-                        h1{
-                            text-align: center;
-                            width: 100%;
-                        }
-                    }
-                }
             }
         }
     }
@@ -205,9 +224,6 @@
             }
         }
     }
-}
-
-@media screen and (max-width: 500px) {
 
     //Reviews
 
@@ -331,8 +347,22 @@
                             margin: 0;
                         }
                     }
+
+                    .responsive-image{
+                        margin: 50px 0 0 0;
+                    }
                 }
             }
+        }
+    }
+
+    //Reviews
+
+    section.reviews{
+        margin-top: 50px;
+
+        h1{
+            font-size: 50px;
         }
     }
 }

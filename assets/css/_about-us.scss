@@ -41,6 +41,10 @@ header.other-pages{
                     text-transform: uppercase;
                     text-decoration: none;
                     font-size: 18px;
+
+                    i{
+                        color: $primary-color;
+                    }
                 }
 
                 a::before, a::after{
@@ -77,7 +81,17 @@ header.other-pages{
         .hamburger{
             display: none;
 
+            a{
+                margin: 0 20px;
+
+                i{
+                    font-size: 25px;
+                    color: $primary-color;
+                }
+            }
+
             button{
+                margin-left: 20px;
 
                 i{
                     transition: 2s;
@@ -183,13 +197,30 @@ section.landing-section{
                 @include button-properties;
             }
         }
+
+        .content-text.nobtn{
+            padding: 100px 0 100px 250px;
+        }
     }
 }
 
 //Our Story
 
 section.our-story, section.promise{
+    position: relative;
     margin: 150px 0;
+
+    .orange-box.about{
+        height: 90%;
+        top: 18%;
+        z-index: -1;
+    }
+
+    .orange-box.promise{
+        height: 110%;
+        top: -5%;
+        z-index: -1;
+    }
 
     article{
         display: flex;
@@ -223,16 +254,6 @@ section.our-story, section.promise{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-
-                .orange-box{
-                    position: absolute;
-                    height: 95%;
-                    width: 30%;
-                    left: 0;
-                    background: $secondary-color;
-                    z-index: -1;
-                    top: 140%;
-                }
 
                 .about-products{
                     position: relative;

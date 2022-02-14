@@ -40,6 +40,10 @@ header.landing-page{
                     text-transform: uppercase;
                     text-decoration: none;
                     font-size: 18px;
+
+                    i{
+                        color: $primary-color;
+                    }
                 }
 
                 a::before, a::after{
@@ -76,7 +80,17 @@ header.landing-page{
         .hamburger{
             display: none;
 
+            a{
+                margin: 0 20px;
+
+                i{
+                    font-size: 25px;
+                    color: $primary-color;
+                }
+            }
+
             button{
+                margin-left: 20px;
 
                 i{
                     transition: 2s;
@@ -138,48 +152,42 @@ section.landing{
     background-size: cover;
     background-position: center;
 
-    article{
+    .landing-wrapper{
         display: flex;
         flex-direction: row;
         align-content: center;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         height: 100vh;
 
-        aside{
-            width: 40%;
-            margin: 100px 0 30px 30px;
+        h1{
+            text-align: left;
+            margin: 40px 0 0 0;
+        }
+
+        p{
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        a{
+            @include button-properties;
+            margin-bottom: 0;
+        }
+
+        div{
+            flex-basis: 40%;
+            position: relative;
             z-index: 1;
-            background: #FFDAC5 url(../images/golden-circle.png) no-repeat;
-            background-position: right;
-            background-position-y: top;
+        }
 
-            .container{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                align-content: center;
-                color: $primary-color;
-                font-family: $primaryFont;
-                margin-left: -420px;
-                width: 100%;
-
-                h1{
-                    text-align: left;
-                    margin: 40px 0 0 0;
-                }
-    
-                p{
-                    margin: 20px 0;
-                    font-size: 18px;
-                    line-height: 26px;
-                }
-    
-                a{
-                    @include button-properties;
-                }
-            }
+        .center-box{
+            margin-left: -200px;
+            text-align: right;
+            background: $secondary-color;
+            padding: 25px 10px 25px 50px;
+            z-index: 0;
         }
     }
 }
@@ -223,6 +231,7 @@ section.information, section.information-other-pages{
                     font-family: $secondaryFont;
                     font-size: 30px;
                     font-weight: 700;
+                    text-align: center;
                 }
 
                 p{
@@ -287,6 +296,15 @@ section.more-products{
 
 // About Us Section
 
+.orange-box{
+    height: 690px;
+    width: 420px;
+    background: $secondary-color;
+    position: absolute;
+    margin: 0 0 10px 0;
+    z-index: 0;
+}
+
 section.about-us{
     width: 100%;
     margin: 150px 0 0 0;
@@ -294,15 +312,6 @@ section.about-us{
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-
-    .orange-box{
-        height: 690px;
-        width: 420px;
-        background: $secondary-color;
-        position: absolute;
-        margin: 0 0 10px 0;
-        z-index: 0;
-    }
 
     div.content{
         display: flex;
@@ -410,14 +419,13 @@ section.trending-other-products{
 
                 .products-image{
                     width: 90%;
-                    // height: 368px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     background: #FFF4EE;
 
                     img{
-                        padding: 10px;
+                        width: 100%;
                     }
                 }
 
@@ -631,14 +639,23 @@ section.subscribe{
     margin: 100px 0;
     
     .subscribe-content{
+        position: relative;
         display: flex;
+
+        img.golden-ellipse{
+            position: absolute;
+            left: 50%;
+            max-height: 100%;
+        }
 
         .subscribe-text{
             padding: 100px 0;
             width: 60%;
+            z-index: 1;
 
             h1{
                 font-size: 50px;
+                text-align: start;
             }
         }
     
@@ -649,9 +666,15 @@ section.subscribe{
             justify-content: center;
             align-content: center;
             background: $secondary-color url(../images/enevelope.png) center no-repeat;
+            background-size: contain;
+
+            img.responsive-golden-ellipse{
+                display: none
+            }
             
             a{
                 @include button-properties;
+                z-index: 2;
             }
         }
     }

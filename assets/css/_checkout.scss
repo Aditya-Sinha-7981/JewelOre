@@ -1,0 +1,271 @@
+//Checkout
+
+section.checkout{
+    margin-top: 200px;
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .details{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .inputs{
+                width: 100%;
+                display: flex;
+                display: flex;
+                flex-direction: column;
+
+                p{
+                    font-family: $primaryFont;
+                    color: $primary-color;
+                    font-weight: 500;
+                    font-size: 15px;
+                    margin: 20px 0 10px 0;
+                }
+
+                input[type="text"]{
+                    box-sizing: border-box;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background: #f0f0f0;
+                    padding: 10px;
+                    font-family: $primaryFont;
+                    color: $primary-color;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                .name{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                    .first, .last{
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .first{
+
+                        input{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+
+            span{
+                font-family: $primaryFont;
+                color: $primary-color;
+                font-weight: 500;
+                font-size: 12px;
+                margin: 20px 0 10px 0;
+            }
+
+            p{
+                font-family: $primaryFont;
+                color: $primary-color;
+                font-weight: 500;
+                font-size: 15px;
+                margin: 20px 0 10px 0;
+            }
+
+            input{
+                // width: 50%;
+                border: none;
+                outline: none;
+                background: #f0f0f0;
+                padding: 10px;
+                font-family: $primaryFont;
+                color: $primary-color;
+                font-weight: 500;
+                font-size: 16px;
+            }
+
+            .checkboxes{
+
+                label{
+                    font-family: $primaryFont;
+                    color: $primary-color;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 10px 0;
+
+                input[type=checkbox]{
+                    margin-right: 5px;
+                    display: inline;
+                }
+
+                input[type=checkbox]:hover{
+                    cursor: pointer;
+                }
+
+                #shipping{
+                    margin: 0;
+                    margin-left: 5px;
+                }
+            }
+
+            textarea{
+                width: 100%;
+                border: none;
+                outline: none;
+                background-color: #F0F0F0;
+                padding: 20px;
+                font-family: $primaryFont;
+                font-weight: 500;
+                font-size: 16px;
+                color: #313131;
+                resize: vertical;
+            }
+        }
+
+        .order{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #F0F0F0;
+
+            &__container{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+
+                h3{
+                    font-family: $secondaryFont;
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: $primary-color;
+                    margin: 20px 0;
+                }
+    
+                h4{
+                    font-family: $primaryFont;
+                    color: $primary-color;
+                    font-weight: 700;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+    
+                p{
+                    font-family: $primaryFont;
+                    color: $primary-color;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+    
+                .details{
+                    margin-top: 20px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+    
+                    &__left{
+                        display: flex;
+                        flex-direction: column;
+                        width: 47%;
+                    }
+    
+                    &__right{
+                        display: flex;
+                        flex-direction: column;
+                        width: 47%;
+                    }
+                }
+    
+                .subtotal, .shipping, .total{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 15px 0;
+    
+                    h4{
+                        width: 47%;
+                    }
+    
+                    p{
+                        width: 47%;
+                    }
+                }
+    
+                .paytm{
+    
+                    input[type=checkbox]:hover{
+                        cursor: pointer;
+                    }
+        
+                    label{
+                        font-family: $primaryFont;
+                        color: $primary-color;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+                }
+    
+                p.order__gateway, p.order__data{
+                    font-family: $primaryFont;
+                    font-weight: 500;
+                    color: $primary-color;
+                    font-size: 12px;
+                }
+    
+                p.order__gateway{
+                    margin: 20px 0 20px 0;
+                    color: #B0B0B0;
+                }
+    
+                p.order__data{
+                    margin: 10px 0;
+                }
+    
+                .TandC{
+                    display: flex;
+                    align-items: center;
+    
+                    input[type=checkbox]{
+                        margin-right: 5px;
+                    }
+
+                    input[type=checkbox]:hover{
+                        cursor: pointer;
+                    }
+    
+                    label{
+                        font-family: $primaryFont;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $primary-color;
+                    }
+                }
+    
+                a{
+                    margin: 40px 0;
+                    width: 100%;
+                    padding: 20px 0;
+                    background: $primary-color;
+                    font-weight: 700;
+                    text-align: center;
+                    color: white;
+                    font-family: $primaryFont;
+                    font-family: 25px;
+                }
+            }
+        }
+    }
+}

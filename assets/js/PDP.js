@@ -3,18 +3,9 @@ const tabContent = document.querySelectorAll('.tab-content')
 const defaultContent = document.querySelector('#default-open')
 const accordianBtn = document.querySelectorAll('#accordian-button')
 const accordianContent = document.querySelectorAll('.accordian-content')
-
-const slider = tns({
-    container: ".bottom",
-    nav: false,
-    controls: false,
-    autuplayButton: false,
-    autoplayButtonOutput: false,
-    items: 3,
-    mouseDrag: true,
-    gutter: 30,
-    autoplay: true
-})
+const thumbnailImage = document.querySelectorAll('.thumbnail')
+const buttonLeft = document.querySelector('#arrowLeft')
+const buttonRight = document.querySelector('#arrowRight')
 
 for(i = 0; i < tabs.length; i++){
     // Assigning it to a variable so that it does not return "undefined"
@@ -86,9 +77,32 @@ for(i = 0; i < accordianBtn.length; i++){
     })
 }
 
+for(i = 0; i < thumbnailImage.length; i++){
 
+    let x = thumbnailImage[i]
 
+    thumbnailImage[i].addEventListener('click', () => {
 
+        const activeImage = document.querySelectorAll('.active')
+
+        if(activeImage.length > 0){
+            activeImage[0].classList.remove('active')
+        }
+        
+        
+        x.classList.add('active')
+        document.getElementById('featured').src = x.src
+
+    })
+}
+
+buttonLeft.addEventListener('click', () => {
+    document.querySelector('.bottom__slider').scrollLeft -= 180
+})
+
+buttonRight.addEventListener('click', () => {
+    document.querySelector('.bottom__slider').scrollLeft += 180
+})
 
 defaultContent.click()
 

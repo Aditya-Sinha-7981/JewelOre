@@ -1,24 +1,7 @@
 //Tablet Queries
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 816px) {
     
-    //Landing Section 
-
-    section.landing-section{
-
-        .content-categories{
-
-            .content-text{
-                width: 90%;
-                margin: 0;
-
-                h1{
-                    text-align: center;
-                }
-            }
-        }
-    }
-
     //More Categories
 
     section.more-categories{
@@ -82,10 +65,35 @@
     }
 }
 
-//Phone Queries
-
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
     
+    //Landing Section 
+
+    section.landing-section{
+
+        .content-categories{
+
+            .content-text{
+                width: 90%;
+                margin: 0;
+
+                h1{
+                    text-align: center;
+                }
+            }
+
+            .content-text.nobtn{
+
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
     //Landing Section 
 
     section.landing-section{
@@ -100,7 +108,7 @@
             }
         }
     }
-
+    
     //More Categories
 
     section.more-categories{
@@ -145,3 +153,4 @@
         display: none;
     }
 }
+

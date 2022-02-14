@@ -1,37 +1,6 @@
 // Tablet Queries
 
 @media screen and (max-width: 1140px) {
-    // Landing section
-    
-    section.landing{
-
-        article{
-
-            aside{
-
-                h1{
-                    font-size: 2.7em;
-                    line-height: normal;
-                }
-
-                p{
-                    font-size: 1em;
-                }
-
-                a{
-                    font-size: 1.25em;
-                }
-            }
-
-            .centered-div{
-                justify-content: center;
-
-                img{
-                    margin: 0;
-                }
-            }
-        }
-    }
 
     // Trending and Other Products
 
@@ -137,6 +106,38 @@
 
 @media screen and (max-width: 1024px){
 
+    //Landing Section
+
+    section.landing{
+
+        .landing-wrapper{
+
+            h1{
+                font-size: 50px;
+            }
+
+            p{
+                font-size: 16px;
+            }
+
+            a{
+                font-size: 20px;
+            }
+
+            div{
+                flex-basis: 50%;
+            }
+
+            div:first-child{
+                flex-basis: 40%;
+            }
+
+            .center-box{
+                margin-left: -100px;
+            }
+        }
+    }
+
     //About Us section
 
     section.about-us{
@@ -154,11 +155,11 @@
 
     //About Us section
 
-    section.about-us{
+    .orange-box{
+        display: none;
+    }
 
-        .orange-box{
-            display: none;
-        }
+    section.about-us{
 
         div.content{
             flex-direction: column;
@@ -191,6 +192,7 @@
 }
 
 @media screen and (max-width: 900px) {
+
     // Information Section
     
     section.information, section.information-other-pages{
@@ -231,7 +233,7 @@
                 li{
                     font-size: 20px;
 
-                    a{
+                    a.button{
                         font-size: 20px;
                         padding: 20px 40px;;
                     }
@@ -307,6 +309,14 @@
                 align-items: center;
                 z-index: 2;
 
+                a{
+
+                    i{
+                        color: white;
+                        transition: 2s;
+                    }
+                }
+
                 button{
                     background: transparent;
                     outline: none;
@@ -314,7 +324,7 @@
 
                     i{
                         font-size: 35px;
-                        // color: $primary-color;
+                        color: white;
                     }
                 }
             }
@@ -327,32 +337,45 @@
 
     section.landing{
 
-        article{
+        .landing-wrapper{
             justify-content: center;
             align-items: center;
+            width: 100%;
 
-
-            aside{
-                width: 100%;
+            div:first-child{
+                flex-basis: 100%;
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-                margin: 0;
+                margin-top: 50px;
 
-                h1{
-                    font-size: 2em;
-                    line-height: normal;
+                h1, p{
+                    text-align: center;
+                    font-size: 60px;
+                    margin: 20px;
                 }
 
-                p{
-                    text-align: center;
+                a{
+                    font-size: 25px;
+                }
+
+                .container{
+                    background: $secondary-color url(../images/golden-circle.png) no-repeat center;
+                    background-size: contain;
+                    padding: 40px;
+
+                    h1,p{
+                        margin: 0;
+                    }
+
+                    p{
+                        font-size: 18px;
+                    }
                 }
             }
 
-            .centered-div{
-                justify-content: center;
-
-                img{
-                    margin: 0;
-                }
+            .center-box{
+                display: none;
             }
         }
     }
@@ -570,6 +593,17 @@
             flex-direction: column;
             align-items: center;
             background: $secondary-color url(../images/enevelope.png) center no-repeat;
+            background-size: contain;
+
+            img.golden-ellipse{
+                display: block;
+                position: absolute;
+                transform: rotate(90deg);
+                top: -200px;
+                left: 50%;
+                max-width: 100%;
+                transform: translateX(-50%) rotate(90deg);
+            }
 
             .subscribe-text{
                 width: 100%;
@@ -693,6 +727,36 @@
 // Phone Queries
 
 @media screen and (max-width: 630px) {
+
+    //About Us
+
+    section.about-us{
+        margin-top: 50px;
+    }
+
+    //Trending Products
+
+    section.trending-other-products{
+        margin-top: 50px;
+    }
+
+    //Company Information 
+
+    section.company-information{
+        margin-top: 50px;
+    }
+
+    //Testimonial
+
+    section.testimonials {
+        margin: 0;
+    }
+
+    //Subscribe 
+
+    section.subscribe {
+        margin: 0 0 100px 0;
+    }
     
     //Footer
 
@@ -750,6 +814,7 @@
 }
 
 @media screen and (max-width: 580px) {
+    
     // Navbar
 
     header.landing-page{
@@ -771,25 +836,23 @@
     // Section: Landing section
 
    section.landing{
+       background-position-x: 60%;
 
-        article{
+        .landing-wrapper{
 
-            aside{
-                width: 88vw;
-                margin-top: 130px;
-
+            div:first-child{
 
                 h1{
-                    font-size: 1.5em;
+                    font-size: 50px;
                 }
-
+    
+                p{
+                    font-size: 16px;
+                }
+    
                 a{
-                    margin: 110px 0 0 0;
+                    font-size: 20px;
                 }
-            }
-
-            .centered-div{
-                width: 90vw;
             }
         }
     } 
@@ -802,17 +865,6 @@
 
             ul.information-ul, ul.contact-ul{
                 padding: 0 0 150px 0;
-
-                li{
-
-                    h5{
-                        font-size: 0.8em;
-                    }
-
-                    p, a{
-                        font-size: 0.6em;
-                    }
-                }
             }
         }
     }
@@ -842,91 +894,16 @@
 
 }
 
-@media screen and (max-width: 426px) {
-
-    // Section: Landing section
+@media screen and (max-width: 520px) {
+    
+    //Landing Section
 
     section.landing{
-        background-position: 65% 0%;
 
-        article{
+        .landing-wrapper{
 
-            aside{
-                padding: 0 50px;
-
-                h1{
-                    font-size: 35px;
-                    text-align: center;
-                }
-
-                p{
-                    font-size: 4.5vw;
-                }
-
-                a{
-                    font-size: 16px;
-                    margin-top: 50px;
-                    text-align: center;
-                }
-            }
-
-            .centered-div{
-                
-                img{
-                    opacity: 50%;
-                }
-            }
-        }
-    }
-
-    //About Us
-
-    section.about-us{
-
-        div.content{
-
-            aside{
-                width: 100%;
-
-                h1{
-                    font-size: 50px;
-                }
-
-                .responsive-image{
-                    
-                    img{
-                        width: 100%;
-                    }
-                }
-
-                a{
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-
-    // Section: Information section
-
-    section.information, section.information-other-pages{
-
-        .information-content{
-
-            ul.information-ul{
-                margin: 30px 0;
-                padding: 0;
-
-                li{
-                    width: 100%;
-
-                    h5{
-                        font-size: 25px;
-                    }
-
-                    p{
-                        font-size: 14px;
-                    }
-                }
+            div:first-child{
+                flex-basis: 100%;
             }
         }
     }
@@ -962,9 +939,127 @@
         }
     }
 
+    // Section: Information section
+
+    section.information, section.information-other-pages{
+
+        .information-content{
+
+            ul.information-ul{
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    //Navbar
+
+    header.landing-page{
+
+        nav.navbar{
+
+            .hamburger{
+
+                a{
+
+                    i{
+                        color: $primary-color;
+                    }
+                }
+
+                button{
+
+                    i{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section: Landing section
+
+    section.landing{
+        background-position-x: 0%;
+
+        .landing-wrapper{
+
+            div:first-child{
+
+                .container{
+                    background-size: auto 90%;
+                }
+
+                h1{
+                    font-size: 45px;
+                }
+
+                h1, p{
+                    margin: 15px 5px;
+                }
+            }
+        }
+    }
+
+    // Section: Information section
+
+    section.information, section.information-other-pages{
+
+        .information-content{
+
+            ul.information-ul{
+                margin: 30px 0;
+                padding: 0;
+
+                li{
+                    width: 100%;
+
+                    h5{
+                        font-size: 25px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    //About Us
+
+    section.about-us{
+        margin-top: 50px;
+
+        div.content{
+
+            aside{
+                width: 100%;
+
+                h1{
+                    font-size: 50px;
+                }
+
+                .responsive-image{
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
     //Trending and Other Products
 
     section.trending-other-products{
+        margin-top: 50px;
 
         .trending-other-content{
 
@@ -996,6 +1091,7 @@
     //Company Information
 
     section.company-information{
+        margin: 50px 0;
 
         ul{
 
@@ -1049,6 +1145,7 @@
     //Testimonial Section
 
     section.testimonials{
+        margin: 0;
 
         .testimonial-area{
             
@@ -1076,6 +1173,7 @@
     //Subscribe Section
 
     section.subscribe{
+        margin: 0 0 100px 0;
 
         .subscribe-content{
 
@@ -1094,6 +1192,7 @@
     //Footer
 
     footer{
+        margin-top: 100px;
 
         .footer-area{
 
