@@ -8,10 +8,17 @@
 
         .content, .content-categories{
 
+            figure{
+
+                img{
+                    width: 100%;
+                }
+            }
+
             .content-text{
+                width: 60%;
                 margin-top: 80px;
-                width: 45%;
-                margin-left: -200px;
+                margin-left: -175px;
                 z-index: 0;
 
                 a{
@@ -36,6 +43,21 @@
             height: 110%;
             width: 30%;
             top: -5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    //Landing Section
+
+    section.landing-section{
+
+        .content, .content-categories{
+
+            .content-text{
+                width: 70%;
+            }
         }
     }
 }
@@ -86,52 +108,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-
-
-    // Center div
-
-    .center-div{
-        max-width: 1400px;
-        margin: 0 auto;
-        width: 90%;
-    }
+@media screen and (max-width: 820px) {
     
-    //navbar
-
-    header.other-pages{
-
-        #hamburger{
-            display: block;
-        }
-
-        nav.navbar{
-            justify-content: space-between;
-            
-            ul{
-                display: none;
-            }
-
-            .hamburger{
-                display: flex;
-                align-items: center;
-                z-index: 2;
-
-                button{
-                    background: transparent;
-                    outline: none;
-                    border: none;
-
-                    i{
-                        font-size: 35px;
-                    }
-                }
-            }
-
-        }
-
-    }
-
     //Landing Section
 
     section.landing-section{
@@ -179,6 +157,54 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    // Center div
+
+    .center-div{
+        max-width: 1400px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    //navbar
+
+    header.other-pages{
+
+        #hamburger{
+            display: block;
+        }
+
+        nav.navbar{
+            justify-content: space-between;
+            
+            ul{
+                display: none;
+            }
+
+            .hamburger{
+                display: flex;
+                align-items: center;
+                z-index: 2;
+
+                button{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+
+                    i{
+                        font-size: 35px;
+                        color: black;
+                    }
+                }
+            }
+
+        }
+
     }
 
     //Testimonials

@@ -28,10 +28,11 @@ header.landing-page{
             align-content: center;
             justify-content: flex-start;
             align-items: center;
+            margin-left: 15px;
             
             li{
                 list-style: none;
-                margin: 5px 10px;
+                margin: 5px 16px;
 
                 a{
                     position: relative;
@@ -39,7 +40,9 @@ header.landing-page{
                     font-family: $primaryFont;
                     text-transform: uppercase;
                     text-decoration: none;
-                    font-size: 18px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 10px 0;
 
                     i{
                         color: $primary-color;
@@ -69,6 +72,10 @@ header.landing-page{
 
                 a:hover::before, a:hover::after{
                     transform: scaleX(1);
+                }
+
+                a.icons::before, a.icons::after{
+                    content: none;
                 }
 
                 .home{
@@ -166,9 +173,10 @@ section.landing{
         }
 
         p{
+            font-family: $primaryFont;
+            font-weight: 500;
             margin: 20px 0;
             font-size: 18px;
-            line-height: 26px;
         }
 
         a{

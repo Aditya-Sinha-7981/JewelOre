@@ -109,6 +109,7 @@
     //Landing Section
 
     section.landing{
+        background-position-x: 10%;
 
         .landing-wrapper{
 
@@ -130,6 +131,10 @@
 
             div:first-child{
                 flex-basis: 40%;
+
+                a{
+                    margin: 0;
+                }
             }
 
             .center-box{
@@ -336,6 +341,7 @@
     // Section: Landing section
 
     section.landing{
+        background-position: center;
 
         .landing-wrapper{
             justify-content: center;
@@ -357,6 +363,7 @@
 
                 a{
                     font-size: 25px;
+                    margin-top: 40px;
                 }
 
                 .container{
@@ -1177,6 +1184,10 @@
 
         .subscribe-content{
 
+            img.golden-ellipse{
+                display: none;
+            }
+
             .subscribe-text{
                 display: flex;
                 justify-content: center;
@@ -1206,4 +1217,22 @@
         }
     }
     
+}
+
+@media screen and (max-width: 376px) {
+    
+    //Landoing section
+
+    section.landing{
+
+        .landing-wrapper{
+
+            div:first-child{
+
+                .container{
+                    background-size: 90%;
+                }
+            }
+        }
+    }
 }
