@@ -13,6 +13,16 @@ h1 {
   text-align: center;
 }
 
+p {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    line-height: normal;
+  }
+}
+
 .center-div {
   max-width: 1400px;
   margin: 0 auto;
@@ -366,7 +376,7 @@ section.information .information-content ul.information-ul li img, section.infor
 }
 
 section.information .information-content ul.information-ul li h5, section.information .information-content ul.contact-ul li h5, section.information-other-pages .information-content ul.information-ul li h5, section.information-other-pages .information-content ul.contact-ul li h5 {
-  margin: 10px 0;
+  margin: 25px 0;
   font-family: "Playfair Display";
   font-size: 30px;
   font-weight: 700;
@@ -533,15 +543,15 @@ section.about-us div.content aside ul li {
   font-weight: 400;
   margin: 15px 0;
   position: relative;
-  padding-left: 30px;
-  line-height: 26px;
+  padding-left: 45px;
+  line-height: 30px;
 }
 
 section.about-us div.content aside ul li::before {
   content: url(../images/list-bullet.svg);
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 5%;
 }
 
 section.about-us div.content aside a {
@@ -669,8 +679,31 @@ section.trending-other-products .trending-other-content ul li .products-image im
   width: 100%;
 }
 
-section.trending-other-products .trending-other-content ul li img {
-  margin: 20px 0;
+section.trending-other-products .trending-other-content ul li #review-stars {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0;
+}
+
+section.trending-other-products .trending-other-content ul li #review-stars i {
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+section.trending-other-products .trending-other-content ul li #review-stars i.fa-regular {
+  color: #127402;
+}
+
+section.trending-other-products .trending-other-content ul li #review-stars i.fa-solid {
+  color: #127402;
 }
 
 section.trending-other-products .trending-other-content ul li h4 {
@@ -841,6 +874,16 @@ section.most-bought article .about-item .item-description {
   -ms-flex-line-pack: center;
       align-content: center;
   color: #073300;
+}
+
+section.most-bought article .about-item .item-description #review-stars {
+  margin: 10px 0;
+}
+
+section.most-bought article .about-item .item-description #review-stars i {
+  color: #127402;
+  font-size: 20px;
+  margin: 0 5px;
 }
 
 section.most-bought article .about-item .item-description h3 {
@@ -1122,6 +1165,16 @@ section.recommended-product .recommended .product-info {
           align-items: flex-start;
   width: 50%;
   margin: 200px 0;
+}
+
+section.recommended-product .recommended .product-info #review-stars {
+  margin: 10px 0;
+}
+
+section.recommended-product .recommended .product-info #review-stars i {
+  font-size: 20px;
+  margin: 0 5px;
+  color: #FFDAC5;
 }
 
 section.recommended-product .recommended .product-info h2 {
@@ -1462,6 +1515,9 @@ footer .footer-area .bottom-area p {
   section.about-us div.content aside {
     padding: 0;
   }
+  section.trending-other-products .trending-other-content ul li #review-stars i {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1632,7 +1688,8 @@ footer .footer-area .bottom-area p {
     margin: 20px;
   }
   section.information .information-content ul.information-ul li h5, section.information .information-content ul.contact-ul li h5, section.information-other-pages .information-content ul.information-ul li h5, section.information-other-pages .information-content ul.contact-ul li h5 {
-    font-size: 1.15em;
+    font-size: 18px;
+    margin: 10px 0;
   }
   section.information .information-content ul.information-ul li p, section.information .information-content ul.contact-ul li p, section.information-other-pages .information-content ul.information-ul li p, section.information-other-pages .information-content ul.contact-ul li p {
     font-size: 0.8em;
@@ -1666,6 +1723,9 @@ footer .footer-area .bottom-area p {
   }
   section.trending-other-products .trending-other-content ul li .products-image img {
     max-width: 70%;
+  }
+  section.trending-other-products .trending-other-content ul li #review-stars i {
+    font-size: 18px;
   }
   section.trending-other-products .trending-other-content ul li a {
     padding: 15px 30px;
@@ -1943,6 +2003,9 @@ footer .footer-area .bottom-area p {
   section.more-products figure ul.more-products li.middle-category {
     margin: 80px 0 0 0;
   }
+  section.trending-other-products .trending-other-content ul li #review-stars i {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -1977,6 +2040,7 @@ footer .footer-area .bottom-area p {
   }
   section.information .information-content ul.information-ul, section.information-other-pages .information-content ul.information-ul {
     padding: 0;
+    margin: 60px 0;
   }
 }
 
@@ -2049,6 +2113,9 @@ footer .footer-area .bottom-area p {
   }
   section.trending-other-products .trending-other-content ul li .products-image img {
     max-width: 100%;
+  }
+  section.trending-other-products .trending-other-content ul li #review-stars i {
+    font-size: 18px;
   }
   section.company-information {
     margin: 50px 0;
@@ -2425,7 +2492,7 @@ section.landing-section .content .content-text a:hover, section.landing-section 
 }
 
 section.landing-section .content .content-text.nobtn, section.landing-section .content-categories .content-text.nobtn {
-  padding: 100px 0 100px 250px;
+  padding: 100px 30px 100px 220px;
 }
 
 section.our-story, section.promise {
@@ -2520,7 +2587,7 @@ section.our-story article .content-story .content-text .about-products ul li, se
   font-weight: 400;
   color: #073300;
   font-size: 18px;
-  margin: 30px 0;
+  margin: 60px 0;
   position: relative;
   padding-left: 30px;
 }
@@ -2541,7 +2608,7 @@ section.our-story article .content-story .content-text .about-products ul::befor
   position: absolute;
   height: 60%;
   border-left: 2px solid #127402;
-  top: 35px;
+  top: 65px;
   left: 10px;
 }
 
@@ -3550,8 +3617,14 @@ section.more-categories .layout .right-section .lower-part .products ul li .prod
   padding: 10px;
 }
 
-section.more-categories .layout .right-section .lower-part .products ul li img {
-  margin: 20px 0;
+section.more-categories .layout .right-section .lower-part .products ul li #review-stars {
+  margin: 10px 0;
+}
+
+section.more-categories .layout .right-section .lower-part .products ul li #review-stars i {
+  font-size: 20px;
+  margin: 0 5px;
+  color: #127402;
 }
 
 section.more-categories .layout .right-section .lower-part .products ul li h4 {
@@ -3880,6 +3953,12 @@ section.pagination .links a i {
   font-size: 40px;
 }
 
+@media screen and (max-width: 950px) {
+  section.landing-section .content-categories .content-text.nobtn h1 {
+    font-size: 50px;
+  }
+}
+
 @media screen and (max-width: 816px) {
   section.more-categories .layout .left-bar {
     display: none;
@@ -3950,7 +4029,7 @@ section.pagination .links a i {
 }
 
 @media screen and (max-width: 600px) {
-  section.landing-section .content-categories .content-text h1 {
+  section.landing-section .content-categories .content-text.nobtn h1 {
     font-size: 40px;
   }
   section.more-categories .layout .right-section .upper-part {
@@ -4525,8 +4604,10 @@ section.reviews .container .view .stars span {
           align-items: flex-end;
 }
 
-section.reviews .container .view .stars span img {
-  margin: 8px;
+section.reviews .container .view .stars span #review-stars i {
+  font-size: 20px;
+  margin: 0 5px;
+  color: #127402;
 }
 
 section.reviews .container .view .stars p {
@@ -4675,6 +4756,27 @@ section.reviews .container .view .written div .user-info .name {
   padding-right: 0;
 }
 
+section.reviews .container .view .written div .user-info .name #review-stars {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  margin: 10px 0;
+}
+
+section.reviews .container .view .written div .user-info .name #review-stars i {
+  margin-right: 5px;
+  color: #127402;
+}
+
 section.reviews .container .view .written div .user-info .name h4 {
   font-family: "Lora";
   color: #073300;
@@ -4707,8 +4809,25 @@ section.reviews .container .write {
           justify-content: center;
 }
 
-section.reviews .container .write img {
+section.reviews .container .write #review-stars {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
   margin: 10px 0;
+}
+
+section.reviews .container .write #review-stars i {
+  margin-right: 5px;
+  color: #127402;
 }
 
 section.reviews .container .write span {

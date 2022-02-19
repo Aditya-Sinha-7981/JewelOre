@@ -313,8 +313,14 @@ section.more-categories{
                                 }
                             }
 
-                            img{
-                                margin: 20px 0;
+                            #review-stars{
+                                margin: 10px 0;
+                
+                                i{
+                                    font-size: 20px;
+                                    margin: 0 5px;
+                                    color: $accent;
+                                }
                             }
 
                             h4{

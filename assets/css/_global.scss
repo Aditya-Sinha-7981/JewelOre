@@ -25,6 +25,14 @@ h1{
     text-align: center;
 }
 
+p{
+    line-height: 30px;
+
+    @media screen and (max-width: 768px) {
+        line-height: normal;
+    }
+}
+
 
 // Center div
 

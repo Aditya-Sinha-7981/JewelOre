@@ -154,6 +154,27 @@
             }
         }
     }
+
+    //Trending and other products
+
+    section.trending-other-products{
+
+        .trending-other-content{
+
+            ul{
+
+                li{
+
+                    #review-stars{
+
+                        i{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -402,7 +423,8 @@
                     margin: 20px;
 
                     h5{
-                        font-size: 1.15em;
+                        font-size: 18px;
+                        margin: 10px 0;
                     }
 
                     p{
@@ -479,11 +501,15 @@
 
                     .products-image{
 
-                        // max-height: 246px;
-
                         img{
                             max-width: 70%;
-                            // max-height: 80%;
+                        }
+                    }
+
+                    #review-stars{
+
+                        i{
+                            font-size: 18px;
                         }
                     }
 
@@ -899,6 +925,26 @@
         }
     }
 
+    //Trending and other products
+
+    section.trending-other-products{
+
+        .trending-other-content{
+
+            ul{
+
+                li{
+
+                    #review-stars{
+
+                        i{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -954,6 +1000,7 @@
 
             ul.information-ul{
                 padding: 0;
+                margin: 60px 0;
             }
         }
     }
@@ -1087,7 +1134,13 @@
 
                         img{
                             max-width: 100%;
-                            // max-height: 90%;
+                        }
+                    }
+
+                    #review-stars{
+
+                        i{
+                            font-size: 18px;
                         }
                     }
                 }

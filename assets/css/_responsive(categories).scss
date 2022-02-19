@@ -1,5 +1,23 @@
 //Tablet Queries
 
+@media screen and (max-width: 950px) {
+    
+    //Landing section
+
+    section.landing-section{
+
+        .content-categories{
+
+            .content-text.nobtn{
+
+                h1{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 816px) {
     
     //More Categories
@@ -100,7 +118,7 @@
 
         .content-categories{
 
-            .content-text{
+            .content-text.nobtn{
 
                 h1{
                     font-size: 40px;

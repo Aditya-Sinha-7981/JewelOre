@@ -386,8 +386,13 @@ section.reviews{
                     display: flex;
                     align-items: flex-end;
 
-                    img{
-                        margin: 8px;
+                    #review-stars{
+        
+                        i{
+                            font-size: 20px;
+                            margin: 0 5px;
+                            color: $accent;
+                        }
                     }
                 }
 
@@ -483,6 +488,20 @@ section.reviews{
                             justify-content: center;
                             padding-right: 0;
 
+                            #review-stars{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                padding: 0;
+                                margin: 10px 0;
+
+                                i{
+                                    margin-right: 5px;
+                                    color: $accent;
+                                }
+                            }
+
                             h4{
                                 font-family: $primaryFont;
                                 color: $primary-color;
@@ -510,8 +529,18 @@ section.reviews{
             align-items: flex-start;
             justify-content: center;
 
-            img{
+            #review-stars{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 0;
                 margin: 10px 0;
+
+                i{
+                    margin-right: 5px;
+                    color: $accent;
+                }
             }
 
             span{

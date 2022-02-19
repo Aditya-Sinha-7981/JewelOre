@@ -235,7 +235,7 @@ section.information, section.information-other-pages{
                 }
 
                 h5{
-                    margin: 10px 0;
+                    margin: 25px 0;
                     font-family: $secondaryFont;
                     font-size: 30px;
                     font-weight: 700;
@@ -363,15 +363,15 @@ section.about-us{
                     font-weight: 400;
                     margin: 15px 0;
                     position: relative;
-                    padding-left: 30px;
-                    line-height: 26px;
+                    padding-left: 45px;
+                    line-height: 30px;
                 }
 
                 li::before{
                     content: url(../images/list-bullet.svg);
                     position: absolute;
                     left: 0;
-                    top: 10%;
+                    top: 5%;
                 }
             }
 
@@ -437,8 +437,25 @@ section.trending-other-products{
                     }
                 }
 
-                img{
-                    margin: 20px 0;
+                #review-stars{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px 0;
+
+                    i{
+                        margin: 0 5px;
+                        font-size: 20px;
+                    }
+
+                    i.fa-regular{
+                        color: $accent;
+                    }
+
+                    i.fa-solid{
+                        color: $accent;
+                    }
                 }
 
                 h4{
@@ -538,6 +555,16 @@ section.most-bought{
                 justify-content: space-evenly;
                 align-content: center;
                 color: $primary-color;
+
+                #review-stars{
+                    margin: 10px 0;
+
+                    i{
+                        color: $accent;
+                        font-size: 20px;
+                        margin: 0 5px;
+                    }
+                }
 
                 h3{
                     font-size: 30px;
@@ -707,6 +734,16 @@ section.recommended-product{
             align-items: flex-start;
             width: 50%;
             margin: 200px 0;
+
+            #review-stars{
+                margin: 10px 0;
+
+                i{
+                    font-size: 20px;
+                    margin: 0 5px;
+                    color: $secondary-color;
+                }
+            }
 
             h2{
                 font-size: 30px;
@@ -904,4 +941,3 @@ footer{
         }
     }
 }
-
