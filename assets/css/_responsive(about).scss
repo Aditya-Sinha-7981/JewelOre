@@ -231,6 +231,29 @@
 
 //Phone Queries
 
+@media screen and (max-width: 550px) {
+    
+    //Landing seciton 
+
+    section.landing-section{
+
+        .content{
+            height: auto;
+            margin: 50px 0;
+        }
+    }
+
+    //Our Story
+
+    section.our-story{
+
+        article{
+
+            margin-top: 0;            
+        }
+    }
+}
+
 @media screen and (max-width: 468px) {
 
     //Landing Section

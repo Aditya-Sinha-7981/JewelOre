@@ -17,12 +17,6 @@ p {
   line-height: 30px;
 }
 
-@media screen and (max-width: 768px) {
-  p {
-    line-height: normal;
-  }
-}
-
 .center-div {
   max-width: 1400px;
   margin: 0 auto;
@@ -47,6 +41,14 @@ header.landing-page .nav-wrapper.scrolled {
   background: #FFDAC5;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+}
+
+header.landing-page .nav-wrapper.scrolled nav.navbar .hamburger i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: black;
+  -webkit-transition: none;
+  transition: none;
 }
 
 header.landing-page nav.navbar {
@@ -153,6 +155,8 @@ header.landing-page nav.navbar .hamburger a {
 }
 
 header.landing-page nav.navbar .hamburger a i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   font-size: 25px;
   color: #073300;
 }
@@ -162,8 +166,8 @@ header.landing-page nav.navbar .hamburger button {
 }
 
 header.landing-page nav.navbar .hamburger button i {
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header.landing-page .hamburger-menu {
@@ -1038,10 +1042,18 @@ section.testimonials .testimonial-area .testimonial .testimonial-content .carous
 
 section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item div p {
   width: 90%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-align: center;
 }
 
 section.testimonials .testimonial-area .testimonial .testimonial-content .carousel-item div h5 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin-top: 40px;
 }
 
@@ -1616,8 +1628,8 @@ footer .footer-area .bottom-area p {
   }
   header.landing-page nav.navbar .hamburger a i, header.other-pages nav.navbar .hamburger a i {
     color: white;
-    -webkit-transition: 2s;
-    transition: 2s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   header.landing-page nav.navbar .hamburger button, header.other-pages nav.navbar .hamburger button {
     background: transparent;
@@ -2058,7 +2070,7 @@ footer .footer-area .bottom-area p {
     background-size: auto 90%;
   }
   section.landing .landing-wrapper div:first-child h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
   section.landing .landing-wrapper div:first-child h1, section.landing .landing-wrapper div:first-child p {
     margin: 15px 5px;
@@ -2831,6 +2843,16 @@ section.shop-all-products .link a {
   }
 }
 
+@media screen and (max-width: 550px) {
+  section.landing-section .content {
+    height: auto;
+    margin: 50px 0;
+  }
+  section.our-story article {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 468px) {
   section.landing-section .content .content-text h1, section.landing-section .content-categories .content-text h1 {
     font-size: 50px;
@@ -3145,7 +3167,13 @@ section.connect .content ul li img {
   }
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 550px) {
+  section.write-to-us article h1 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 426px) {
   section.write-to-us article h1 {
     margin: 50px 0;
     font-size: 40px;
@@ -3209,6 +3237,12 @@ section.trending-other-products .trending-other-content ul li .products-image {
 
 section.trending-other-products .trending-other-content .responsive-link {
   display: none;
+}
+
+@media screen and (max-width: 992px) {
+  section.trending-other-products .trending-other-content .heading h1, section.trending-other-products .trending-other-content .heading a {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -4056,6 +4090,16 @@ section.pagination .links a i {
   }
   section.pagination {
     display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section.landing-section .content-categories {
+    height: auto;
+    margin: 50px 0;
+  }
+  section.landing-section .content-categories .content-text.nobtn {
+    margin-top: 100px;
   }
 }
 

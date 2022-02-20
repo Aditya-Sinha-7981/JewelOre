@@ -1,25 +1,20 @@
 <-----To Do----->
 
-Slider: try to make it work or use direct images: Done
+Heading text in landing section index: Done
 
-change text in information section 426+: Done
+Hamburger primary: ask again
 
-orange box in landing page and other that: Done
+Black color in navbar scrolled: Done
 
-reduce spaces in between sections 426+ for tablet around 50px, for mobile near about 0: from 600
+transition: Done
 
-golden eclipse in subscribe section: On hold
+custom cursor for carousel: Waiting for image
 
-most bought section change button to "view product": Done
+JewellOre in footer: Done
 
-add search and cart icons to navbar right of contact and left of hamburger: Done
+Reduce font size on shop all pages 992px: Done
 
-fix landing section in categories and shop page: Done
-
-Hamburger in other pages 
-
-Golden ellipse(if possible)
-
+remove height and add margin of landing section 550 all pages: Done
 
 
 

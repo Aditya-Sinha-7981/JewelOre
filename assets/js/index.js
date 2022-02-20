@@ -7,7 +7,7 @@ const slider = tns({
     controls: false,
     mouseDrag: true,
     autoplayButton: false,
-    autoplay: true,
+    autoplay: false,
     autoplayButtonOutput: false
 })
   

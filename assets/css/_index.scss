@@ -8,6 +8,18 @@ header.landing-page{
     .nav-wrapper.scrolled{
         background: $secondary-color;
         transition: ease-in-out 0.3s;
+
+        nav.navbar{
+
+            .hamburger{
+
+                i{
+                    transition: all 0.3s;
+                    color: black;
+                    transition: none;
+                }
+            }
+        }
     }
 
     nav.navbar{
@@ -91,6 +103,7 @@ header.landing-page{
                 margin: 0 20px;
 
                 i{
+                    transition: all 0.3s;
                     font-size: 25px;
                     color: $primary-color;
                 }
@@ -100,7 +113,7 @@ header.landing-page{
                 margin-left: 20px;
 
                 i{
-                    transition: 2s;
+                    transition: 0.3s;
                 }
             }
 
@@ -655,10 +668,12 @@ section.testimonials{
                         
                         p{
                             width: 90%;
+                            user-select: none;
                             text-align: center;
                         }
         
                         h5{
+                            user-select: none;
                             margin-top: 40px;
                         }
                     }
