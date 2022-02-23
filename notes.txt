@@ -22,11 +22,11 @@ remove height and add margin of landing section 550 all pages: Done
 
 Index: Done
 About: Done
-Contact: Done
+Contact: Done 
 Shop all: Done
 Categories: Done
 PDP: Done
-Search: Done
+Search: Done 
 Cart: Done
 Checkout: Done
 404, Thank you: Done
@@ -34,8 +34,6 @@ Checkout: Done
 
 <-----To ask----->
 
-Height in categories landing section add padding for clarity
+Client side validation thing
 
-Categories landing page 768px+: Done
-
-golden ellipse responsive: Done
+left aligning items 
