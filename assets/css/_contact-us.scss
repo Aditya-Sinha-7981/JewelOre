@@ -4,12 +4,6 @@ section.write-to-us{
     position: relative;
     margin-bottom: 150px;
 
-    .orange-box.contact{
-        height: 90%;
-        top: 18%;
-        z-index: -1;
-    }
-
     article{
         display: flex;
         flex-direction: column;
@@ -31,6 +25,14 @@ section.write-to-us{
                 align-content: center;
                 align-items: center;
                 justify-content: center;
+                position: relative;
+
+                .orange-box.contact{
+                    height: 110%;
+                    top: -5%;
+                    left: -10%;
+                    z-index: -1;
+                }
 
                 img{
                     width: 100%;

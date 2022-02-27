@@ -217,18 +217,6 @@ section.our-story, section.promise{
     position: relative;
     margin: 150px 0;
 
-    .orange-box.about{
-        height: 90%;
-        top: 18%;
-        z-index: -1;
-    }
-
-    .orange-box.promise{
-        height: 110%;
-        top: -5%;
-        z-index: -1;
-    }
-
     article{
         display: flex;
         flex-direction: column;
@@ -250,6 +238,14 @@ section.our-story, section.promise{
                 align-content: center;
                 align-items: center;
                 justify-content: center;
+                position: relative;
+
+                .orange-box{
+                    height: 110%;
+                    top: -5%;
+                    left: -10%;
+                    z-index: -1;
+                }
 
                 img{
                     width: 100%;

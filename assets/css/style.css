@@ -459,7 +459,6 @@ section.more-products figure ul.more-products li.middle-category {
 }
 
 .orange-box {
-  height: 690px;
   width: 420px;
   background: #FFDAC5;
   position: absolute;
@@ -483,6 +482,7 @@ section.about-us {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-x: hidden;
 }
 
 section.about-us div.content {
@@ -606,6 +606,12 @@ section.about-us div.content figure {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  position: relative;
+}
+
+section.about-us div.content figure .orange-box.index {
+  height: 110%;
+  right: -10%;
 }
 
 section.about-us div.content figure img {
@@ -2512,18 +2518,6 @@ section.our-story, section.promise {
   margin: 150px 0;
 }
 
-section.our-story .orange-box.about, section.promise .orange-box.about {
-  height: 90%;
-  top: 18%;
-  z-index: -1;
-}
-
-section.our-story .orange-box.promise, section.promise .orange-box.promise {
-  height: 110%;
-  top: -5%;
-  z-index: -1;
-}
-
 section.our-story article, section.promise article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2567,6 +2561,14 @@ section.our-story article .content-story figure, section.promise article .conten
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+section.our-story article .content-story figure .orange-box, section.promise article .content-story figure .orange-box {
+  height: 110%;
+  top: -5%;
+  left: -10%;
+  z-index: -1;
 }
 
 section.our-story article .content-story figure img, section.promise article .content-story figure img {
@@ -2702,21 +2704,23 @@ section.shop-all-products .link a {
     padding: 20px 45px;
     font-size: 20px;
   }
-  section.our-story .orange-box.about, section.promise .orange-box.about {
-    height: 80%;
-    width: 30%;
-    top: 23%;
-  }
-  section.our-story .orange-box.promise, section.promise .orange-box.promise {
-    height: 110%;
-    width: 30%;
-    top: -5%;
-  }
 }
 
 @media screen and (max-width: 1024px) {
   section.landing-section .content .content-text, section.landing-section .content-categories .content-text {
     width: 70%;
+  }
+  section.our-story article .content-story figure .orange-box.about, section.promise article .content-story figure .orange-box.about {
+    height: 80%;
+    top: 10%;
+    left: -25%;
+    z-index: -1;
+  }
+  section.our-story article .content-story figure .orange-box.promise, section.promise article .content-story figure .orange-box.promise {
+    height: 100%;
+    top: 0%;
+    left: -25%;
+    z-index: -1;
   }
 }
 
@@ -2906,12 +2910,6 @@ section.write-to-us {
   margin-bottom: 150px;
 }
 
-section.write-to-us .orange-box.contact {
-  height: 90%;
-  top: 18%;
-  z-index: -1;
-}
-
 section.write-to-us article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2955,6 +2953,14 @@ section.write-to-us article .content-write figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+section.write-to-us article .content-write figure .orange-box.contact {
+  height: 110%;
+  top: -5%;
+  left: -10%;
+  z-index: -1;
 }
 
 section.write-to-us article .content-write figure img {
@@ -3106,11 +3112,12 @@ section.connect .content ul li img {
   height: 90%;
 }
 
-@media screen and (max-width: 1100px) {
-  section.write-to-us .orange-box.contact {
-    height: 70%;
-    width: 30%;
-    top: 23%;
+@media screen and (max-width: 1024px) {
+  section.write-to-us article .content-write figure .orange-box.contact {
+    height: 80%;
+    top: 10%;
+    left: -25%;
+    z-index: -1;
   }
 }
 
