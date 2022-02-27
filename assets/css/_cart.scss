@@ -30,7 +30,7 @@ section.cart{
                     color: $primary-color;
                     font-weight: 700;
                     font-size: 18px;
-                    text-align: center;
+                    text-align: left;
                     text-transform: uppercase;
                 }
             }
@@ -65,7 +65,7 @@ section.cart{
                     display: flex;
 
                     h4, p, span{
-                        text-align: center;
+                        text-align: left;
                         width: 25%;
                         font-family: $primaryFont;
                         color: $primary-color;

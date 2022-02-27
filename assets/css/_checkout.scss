@@ -22,6 +22,13 @@ section.checkout{
                 display: flex;
                 flex-direction: column;
 
+                p.error_text{
+                    margin: 0;
+                    font-size: 10px;
+                    font-weight: 500;
+                    color: red;
+                }
+
                 p{
                     font-family: $primaryFont;
                     color: $primary-color;
@@ -61,6 +68,20 @@ section.checkout{
                         }
                     }
                 }
+
+                input.error{
+                    border: 0.5px solid red;
+                }
+
+                // input.error::after{
+                //     content: "Please input something";
+                //     position:absolute;
+                //     display: block;
+                //     margin: 0;
+                //     font-size: 10px;
+                //     font-weight: 500;
+                //     color: red;
+                // }
             }
 
             span{
@@ -264,6 +285,11 @@ section.checkout{
                     color: white;
                     font-family: $primaryFont;
                     font-family: 25px;
+                }
+
+                a.submit-button:hover{
+                    cursor: pointer;
+                    background: $accent;
                 }
             }
         }

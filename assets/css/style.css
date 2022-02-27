@@ -5197,7 +5197,7 @@ section.cart .container .cart-items ul li {
   color: #073300;
   font-weight: 700;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -5243,7 +5243,7 @@ section.cart .container .cart-items .products__container {
 }
 
 section.cart .container .cart-items .products__container h4, section.cart .container .cart-items .products__container p, section.cart .container .cart-items .products__container span {
-  text-align: center;
+  text-align: left;
   width: 25%;
   font-family: "Lora";
   color: #073300;
@@ -5680,6 +5680,13 @@ section.checkout .container .details .inputs {
           flex-direction: column;
 }
 
+section.checkout .container .details .inputs p.error_text {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 500;
+  color: red;
+}
+
 section.checkout .container .details .inputs p {
   font-family: "Lora";
   color: #073300;
@@ -5724,6 +5731,10 @@ section.checkout .container .details .inputs .name .first, section.checkout .con
 
 section.checkout .container .details .inputs .name .first input {
   width: 90%;
+}
+
+section.checkout .container .details .inputs input.error {
+  border: 0.5px solid red;
 }
 
 section.checkout .container .details span {
@@ -5970,6 +5981,11 @@ section.checkout .container .order__container a {
   color: white;
   font-family: "Lora";
   font-family: 25px;
+}
+
+section.checkout .container .order__container a.submit-button:hover {
+  cursor: pointer;
+  background: #127402;
 }
 
 @media screen and (max-width: 1024px) {

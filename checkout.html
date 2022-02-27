@@ -64,11 +64,11 @@
                         <div class="name">
                             <div class="first">
                                 <p>First name</p>
-                                <input type="text" placeholder="First name">
+                                <input type="text" placeholder="First name" class="required">
                             </div>
                             <div class="last">
                                 <p>Last name</p>
-                                <input type="text" placeholder="Last name">
+                                <input type="text" placeholder="Last name" class="required">
                             </div>
                         </div>
                         <p>Company name(Optional)</p>
@@ -76,15 +76,15 @@
                         <p>Country/Region</p>
                         <p>India</p>
                         <p>Street Address</p>
-                        <input type="text" placeholder="House number and street address">
+                        <input type="text" placeholder="House number and street address" class="required">
                         <p>Town City</p>
-                        <input type="text" placeholder="Town city">
+                        <input type="text" placeholder="Town city" class="required">
                         <p>State</p>
-                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="State" class="required">
                         <p>Pin Code</p>
-                        <input type="text" placeholder="Type pincode">
+                        <input type="text" placeholder="Type pincode" class="required">
                         <p>Phone Number</p>
-                        <input type="number" placeholder="Enter Phone Number">
+                        <input type="number" placeholder="Enter Phone Number" class="required">
                         <p>Email address</p>
                         <input type="text" placeholder="Enter your email address">
                     </div>
@@ -138,7 +138,7 @@
                             <input type="checkbox" name="t&c" id="t&c" value="true">
                             <label for="t&c">I have read and agree to the website terms and conditions</label>
                         </div>
-                        <a>Place Order</a>
+                        <a class="submit-button">Place Order</a>
                     </div>
                 </div>
             </div>
@@ -210,5 +210,6 @@
     </footer>
 
     <script src="assets/js/javascript.js"></script>
+    <script src="assets/js/checkout.js"></script>
 </body>
 </html>
