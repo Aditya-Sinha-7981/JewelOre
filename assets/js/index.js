@@ -34,6 +34,7 @@ function isInViewPort(element) {
 }
 
 window.addEventListener('scroll', function (event) {
+
     if (isInViewPort(counterArea)) {
         // Number Counter
         for(let n of counters) {
@@ -53,8 +54,10 @@ window.addEventListener('scroll', function (event) {
         }
 
     }
+
 }, false);
   
+
 // Number Counter
 // for(let n of counters) {
 //     const updateCount = () => {

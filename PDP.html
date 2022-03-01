@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
@@ -57,7 +58,7 @@
     <section class="item-detail">
         <div class="center-div">
             <div class="container">
-                <div class="product-images">
+                <div class="product-images" data-aos="fade-right">
                     <figure class="upper">
                         <img src="assets/images/white stone earring big.png" id="featured" alt="Default Image">
                     </figure>
@@ -76,7 +77,7 @@
                         <img src="assets/images/arrow-right.png" alt="Right arrow" class="arrow" id="arrowRight">
                     </div>
                 </div>
-                <div class="about-product">
+                <div class="about-product" data-aos="fade-left">
                     <div class="container-item">
                         <img src="assets/images/5-stars.png" alt="5 star item">
                         <h3>White Stone Earring</h3>
@@ -115,7 +116,7 @@
 
     <section class="tabs">
         <div class="center-div">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <ul class="tab-ul">
                     <li onclick="tabContentDisplay('more')" class="active" id="default-open">More About Product</li>
                     <li onclick="tabContentDisplay('outfit')">Outfit match info</li>
@@ -275,12 +276,12 @@
 
             <article>
                 <div class="content-story">
-                    <figure>
+                    <figure data-aos="fade-right">
                         <div class="orange-box promise"></div>
                         <img src="assets/images/heart-shaped-pendant.png" alt="Cover photo for our story section">
                     </figure>
 
-                    <div class="content-text">
+                    <div class="content-text" data-aos="fade-left">
                         <div class="about-products">
                             <h1>We promise you gleam</h1>
                         </div>
@@ -306,9 +307,9 @@
         <div class="center-div">
 
             <div class="trending-other-content">
-                <h1>You May also like</h1>
+                <h1 data-aos="fade-up">You May also like</h1>
                 <ul>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="500">
                         <div class="products-image">
                             <img src="assets/images/gold finger ring.png" alt="Gold finger ring">
                         </div>
@@ -323,7 +324,7 @@
                         <span>Rs.637/-</span>
                         <a href="#" class="button">Add to cart</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="500">
                         <div class="products-image">
                             <img src="assets/images/fun filled silver ring.png" alt="Fun filled silver finger ring">
                         </div>
@@ -338,7 +339,7 @@
                         <span>Rs.400/-</span>
                         <a href="#" class="button">Add to cart</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="500">
                         <div class="products-image">
                             <img src="assets/images/white stone earring.png" alt="White stone earring">
                         </div>
@@ -364,10 +365,10 @@
     <section class="reviews">
         <div class="center-div">
 
-            <h1>Happy Customers</h1>
+            <h1 data-aos="fade-up">Happy Customers</h1>
 
             <div class="container">
-                <div class="view">
+                <div class="view" data-aos="fade-right">
                     <div class="stars">
                         <span>
                             5 
@@ -438,7 +439,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="write">
+                <div class="write" data-aos="fade-left">
                     <span>Your overall rating</span>
                     <div id="review-stars">
                         <i class="fa-regular fa-star"></i>
@@ -527,5 +528,9 @@
 
     <script src="assets/js/javascript.js"></script>
     <script src="assets/js/PDP.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

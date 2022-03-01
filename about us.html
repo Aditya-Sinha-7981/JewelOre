@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
@@ -58,11 +59,11 @@
         <div class="center-div">
 
             <div class="content">
-                <figure>
+                <figure data-aos="fade-right" data-aos-duration="1000">
                     <img src="assets/images/big ring.png" alt="Landing section big ring">
                 </figure>
 
-                <div class="content-text">
+                <div class="content-text" data-aos="fade-left" data-aos-duration="1000">
                     <h1>About Us</h1>
                     <div class="responsive-image">
                         <img src="assets/images/big ring.png" alt="Landing section big ring">
@@ -81,14 +82,14 @@
         <div class="center-div">
 
             <article>
-                <h1>Our story</h1>
+                <h1 data-aos="fade-up">Our story</h1>
                 <div class="content-story">
-                    <figure>
+                    <figure data-aos="fade-right"> 
                         <div class="orange-box about"></div>
                         <img src="assets/images/heart-shaped-pendant.png" alt="Cover photo for our story section">
                     </figure>
 
-                    <div class="content-text">
+                    <div class="content-text" data-aos="fade-left">
                         <div class="about-products">
                             <ul>
                                 <li>
@@ -156,9 +157,9 @@
         <div class="center-div">
 
             <div class="trending-other-content">
-                <h1>Take a Gleaming Tour</h1>
+                <h1 data-aos="fade-up">Take a Gleaming Tour</h1>
                 <ul>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="500">
                         <div class="products-image">
                             <img src="assets/images/gold finger ring.png" alt="Gold finger ring">
                         </div>
@@ -173,7 +174,7 @@
                         <span>Rs.637/-</span>
                         <a href="#" class="button">Add to cart</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="500">
                         <div class="products-image">
                             <img src="assets/images/fun filled silver ring.png" alt="Fun filled silver finger ring">
                         </div>
@@ -188,7 +189,7 @@
                         <span>Rs.400/-</span>
                         <a href="#" class="button">Add to cart</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="500">
                         <div class="products-image">
                             <img src="assets/images/white stone earring.png" alt="White stone earring">
                         </div>
@@ -215,7 +216,7 @@
         <div class="center-div">
 
             <div class="testimonial-area">
-                <h1>Hear from our clients</h1>
+                <h1 data-aos="fade-up">Hear from our clients</h1>
 
                 <!-- Backgroung image of testimonial along with body -->
                 <div class="testimonial">
@@ -319,5 +320,9 @@
 
     <script src="assets/js/javascript.js"></script>
     <script src="assets/js/about-us.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

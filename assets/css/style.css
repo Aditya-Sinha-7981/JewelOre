@@ -2622,7 +2622,7 @@ section.our-story article .content-story .content-text .about-products ul li::be
 section.our-story article .content-story .content-text .about-products ul::before, section.promise article .content-story .content-text .about-products ul::before {
   content: "";
   position: absolute;
-  height: 60%;
+  height: 65%;
   border-left: 2px solid #127402;
   top: 65px;
   left: 10px;
@@ -2887,7 +2887,7 @@ section.shop-all-products .link a {
     margin: 20px 0;
   }
   section.our-story article .content-story .content-text .about-products ul::before, section.promise article .content-story .content-text .about-products ul::before {
-    height: 65%;
+    top: 30px;
   }
   section.our-story article .content-story .content-text .about-writer, section.promise article .content-story .content-text .about-writer {
     margin-top: 40px;
@@ -3005,7 +3005,7 @@ section.write-to-us article .content-write .content-text form input {
   outline: none;
   border: none;
   height: 88px;
-  width: 90%;
+  width: 100%;
   font-family: "Lora";
   font-weight: 400;
   margin: 20px 0;
@@ -5930,15 +5930,31 @@ section.checkout .container .order__container .subtotal p, section.checkout .con
   width: 47%;
 }
 
-section.checkout .container .order__container .paytm input[type=checkbox]:hover {
+section.checkout .container .order__container .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.checkout .container .order__container .payment input[type=checkbox]:hover {
   cursor: pointer;
 }
 
-section.checkout .container .order__container .paytm label {
+section.checkout .container .order__container .payment label {
   font-family: "Lora";
   color: #073300;
   font-weight: 700;
   font-size: 18px;
+  margin-right: 20px;
 }
 
 section.checkout .container .order__container p.order__gateway, section.checkout .container .order__container p.order__data {
@@ -6064,6 +6080,7 @@ section.content-body .wrapper {
 
 section.content-body .wrapper h1 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 section.content-body .wrapper p {
@@ -6071,5 +6088,6 @@ section.content-body .wrapper p {
   font-weight: 500;
   font-size: 18px;
   font-family: "Lora";
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
