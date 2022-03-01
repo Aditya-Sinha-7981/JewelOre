@@ -6,6 +6,10 @@ const accordianContent = document.querySelectorAll('.accordian-content')
 const thumbnailImage = document.querySelectorAll('.thumbnail')
 const buttonLeft = document.querySelector('#arrowLeft')
 const buttonRight = document.querySelector('#arrowRight')
+const add = document.querySelector('#add')
+const subtract = document.querySelector('#subtract')
+const valueBox = document.querySelector('#valueBox')
+
 
 for(i = 0; i < tabs.length; i++){
     // Assigning it to a variable so that it does not return "undefined"
@@ -95,6 +99,20 @@ for(i = 0; i < thumbnailImage.length; i++){
 
     })
 }
+
+add.addEventListener('click', () => {
+    let value = valueBox.innerHTML
+
+    valueBox.innerHTML = Number(value) + 1
+})
+
+subtract.addEventListener('click', () => {
+    let value = valueBox.innerHTML
+
+    if(value > 1){
+        valueBox.innerHTML = Number(value) - 1
+    }
+})
 
 buttonLeft.addEventListener('click', () => {
     document.querySelector('.bottom__slider').scrollLeft -= 180

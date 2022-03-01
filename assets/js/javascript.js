@@ -17,24 +17,24 @@ window.onscroll = () => {
 
 
 hamburgerButton.addEventListener('click', () => {
-  //Removal or addition of "active" class for hamburger
+    //Removal or addition of "active" class for hamburger
 
-  let x = hamburgerClass
-    
-  if(x.classList.contains('active')){
-      x.classList.remove('active');
-  }else{
-      x.classList.add('active');
-  }
+    let x = hamburgerClass
+        
+    if(x.classList.contains('active')){
+        x.classList.remove('active');
+    }else{
+        x.classList.add('active');
+    }
 
-  let y = hamburgerIcon
+    let y = hamburgerIcon
 
-  if(y.classList.contains('fa-bars')){
-      y.classList.remove('fa-bars');
-      y.classList.add('fa-times');
-  }else{
-      y.classList.remove('fa-times');
-      y.classList.add('fa-bars');
-  }
+    if(y.classList.contains('fa-bars')){
+        y.classList.remove('fa-bars');
+        y.classList.add('fa-times');
+    }else{
+        y.classList.remove('fa-times');
+        y.classList.add('fa-bars');
+    }
 });
 

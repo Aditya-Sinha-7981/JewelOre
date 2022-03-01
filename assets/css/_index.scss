@@ -589,6 +589,7 @@ section.most-bought{
                 h3{
                     font-size: 30px;
                     font-weight: 700;
+                    font-family: $secondaryFont;
                 }
 
                 h5{
@@ -601,6 +602,7 @@ section.most-bought{
                     display: flex;
 
                     button{
+                        font-family: $primaryFont;
                         background: transparent;
                         padding: 20px;
                         outline: none;

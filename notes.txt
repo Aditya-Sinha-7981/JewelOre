@@ -34,6 +34,10 @@ Checkout: Done
 
 <-----To ask----->
 
-Client side validation thing
+Price range slider
 
-left aligning items 
+Index animation
+
+Our story line(about us page)
+
+radio button paytm(checkout)

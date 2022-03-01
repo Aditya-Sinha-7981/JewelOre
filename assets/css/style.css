@@ -899,6 +899,7 @@ section.most-bought article .about-item .item-description #review-stars i {
 section.most-bought article .about-item .item-description h3 {
   font-size: 30px;
   font-weight: 700;
+  font-family: "Playfair Display";
 }
 
 section.most-bought article .about-item .item-description h5 {
@@ -914,6 +915,7 @@ section.most-bought article .about-item .item-description .interact-buttons {
 }
 
 section.most-bought article .about-item .item-description .interact-buttons button {
+  font-family: "Lora";
   background: transparent;
   padding: 20px;
   outline: none;
@@ -3029,7 +3031,7 @@ section.write-to-us article .content-write .content-text form a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   text-align: center;
-  width: 95%;
+  width: 100%;
 }
 
 section.write-to-us article .content-write .content-text form a:hover {
@@ -4250,6 +4252,7 @@ section.item-detail .container .about-product .container-item .interact-buttons 
   outline: none;
   border: 1px solid #E0E0E0;
   font-size: 20px;
+  font-family: "Lora";
   cursor: pointer;
 }
 
