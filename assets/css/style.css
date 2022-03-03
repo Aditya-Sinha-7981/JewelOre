@@ -3000,7 +3000,11 @@ section.write-to-us article .content-write .content-text form {
   height: 100%;
 }
 
-section.write-to-us article .content-write .content-text form input {
+section.write-to-us article .content-write .content-text form .input-area {
+  width: 100%;
+}
+
+section.write-to-us article .content-write .content-text form .input-area input {
   background: #F0F0F0;
   outline: none;
   border: none;
@@ -3008,9 +3012,20 @@ section.write-to-us article .content-write .content-text form input {
   width: 100%;
   font-family: "Lora";
   font-weight: 400;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   padding: 0 20px;
   font-size: 18px;
+}
+
+section.write-to-us article .content-write .content-text form .input-area small {
+  font-family: "Lora";
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+section.write-to-us article .content-write .content-text form .input-area input.required.error {
+  border: 0.5px solid red;
 }
 
 section.write-to-us article .content-write .content-text form a {
@@ -3246,6 +3261,10 @@ section.trending-other-products .trending-other-content ul li .products-image {
 
 section.trending-other-products .trending-other-content .responsive-link {
   display: none;
+}
+
+section.trending-other-products.shop-all {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -5688,6 +5707,30 @@ section.checkout .container .details .inputs {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+section.checkout .container .details .inputs .text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.checkout .container .details .inputs .text-area input {
+  width: 100%;
+}
+
+section.checkout .container .details .inputs .text-area small.error-text {
+  font-family: "Lora";
+  color: red;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 section.checkout .container .details .inputs p.error_text {
