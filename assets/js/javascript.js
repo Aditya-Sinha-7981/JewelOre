@@ -3,6 +3,10 @@ const navbar = document.querySelector('.navbar');
 const hamburgerButton = document.querySelector('.hamburger-btn');
 const hamburgerIcon = document.querySelector('#icon');
 const hamburgerClass = document.querySelector('.hamburger-menu');
+const searchButton = document.querySelectorAll('#search-button')
+const searchIcon = document.querySelector('.search-icon')
+const searchArea = document.querySelector('.search-area')
+const searchSubmit = document.querySelector('.search-submit')
 
 //For ddding background adter scroll in navbar
 
@@ -14,6 +18,21 @@ window.onscroll = () => {
     }
 };
 
+
+
+
+for(i = 0; i < searchButton.length; i++){
+    searchButton[i].addEventListener('click', () => {
+
+        searchArea.classList.add('active')
+        document.querySelector('body').style.overflow = 'hidden'
+    })
+}
+
+searchIcon.addEventListener('click', () => {
+    searchArea.classList.remove('active')
+    document.querySelector('body').style.overflow = 'auto'
+})
 
 
 hamburgerButton.addEventListener('click', () => {

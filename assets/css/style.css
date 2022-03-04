@@ -146,6 +146,10 @@ header.landing-page nav.navbar ul li .home {
   font-weight: 900;
 }
 
+header.landing-page nav.navbar ul li a:hover {
+  cursor: pointer;
+}
+
 header.landing-page nav.navbar .hamburger {
   display: none;
 }
@@ -230,6 +234,100 @@ header.landing-page .hamburger-menu.active {
           transform: translateX(0%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+header.landing-page .search-area {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+header.landing-page .search-area a.search-icon {
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  right: 3%;
+  top: 2%;
+}
+
+header.landing-page .search-area a.search-icon:hover {
+  cursor: pointer;
+}
+
+header.landing-page .search-area .search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header.landing-page .search-area .search-input .search-box {
+  margin-top: 200px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header.landing-page .search-area .search-input .search-box input {
+  width: 100%;
+  padding: 20px;
+  font-family: "Lora";
+  font-size: 18px;
+  color: #073300;
+  font-weight: 500;
+  position: relative;
+}
+
+header.landing-page .search-area .search-input .search-box input[type="search"]::-webkit-search-decoration,
+header.landing-page .search-area .search-input .search-box input[type="search"]::-webkit-search-cancel-button,
+header.landing-page .search-area .search-input .search-box input[type="search"]::-webkit-search-results-button,
+header.landing-page .search-area .search-input .search-box input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+header.landing-page .search-area .search-input .search-box a {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+}
+
+header.landing-page .search-area .search-input .search-box a i {
+  color: #073300;
+}
+
+header.landing-page .search-area .search-input .search-box a:hover {
+  cursor: pointer;
+}
+
+header.landing-page .search-area.active {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 section.landing {
@@ -2344,6 +2442,10 @@ header.other-pages nav.navbar ul li .home {
   font-weight: 900;
 }
 
+header.other-pages nav.navbar ul li a:hover {
+  cursor: pointer;
+}
+
 header.other-pages nav.navbar .hamburger {
   display: none;
 }
@@ -2426,6 +2528,100 @@ header.other-pages .hamburger-menu.active {
           transform: translateX(0%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+header.other-pages .search-area {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+header.other-pages .search-area a.search-icon {
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  right: 3%;
+  top: 2%;
+}
+
+header.other-pages .search-area a.search-icon:hover {
+  cursor: pointer;
+}
+
+header.other-pages .search-area .search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header.other-pages .search-area .search-input .search-box {
+  margin-top: 200px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header.other-pages .search-area .search-input .search-box input {
+  width: 100%;
+  padding: 20px;
+  font-family: "Lora";
+  font-size: 18px;
+  color: #073300;
+  font-weight: 500;
+  position: relative;
+}
+
+header.other-pages .search-area .search-input .search-box input[type="search"]::-webkit-search-decoration,
+header.other-pages .search-area .search-input .search-box input[type="search"]::-webkit-search-cancel-button,
+header.other-pages .search-area .search-input .search-box input[type="search"]::-webkit-search-results-button,
+header.other-pages .search-area .search-input .search-box input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+header.other-pages .search-area .search-input .search-box a {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+}
+
+header.other-pages .search-area .search-input .search-box a i {
+  color: #073300;
+}
+
+header.other-pages .search-area .search-input .search-box a:hover {
+  cursor: pointer;
+}
+
+header.other-pages .search-area.active {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 section.landing-section {
@@ -2878,7 +3074,7 @@ section.shop-all-products .link a {
 @media screen and (max-width: 550px) {
   section.landing-section .content {
     height: auto;
-    margin: 50px 0;
+    padding: 50px 0;
   }
   section.our-story article {
     margin-top: 0;
@@ -2936,7 +3132,7 @@ section.shop-all-products .link a {
 section.write-to-us {
   position: relative;
   margin-bottom: 150px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 section.write-to-us article {
