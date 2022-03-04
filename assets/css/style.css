@@ -296,6 +296,7 @@ header.landing-page .search-area .search-input .search-box input {
   color: #073300;
   font-weight: 500;
   position: relative;
+  outline: none;
 }
 
 header.landing-page .search-area .search-input .search-box input[type="search"]::-webkit-search-decoration,
@@ -1756,6 +1757,9 @@ footer .footer-area .bottom-area p a {
     font-size: 35px;
     color: white;
   }
+  header.landing-page .search-area .search-input .search-box, header.other-pages .search-area .search-input .search-box {
+    width: 70% !important;
+  }
   section.landing {
     background-position: center;
   }
@@ -2194,6 +2198,9 @@ footer .footer-area .bottom-area p a {
   header.landing-page nav.navbar .hamburger button i {
     color: black;
   }
+  header.landing-page .search-area .search-input .search-box input {
+    padding: 15px;
+  }
   section.landing {
     background-position-x: 0%;
   }
@@ -2590,6 +2597,7 @@ header.other-pages .search-area .search-input .search-box input {
   color: #073300;
   font-weight: 500;
   position: relative;
+  outline: none;
 }
 
 header.other-pages .search-area .search-input .search-box input[type="search"]::-webkit-search-decoration,
@@ -2625,6 +2633,7 @@ header.other-pages .search-area.active {
 }
 
 section.landing-section {
+  overflow: hidden;
   background: url(../images/background2.png) top;
   background-repeat: repeat-x;
   background-size: auto;
@@ -3123,9 +3132,16 @@ section.shop-all-products .link a {
   }
   section.shop-all-products {
     margin: 50px 0;
+    margin-top: -50px;
   }
   section.shop-all-products .link a {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  header.other-pages .search-area .search-input .search-box input {
+    padding: 15px;
   }
 }
 

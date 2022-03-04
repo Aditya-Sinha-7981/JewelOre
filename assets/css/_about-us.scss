@@ -200,6 +200,7 @@ header.other-pages{
                     color: $primary-color;
                     font-weight: 500;
                     position: relative;
+                    outline: none;
                 }
 
                 input[type="search"]::-webkit-search-decoration,
@@ -239,6 +240,7 @@ header.other-pages{
 //Landing Section 
 
 section.landing-section{
+    overflow: hidden;
     background: url(../images/background2.png) top;
     background-repeat: repeat-x;
     background-size: auto;

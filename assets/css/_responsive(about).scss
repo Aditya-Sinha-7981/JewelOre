@@ -351,11 +351,33 @@
 
     section.shop-all-products{
         margin: 50px 0;
+        margin-top: -50px;
 
         .link{
 
             a{
                 font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    
+    //Navbar
+
+    header.other-pages{
+
+        .search-area{
+
+            .search-input{
+                
+                .search-box{
+                    
+                    input{
+                        padding: 15px;
+                    }
+                }
             }
         }
     }

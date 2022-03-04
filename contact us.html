@@ -30,11 +30,11 @@
                         <li><a href="about us.html">About US</a></li>
                         <li><a href="shop all.html">Shop</a></li>
                         <li><a href="contact us.html">Contact</a></li>
-                        <li><a href="search.html" class="icons"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a id="search-button" class="icons"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li><a href="cart.html" class="icons"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                     <div class="hamburger">
-                        <a href="search.html" class="icons"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a id="search-button" class="icons"><i class="fa-solid fa-magnifying-glass"></i></a>
                         <a href="cart.html" class="icons"><i class="fa-solid fa-cart-shopping"></i></a>
                         <button class="hamburger-btn"><i class="fas fa-bars" id="icon"></i></button>
                     </div>
@@ -49,6 +49,17 @@
                     <li><a href="shop all.html">Shop</a></li>
                     <li><a href="contact us.html">Contact</a></li>
                 </ul>
+            </div>
+        </div>
+        <div class="center-div" id="search-place">
+            <div class="search-area">
+                <a class="search-icon"><i class="fas fa-times"></i></a>
+                <div class="search-input">
+                    <div class="search-box">
+                        <input type="search" name="searchField" id="search">
+                        <a href="search.html" class="search-submit"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -92,7 +103,7 @@
                     <div class="content-text" data-aos="fade-left">
                         <form>
                             <div class="input-area">
-                                <input type="text" name="Name" placeholder="Your Name" class="required" onkeypress="return alpha(event)">
+                                <input type="text" name="Name" placeholder="Your Name" class="required">
                             </div>
                             <div class="input-area">
                                 <input type="text" name="Email" placeholder="Your email id" class="required">

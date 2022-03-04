@@ -357,6 +357,16 @@
 
         }
 
+        .search-area{
+
+            .search-input{
+                
+                .search-box{
+                    width: 70% !important;
+                }
+            }
+        }
+
     }
 
     // Section: Landing section
@@ -1077,6 +1087,19 @@
 
                     i{
                         color: black;
+                    }
+                }
+            }
+        }
+
+        .search-area{
+
+            .search-input{
+                
+                .search-box{
+                    
+                    input{
+                        padding: 15px;
                     }
                 }
             }
