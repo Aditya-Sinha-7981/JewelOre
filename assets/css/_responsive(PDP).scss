@@ -281,10 +281,6 @@
 
                 form{
                     width: 100%;
-
-                    input[type='text']{
-                        padding: 5px 0;
-                    }
                 }
             }
         }
@@ -363,6 +359,19 @@
 
         h1{
             font-size: 50px;
+        }
+
+        .container{
+
+            .write{
+
+                form{
+                    
+                    input[type="text"]{
+                        padding: 15px;
+                    }
+                }
+            }
         }
     }
 }

@@ -3,6 +3,7 @@
 section.write-to-us{
     position: relative;
     margin-bottom: 150px;
+    overflow-x: hidden;
 
     article{
         display: flex;
@@ -60,12 +61,11 @@ section.write-to-us{
                             background: #F0F0F0;
                             outline: none;
                             border: none;
-                            height: 88px;
                             width: 100%;
                             font-family: $primaryFont;
                             font-weight: 400;
                             margin: 20px 0 0 0;
-                            padding: 0 20px;
+                            padding: 20px;
                             font-size: 18px;
                         }
 

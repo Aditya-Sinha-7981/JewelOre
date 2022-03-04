@@ -543,6 +543,7 @@ section.company-information{
 //Most bought item for the current month
 
 section.most-bought{
+    overflow-x: hidden;
     
     article{
         display: flex;
@@ -734,6 +735,7 @@ section.subscribe{
             a{
                 @include button-properties;
                 z-index: 2;
+                margin-top: 0;
             }
         }
     }
@@ -744,6 +746,7 @@ section.subscribe{
 section.recommended-product{
     background: url(../images/model-wearing-jewelry.png) no-repeat center;
     background-size: cover;
+    overflow-x: hidden;
 
     .recommended{
         display: flex;
@@ -961,6 +964,10 @@ footer{
                 font-weight: 400;
                 font-size: 18px;
                 color: white;
+
+                a{
+                    display: inline-block;
+                }
             }
         }
     }

@@ -822,6 +822,10 @@ section.company-information ul li h5 {
   font-size: 40px;
 }
 
+section.most-bought {
+  overflow-x: hidden;
+}
+
 section.most-bought article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1132,6 +1136,7 @@ section.subscribe .subscribe-content .subscribe-btn a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   z-index: 2;
+  margin-top: 0;
 }
 
 section.subscribe .subscribe-content .subscribe-btn a:hover {
@@ -1153,6 +1158,7 @@ section.subscribe .subscribe-content .subscribe-btn a:hover {
 section.recommended-product {
   background: url(../images/model-wearing-jewelry.png) no-repeat center;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 section.recommended-product .recommended {
@@ -1473,6 +1479,10 @@ footer .footer-area .bottom-area p {
   font-weight: 400;
   font-size: 18px;
   color: white;
+}
+
+footer .footer-area .bottom-area p a {
+  display: inline-block;
 }
 
 @media screen and (max-width: 1140px) {
@@ -2062,6 +2072,21 @@ footer .footer-area .bottom-area p {
     padding: 0;
     margin: 60px 0;
   }
+  section.testimonials.index {
+    margin-top: 0;
+  }
+  section.testimonials .testimonial-area .testimonial .testimonial-content {
+    padding: 70px 0;
+  }
+  section.subscribe .subscribe-content .subscribe-btn a {
+    z-index: 1;
+  }
+  section.recommended-product .recommended .product-info {
+    margin: 100px 0;
+  }
+  section.recommended-product .recommended .product-info a {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -2196,7 +2221,7 @@ footer .footer-area .bottom-area p {
     width: 90%;
   }
   footer {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   footer .footer-area .bottom-area p {
     text-align: center;
@@ -2516,6 +2541,7 @@ section.landing-section .content .content-text.nobtn, section.landing-section .c
 }
 
 section.our-story, section.promise {
+  overflow: hidden;
   position: relative;
   margin: 150px 0;
 }
@@ -2910,6 +2936,7 @@ section.shop-all-products .link a {
 section.write-to-us {
   position: relative;
   margin-bottom: 150px;
+  overflow-x: hidden;
 }
 
 section.write-to-us article {
@@ -3008,12 +3035,11 @@ section.write-to-us article .content-write .content-text form .input-area input 
   background: #F0F0F0;
   outline: none;
   border: none;
-  height: 88px;
   width: 100%;
   font-family: "Lora";
   font-weight: 400;
   margin: 20px 0 0 0;
-  padding: 0 20px;
+  padding: 20px;
   font-size: 18px;
 }
 
@@ -3204,6 +3230,9 @@ section.connect .content ul li img {
   }
   section.write-to-us article .content-write figure img {
     width: 90%;
+  }
+  section.write-to-us article .content-write .content-text form .input-area input {
+    padding: 15px;
   }
   section.write-to-us article .content-write .content-text form a {
     width: 100%;
@@ -4616,6 +4645,7 @@ section.promise article .content-story .content-text .responsive-image {
 
 section.reviews {
   margin-top: 100px;
+  overflow-x: hidden;
 }
 
 section.reviews .container {
@@ -4940,7 +4970,7 @@ section.reviews .container .write form p {
 
 section.reviews .container .write form input[type='text'] {
   width: 100%;
-  padding: 5px 10px;
+  padding: 20px;
   border: none;
   outline: none;
   background: #f0f0f0;
@@ -5120,9 +5150,6 @@ section.reviews .container .write form button:hover {
   section.reviews .container .write form {
     width: 100%;
   }
-  section.reviews .container .write form input[type='text'] {
-    padding: 5px 0;
-  }
 }
 
 @media screen and (max-width: 426px) {
@@ -5160,6 +5187,9 @@ section.reviews .container .write form button:hover {
   }
   section.reviews h1 {
     font-size: 50px;
+  }
+  section.reviews .container .write form input[type="text"] {
+    padding: 15px;
   }
 }
 

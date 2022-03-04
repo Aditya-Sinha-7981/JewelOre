@@ -1004,6 +1004,56 @@
             }
         }
     }
+
+    //Testimonial 
+
+    section.testimonials.index{
+        margin-top: 0;
+    }
+
+    section.testimonials{
+
+        .testimonial-area{
+
+            .testimonial{
+
+                .testimonial-content{
+                    padding: 70px 0;
+                }
+            }
+        }
+    }
+
+    //Subscribe 
+
+    section.subscribe{
+
+        .subscribe-content{
+
+            .subscribe-btn{
+
+                a{
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    //Recommended products
+
+    section.recommended-product{
+        
+        .recommended{
+
+            .product-info{
+                margin: 100px 0;
+
+                a{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -1256,7 +1306,7 @@
     //Footer
 
     footer{
-        margin-top: 100px;
+        margin-top: 50px;
 
         .footer-area{
 
