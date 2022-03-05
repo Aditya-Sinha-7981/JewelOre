@@ -5968,11 +5968,11 @@ section.checkout .container .details .inputs .text-area input {
   width: 100%;
 }
 
-section.checkout .container .details .inputs .text-area small.error-text {
+section.checkout .container .details .inputs .text-area small {
   font-family: "Lora";
   color: red;
-  font-weight: 500;
   font-size: 12px;
+  font-weight: 500;
 }
 
 section.checkout .container .details .inputs p.error_text {
