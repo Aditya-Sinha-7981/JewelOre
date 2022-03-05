@@ -283,25 +283,6 @@ checkoutDiv.addEventListener('input', debounce(function (e) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // submit.addEventListener('click', () => {
 
 //     // looping through all input to check for empty value

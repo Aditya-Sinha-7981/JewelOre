@@ -5,6 +5,7 @@ const contactForm = document.querySelector('#contact-form')
 const contactName = document.querySelector('#contact_name')
 const contactEmail = document.querySelector('#contact_email')
 const contactNumber = document.querySelector('#contact_number')
+const contactQuery = document.querySelector('#contact_query')
 
 const slider = tns({
     container: ".carousel-connect",
@@ -40,6 +41,8 @@ const checkUsername = () => {
 
     if(!isRequired(name)){
         displayError(contactName, 'Username cannot be blank')
+    }else if(!isTextValid(name)){
+        displayError(contactName, `USername cannot contain special characters`)
     }else if(!isBetween(name.length, min, max)){
         displayError(contactName, `Username must be between ${min} and ${max} characters`)
     }else{
@@ -94,6 +97,24 @@ const checkNumber = () => {
     return valid
 }
 
+const checkQuery = () => {
+
+    const query = contactQuery.value.trim()
+
+    let valid = false
+
+    if(!isRequired(query)){
+        displayError(contactQuery, `Query cannot be empty`)
+    }else if(!isTextValid(query)){
+        displayError(contactQuery, `Query cannot contain special characters`)
+    }else{
+        displaySuccess(contactQuery)
+        valid = true
+    }
+
+    return valid
+}
+
 //Pre-requiste functions
 
 const isRequired = value => value === '' ? false : true;
@@ -102,10 +123,16 @@ const isEmailValid = (email) => {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 };
+
 const isPhoneValid = (phone) => {
     const re = /^[0-9]{10}$/;
     return re.test(phone);
 };
+
+const isTextValid = (string) => {
+    const re = /^[a-zA-Z0-9]/;
+    return re.test(string);
+}
 
 const displayError = (input, msg) => {
 
@@ -149,7 +176,6 @@ contactForm.addEventListener('input', debounce(function (e) {
 
     switch (e.target.id) {
         case 'contact_name':
-            console.log(`this is working`)
             checkUsername();
             break;
         case 'contact_email':
@@ -157,6 +183,9 @@ contactForm.addEventListener('input', debounce(function (e) {
             break;
         case 'contact_number':
             checkNumber();
+            break;
+        case 'contact_query':
+            checkQuery()
             break;
     }
 }));
