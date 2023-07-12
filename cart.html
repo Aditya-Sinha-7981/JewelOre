@@ -87,7 +87,11 @@
                         <div class="products__container">
                             <h4>White Stone Earring</h4>
                             <p>Rs 400</p>
-                            <span>1</span>
+                            <div class="quantity-container">
+                                <div class="decrement" id="quantity_decrement">-</div>
+                                <span id="quantity_value">1</span>
+                                <div class="increment" id="quantity_increment">+</div>
+                            </div>
                             <p>Rs 400</p>
                         </div>
                     </div>
@@ -99,7 +103,11 @@
                         <div class="products__container">
                             <h4>White Stone Earring</h4>
                             <p>Rs 400</p>
-                            <span>1</span>
+                            <div class="quantity-container">
+                                <div class="decrement" id="quantity_decrement">-</div>
+                                <span id="quantity_value">1</span>
+                                <div class="increment" id="quantity_increment">+</div>
+                            </div>
                             <p>Rs 400</p>
                         </div>
                     </div>
@@ -111,15 +119,21 @@
                         <div class="products__container">
                             <h4>White Stone Earring</h4>
                             <p>Rs 400</p>
-                            <span>1</span>
+                            <div class="quantity-container">
+                                <div class="decrement" id="quantity_decrement">-</div>
+                                <span id="quantity_value">1</span>
+                                <div class="increment" id="quantity_increment">+</div>
+                            </div>
                             <p>Rs 400</p>
                         </div>
                     </div>
 
                     <div class="buttons">
                         <input type="text" placeholder="Coupon Code">
-                        <a href="#">Apply Coupon</a>
-                        <a href="#">Update Cart</a>
+                        <div class="button-container">
+                            <a href="#">Apply Coupon</a>
+                            <a href="#">Update Cart</a>
+                        </div>
                     </div>
 
                     <!-- Responsive products only visible on 550px or below -->
@@ -262,6 +276,7 @@
     </footer>
 
     <script src="assets/js/javascript.js"></script>
+    <script src="assets/js/cart.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

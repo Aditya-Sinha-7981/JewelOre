@@ -64,7 +64,7 @@ section.cart{
                     width: 80%;
                     display: flex;
 
-                    h4, p, span{
+                    h4, p, .quantity-container{
                         text-align: left;
                         width: 25%;
                         font-family: $primaryFont;
@@ -75,6 +75,27 @@ section.cart{
     
                     h4{
                         padding: 0 10px;
+                    }
+
+                    .quantity-container{
+                        display: flex;
+                        align-items: flex-start;
+
+                        .increment, .decrement{
+                            width: 20px;
+                            height: 20px;
+                            background: none;
+                            display: flex;
+                            background: none;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                        }
+
+                        span{
+                            margin: 0 10px;
+                            margin-top: -2px;
+                        }
                     }
                 }
             }
@@ -94,14 +115,22 @@ section.cart{
                     color: $primary-color;
                     font-weight: 500;
                     font-size: 16px;
+                    width: 20%;
                 }
 
-                a{
-                    @include button-properties;
-                    padding: 15px 0;
-                    width: 25%;
-                    text-align: center;
-                    margin: 0;
+                .button-container{
+                    width: 80%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    a{
+                        @include button-properties;
+                        padding: 15px 0;
+                        width: 25%;
+                        text-align: center;
+                        margin: 0;
+                        margin-left: 20px;
+                    }
                 }
             }
         }

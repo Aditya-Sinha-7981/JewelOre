@@ -3,6 +3,9 @@ const add = document.querySelector('#add')
 const subtract = document.querySelector('#subtract')
 const valueBox = document.querySelector('#valueBox')
 const counterArea = document.querySelector('#counterArea')
+const increment_button = document.querySelector('#increment_button')
+const decrement_button = document.querySelector('#decrement_button')
+const quantity_value = document.querySelector('#quantity_value')
 
 const slider = tns({
     container: "#carousel",
@@ -88,4 +91,18 @@ subtract.addEventListener('click', () => {
     if(value > 1){
         valueBox.innerHTML = Number(value) - 1
     }
+})
+
+increment_button.addEventListener('click', () => {
+    let current_value = quantity_value.innerHTML
+    current_value ++
+    quantity_value.innerHTML = current_value
+})
+
+decrement_button.addEventListener('click', () => {
+    let current_value = quantity_value.innerHTML
+    if(current_value > 1){
+        current_value --
+    }
+    quantity_value.innerHTML = current_value
 })
